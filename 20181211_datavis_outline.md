@@ -48,11 +48,11 @@ Data-driven visualizations
 	- ACTIVITY: show examples highlight each plus a combined one so learners can critique each with
 		- What is clear about this visualization choice?
 		- What is misleading about this visualization choice?
-- Combining it all for your own data
+- ACTIVITY: Combining it all for your own data
 	- Use your own data set (knowing data types, groups, and response/predictors) (or one provided)
 	- Choose what type of graph to illustrate your dataset
 	- Use whiteboard or paper and explain your choices
-- Summarize previous headers
+- Wrap-up / summary
 	- Match your data type and question to the graph type
 	- Use visually effective aesthetics
 	- Keep your visuals clear and provide context
