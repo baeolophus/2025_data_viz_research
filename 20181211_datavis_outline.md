@@ -1,8 +1,8 @@
 Data-driven visualizations
 
-Contributors
-- Claire Curry
-- Brent Tweedy
+- Contributors
+	- Claire Curry
+	- Brent Tweedy
 
 - Session goals for participants
 	- choose a sentence, table, or graph based on your question and data types
@@ -59,5 +59,7 @@ Contributors
 
 
 Concepts adapted from:
+
 The Visual Display of Quantitative Information by Edward R. Tufte
+
 Chart Chooser by A. Abela ExtremePresentation.com https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf
