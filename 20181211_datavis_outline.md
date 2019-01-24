@@ -5,11 +5,11 @@ Data-driven visualizations
 	- Brent Tweedy
 
 - Session goals for participants
-	- choose a sentence, table, or graph based on your question and data types
+	- choose a sentence, table, or graph based on your question and data types [HANDOUT]
 	- maximize data portrayed to a reader with minimal time, ink, and space by understanding concepts of data density, "chartjunk", and data/ink ratio
 	- present your data with clarity by making symbols proportional to numbers, clear labeling, showing variation in data (not design of chart), using standardized units, illustrating data with each axis of appropriate dimensions, and providing context for data
 - Is the visualization type appropriate? 
-	- Matching data and hypothesis to graph type (chart handout - IN PROGRESS)
+	- Matching data and hypothesis to graph type
 		- Are your data summaries or raw?
 			- Raw: What variable types (categories vs numeric)?
 				- Number vs number (scatterplot)
