@@ -8,7 +8,9 @@ Data-driven visualizations
 	- choose a sentence, table, or graph based on your question and data types [HANDOUT]
 	- maximize data portrayed to a reader with minimal time, ink, and space by understanding concepts of data density, "chartjunk", and data/ink ratio
 	- present your data with clarity by making symbols proportional to numbers, clear labeling, showing variation in data (not design of chart), using standardized units, illustrating data with each axis of appropriate dimensions, and providing context for data
-- Is the visualization type appropriate? 
+
+	
+- Is the visualization type appropriate? (10 min)
 	- Matching data and hypothesis to graph type
 		- Are your data summaries or raw?
 			- Raw: What variable types (categories vs numeric)?
@@ -28,27 +30,27 @@ Data-driven visualizations
 			- Highlight statistical tests
 			- Combine raw and summary graphs (scatterplot with regression line, scatter over box-and-whisker)
 		- Most important of all: Does it actually answer your question and/or correspond with any statistical tests you've conducted?
-	- ACTIVITY: Show examples (number varying with time permitting) of good and bad graphs or tables so learners can critique each with
+	- ACTIVITY (5 min): Show examples (number varying with time permitting) of good and bad graphs or tables so learners can critique each with
 		- What is informative about this visualization choice?
 		- What is not informative about this visualization choice?
-- Effective visuals
+- Effective visuals (10 min)
 	- Concepts
 		- Data density (information per unit area)
 		- Chartjunk (extraneous grid lines, optical illusions, unnecessary color)
 		- Data/ink ratio: maximize use of ink for data
 		- Accessibility: color blind color choices, font sizes (presentations vs manuscripts)
-	- ACTIVITY: show examples highlight each plus a combined one so learners can critique each with
+	- ACTIVITY (5 min): show examples highlight each plus a combined one so learners can critique each with
 		- What is effective about this visualization choice?
 		- What is not effective about this visualization choice?
-- Clear visuals with context
+- Clear visuals with context (10 min)
 		- Symbols and axes proportional to numbers represented (problem with pie charts, area in general)
 		- Reduce external variation / lack of context: Use standardized units (per capita, per weight, whatever relevant to your field), show all relevant data
 		- Clear labels (minimize abbrevations)
 		- Do not change chart design partway through (emphasize variation in data, not design)
-	- ACTIVITY: show examples highlight each plus a combined one so learners can critique each with
+	- ACTIVITY  (5 min) : show examples highlight each plus a combined one so learners can critique each with
 		- What is clear about this visualization choice?
 		- What is misleading about this visualization choice?
-- ACTIVITY: Combining it all for your own data
+- ACTIVITY (if time): Combining it all for your own data
 	- Use your own data set (knowing data types, groups, and response/predictors) (or one provided)
 	- Choose what type of graph to illustrate your dataset
 	- Use whiteboard or paper and explain your choices
