@@ -30,9 +30,7 @@ Data-driven visualizations
 			- Highlight statistical tests
 			- Combine raw and summary graphs (scatterplot with regression line, scatter over box-and-whisker)
 		- Most important of all: Does it actually answer your question and/or correspond with any statistical tests you've conducted?
-	- ACTIVITY (5 min): Show examples (number varying with time permitting) of good and bad graphs or tables so learners can critique each with
-		- What is informative about this visualization choice?
-		- What is not informative about this visualization choice?
+
 - Effective visuals (10 min)
 	- Concepts
 		- Data density (information per unit area)
