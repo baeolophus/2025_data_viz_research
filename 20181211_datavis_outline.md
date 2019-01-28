@@ -41,7 +41,7 @@ Data-driven visualizations
 		- What is effective about this visualization choice?
 		- What is not effective about this visualization choice?
 - Clear visuals with context (10 min)
-		- Symbols and axes proportional to numbers represented (problem with pie charts, area in general)
+        - Symbols and axes proportional to numbers represented (problem with pie charts, area in general)
 		- Reduce external variation / lack of context: Use standardized units (per capita, per weight, whatever relevant to your field), show all relevant data
 		- Clear labels (minimize abbrevations)
 		- Do not change chart design partway through (emphasize variation in data, not design)
