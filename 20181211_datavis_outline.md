@@ -12,14 +12,7 @@ Data-driven visualizations
 	
 - Is the visualization type appropriate? (10 min)
 	- Matching data and hypothesis to graph type
-		- Are your data summaries or raw?
-			- Raw: What variable types (categories vs numeric)?
-				- Number vs number (scatterplot)
-				- Number vs category (box and whisker, bar plot)
-			- Summaries
-				- Descriptive (sentence, table, box-and-whisker)
-				- Distributions (histograms, scatterplots, 3d area)
-				- Predictive (regression lines, confidence intervals)
+		- Walk through one path to demo the chart of charts
 		- Do you have groupings in your data?
 			- Lines to connect individuals
 			- Heatmaps or shading to show density
