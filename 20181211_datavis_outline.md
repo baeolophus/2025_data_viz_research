@@ -41,10 +41,6 @@ Data-driven visualizations
 	- ACTIVITY  (5 min) : show examples highlight each plus a combined one so learners can critique each with
 		- What is clear about this visualization choice?
 		- What is misleading about this visualization choice?
-- ACTIVITY (if time): Combining it all for your own data
-	- Use your own data set (knowing data types, groups, and response/predictors) (or one provided)
-	- Choose what type of graph to illustrate your dataset
-	- Use whiteboard or paper and explain your choices
 - Wrap-up / summary
 	- Match your data type and question to the graph type
 	- Use visually effective aesthetics
@@ -52,7 +48,6 @@ Data-driven visualizations
 
 
 Concepts adapted from:
-
 The Visual Display of Quantitative Information by Edward R. Tufte
 
 Chart Chooser by A. Abela ExtremePresentation.com https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf
