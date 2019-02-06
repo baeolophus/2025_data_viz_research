@@ -1,5 +1,4 @@
 library(ggplot2)
-library(RColorBrewer)
 ?ggplot
 diamonds <- diamonds
 
@@ -33,6 +32,6 @@ ggplot() +
                                   price, 
                                   alpha = cut))+
   theme_classic()+
-  ylab("price in US$")+
+  ylab("price in USD")+
   theme(axis.text = element_text(size = 16),
         axis.title = element_text(size = 16))
