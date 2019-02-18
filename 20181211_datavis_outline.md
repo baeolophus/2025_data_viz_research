@@ -5,11 +5,20 @@ Data-driven visualizations
 	- Brent Tweedy
 	
 - Estimated time: 53 minutes
+- Suggested equipment: whiteboard, erasers, markers for group discussion
+- Layout
+    - Works well for remote participation
+        - That requires one additional helper to monitor Zoom chat for questions
+    - Have people sit in groups of 2 or more
 
 - Session goals for participants (3 min)
 	- choose a sentence, table, or graph based on your question and data types [HANDOUT]
 	- maximize data portrayed to a reader with minimal time, ink, and space by understanding concepts of data density, "chartjunk", and data/ink ratio
 	- present your data with clarity by making symbols proportional to numbers, clear labeling, showing variation in data (not design of chart), using standardized units, illustrating data with each axis of appropriate dimensions, and providing context for data
+
+- Getting started
+    - Confirm everyone has at least one person to discuss with
+    - Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries)
 
 - Is the visualization type appropriate? (10 min)
 	- Matching data and hypothesis to graph type
