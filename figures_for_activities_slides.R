@@ -2,6 +2,34 @@ library(ggplot2)
 ?ggplot
 diamonds <- diamonds
 
+#Introductory images
+ggplot() +
+  geom_point(data = diamonds,
+             aes(x = carat, price))+
+  theme_classic()+
+  theme(axis.line = element_line(colour = 'black', size = 3))
+
+ggplot() +
+  geom_point(data = diamonds,
+             aes(x = carat,
+                 price,
+                 color = cut,
+                 shape = color,
+                 size = 10))+
+  theme_classic()+
+  theme(axis.line = element_line(colour = 'black', size = 3))
+
+ggplot() +
+  geom_point(data = diamonds,
+             aes(x = carat,
+                 price,
+                 color = cut,
+                 size = 10))+
+  theme_classic()+
+  theme(axis.line = element_line(colour = 'black', size = 3))+
+  facet_grid(~color)
+
+
 
 #Effectiveness of plots
 ggplot() +
