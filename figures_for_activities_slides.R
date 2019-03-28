@@ -188,7 +188,7 @@ ggplot() +
 #Clarity of plots
 #symbols proportional to numbers
 
-
+#clear labels/symbology consistent in your document/presentation
 
 #reduce lack of context
 
