@@ -36,8 +36,7 @@ Data-driven visualizations
 			- Combine raw and summary graphs (scatterplot with regression line, scatter over box-and-whisker)
 			- Do you have groupings in your data?
 				- Lines to connect individuals
-		- Data density (information per unit area)
-		- Data/ink ratio: maximize use of ink for data (remove extraneous grid lines and colors)
+		- Data density (information per unit area) and the related data/ink ratio: maximize use of ink for data (remove extraneous grid lines and colors)
 	- ACTIVITY (5 min): show examples highlight each plus a combined one so learners can critique each with
 		- What is effective about this visualization choice?
 		- What is not effective about this visualization choice?
@@ -45,9 +44,9 @@ Data-driven visualizations
 	- Concepts
 		- Symbols and axes proportional to numbers represented (problem with pie charts, area in general)
 		- Clear labels (minimize abbrevations) that are consistent with rest of presentation/manuscript terminology 
-		- Does it meet your goal, whether that's describing your data or corresponding with any statistical tests you've conducted?
 		- Reduce external variation / lack of context: Use standardized units (per capita, per weight, whatever relevant to your field), show all relevant data
 		- Do not change chart design partway through (emphasize variation in data, not design)
+		- Does it meet your goal, whether that's describing your data or corresponding with any statistical tests you've conducted?
 	- ACTIVITY  (5 min) : show examples highlight each plus a combined one so learners can critique each with
 		- What is clear about this visualization choice?
 		- What is misleading about this visualization choice?
