@@ -187,10 +187,115 @@ ggplot() +
 
 #Clarity of plots
 #symbols proportional to numbers
+#"Here we demonstrate four diets affect chicken weight divergently over time."
+#symbol size according to diet which has no actual size
+ggplot(ChickWeight,
+       aes(x = Time,
+           y = weight,
+           color = Diet,
+           size = Diet)) +
+  
+  theme_classic()+
+  universal_design+
+  scale_color_brewer(palette = "Paired")+
+  geom_point()
+
+ggplot(ChickWeight,
+       aes(x = Time,
+           y = weight,
+           color = Diet,
+           shape = Diet)) +
+  
+  theme_classic()+
+  universal_design+
+  scale_color_brewer(palette = "Paired")+
+  geom_point()+
+  theme(legend.key.width = unit(5, "line"))
+
+
 
 #clear labels/symbology consistent in your document/presentation
 
+#not matching
+ggplot() +
+  geom_boxplot(data = diamonds,
+               aes(x = color,
+                   y = price,
+                   fill = cut),
+               outlier.shape = NA)+
+  theme_classic()+
+  universal_design+
+  scale_fill_brewer(palette = "Paired")
+
+ggplot() +
+  geom_boxplot(data = diamonds[diamonds$cut!="Fair",],
+               aes(x = color,
+                   y = price,
+                   fill = cut),
+               outlier.shape = NA)+
+  theme_classic()+
+  universal_design+
+  scale_fill_brewer(palette = "Paired")
+
+#matching
+ggplot() +
+  geom_boxplot(data = diamonds,
+               aes(x = color,
+                   y = price,
+                   fill = cut),
+               outlier.shape = NA)+
+  theme_classic()+
+  universal_design+
+  scale_fill_manual(values = c("#A6CEE3",
+                               "#1F78B4",
+                               "#B2DF8A",
+                               "#33A02C",
+                               "#FB9A99"))
+
+ggplot() +
+  geom_boxplot(data = diamonds[diamonds$cut!="Fair",],
+               aes(x = color,
+                   y = price,
+                   fill = cut),
+               outlier.shape = NA)+
+  theme_classic()+
+  universal_design+
+  scale_fill_manual(values = c(
+                               "#1F78B4",
+                               "#B2DF8A",
+                               "#33A02C",
+                               "#FB9A99"))
+
+
+
 #reduce lack of context
+ggplot(ChickWeight[ChickWeight$Diet==1|ChickWeight$Diet==4,],
+       aes(x = Time,
+           y = weight,
+           color = Diet,
+           lty = Diet)) +
+  
+  theme_classic()+
+  universal_design+
+  scale_color_brewer(palette = "Paired")+
+  geom_line(stat='summary', 
+            fun.y = mean,
+            size = 2)+
+  theme(legend.position = "none")
+
+ggplot(ChickWeight,
+       aes(x = Time,
+           y = weight,
+           color = Diet,
+           lty = Diet)) +
+  
+  theme_classic()+
+  universal_design+
+  scale_color_brewer(palette = "Paired")+
+  geom_line(stat='summary', 
+            fun.y = mean,
+            size = 2)+
+  theme(legend.key.width = unit(5, "line"))
 
 
 
