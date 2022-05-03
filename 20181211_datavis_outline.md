@@ -2,7 +2,7 @@ Data-driven visualizations
 
 - Contributors
 	- Claire Curry
-	- Brent Tweedy
+	- Beth Tweedy
 	- Amanda Schilling
 	
 - Estimated time: 53 minutes
