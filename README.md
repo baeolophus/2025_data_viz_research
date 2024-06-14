@@ -1,9 +1,9 @@
 Data-driven visualizations
 
 - Contributors
-	- Claire Curry
-	- Beth Tweedy
-	- Amanda Schilling
+	- Claire Curry, OU
+	- Beth Tweedy, OU now UCDavis
+	- Amanda Schilling, OU
 	
 - Estimated time: 53 minutes
 - Suggested equipment: (in person) whiteboard, erasers, markers for group discussion.  (Zoom/online): randomly assigned breakout rooms (requires host status for zoom)
@@ -12,7 +12,7 @@ Data-driven visualizations
         - That requires one additional helper to monitor Zoom chat for questions
 	- One helper optional but nice-to-have if completely online
     - Have people sit in groups of 2 or more if in person.
-    - Randomly assign breakout rooms at group discussion if completely online.
+    - Randomly or alphabetically assign breakout rooms at group discussion if completely online.
 
 - Session goals for participants (3 min)
 	- choose a sentence, table, or graph based on your question and data types [HANDOUT]
