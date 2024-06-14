@@ -1,30 +1,97 @@
-Data-driven visualizations
+# Title: Concepts of Data-driven Visualizations
+## Series: Survival Skills
 
-- Contributors
-	- Claire Curry, OU
-	- Beth Tweedy, OU now UCDavis
-	- Amanda Schilling, OU
-	
-- Estimated time: 53 minutes
-- Suggested equipment: (in person) whiteboard, erasers, markers for group discussion.  (Zoom/online): randomly assigned breakout rooms (requires host status for zoom)
-- Layout
-    - Works well for remote participation
-        - That requires one additional helper to monitor Zoom chat for questions
-	- One helper optional but nice-to-have if completely online
-    - Have people sit in groups of 2 or more if in person.
-    - Randomly or alphabetically assign breakout rooms at group discussion if completely online.
 
-- Session goals for participants (3 min)
+## Contributors (alphabetical order)
+- Claire Curry, OU
+- Beth Tweedy, OU now UCDavis
+- Amanda Schilling, OU
+
+## Last updated: June 14, 2024
+
+# Logistics
+## Estimated time
+53 minutes
+
+## Suggested equipment
+### in person
+- whiteboard
+- erasers
+- markers for group discussion
+
+### Zoom/online
+- Host status for zoom to be able to create breakout rooms and moderate
+
+## Format
+### in person
+- Have people sit in groups of 2 or more if in person.
+- One helper optional
+
+### Zoom/online
+- One helper optional but nice-to-have if completely online
+- Randomly or alphabetically assign breakout rooms at group discussion if completely online.
+
+
+### Hybrid (remote/in-person)
+- Works well for hybrid participation if more than one person in each format.  We are now moving away from hybrid to alternating occurence of remote and in-person, as remote tends to result in only one person showing up in person, which is not conducive to participation.
+- Hybrid requires one helper to monitor Zoom chat for questions
+
+
+
+
+
+# The workshop
+
+Getting started (5 min, use this time to let stragglers arrive)
+- In person
+	- Confirm everyone has at least one person to discuss with (in person)
+	- Provide paper copies of handouts (in person)
+	- Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries)
+- Online
+	- Provide link to handsouts (online)
+	- Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
+
+Start with activity of critiquing a chart
+
+Main message: don't let defaults get in the way of your goal
+
+What is your goal?
+- telling a story (often to supplement or explain a statistical analysis or describe your data)
+- exploring (often earlier in analysis or for descriptive studies)
+- there is no right answer, there is the right answer FOR YOUR SITUATION
+
+Too many choices - what are things you should choose by?
+- Ensure all variables in your goal/question are in/answered by your graph
+	- whether in axes, multiples/facets, or groupings (shapes, colors, line types)
+	- Data density (quantitative data)
+	- Library thought: what's the common way to present this in your field?  Searching in captions in some databases.
+- Human perceptual abilities (Robbins book)
+	- Accessibility (universal design) in presentations and reading/paper/computer
+	- Add smallest effective differences (Visual Explanation book)
+	- Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
+	- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it)
+- design considerations (Quantitative Data)
+	- Data/ink
+	- "Chart junk"
+
+- 
+
+Making it easy to do the right thing (5 min)
+- Learn how to save settings for graphs in code
+- Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
+
+Ending activity (10 min)
+- Original graphs, what would they recommend fixing now?
+
+
+# OLD VERSION
+State session goals for participants (3 min)
 	- choose a sentence, table, or graph based on your question and data types [HANDOUT]
 	- maximize data portrayed to a reader with minimal time, ink, and space by understanding concepts of data density, "chartjunk", and data/ink ratio
 	- present your data with clarity by making symbols proportional to numbers, clear labeling, showing variation in data (not design of chart), using standardized units, illustrating data with each axis of appropriate dimensions, and providing context for data
 
-- Getting started (5 min)
-    - Confirm everyone has at least one person to discuss with (in person)
-    - Provide paper copies of handouts (in person)
-    - Provide link to handsouts (online)
-    - Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries)
-    - Ask each person to introduce themselves in chat (online)
+
+
     
 - Why visualization is important (2 min)
 	-Give example of John Snow's map of cholera cases and public pumps to determine that cholera was water-borne.  A good visualization can save lives!
