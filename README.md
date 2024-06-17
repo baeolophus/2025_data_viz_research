@@ -7,11 +7,11 @@
 - Beth Tweedy, OU now UCDavis
 - Amanda Schilling, OU
 
-## Last updated: June 14, 2024
+## Last updated: June 17, 2024
 
 # Logistics
 ## Estimated time
-53 minutes
+- 50 minutes
 
 ## Suggested equipment
 ### in person
@@ -59,9 +59,11 @@ What is your goal?
 - telling a story (often to supplement or explain a statistical analysis or describe your data)
 - exploring (often earlier in analysis or for descriptive studies)
 - there is no right answer, there is the right answer FOR YOUR SITUATION
+- "visual representation and presentation of data to facilitate understanding" - Andy Kirk, "Data visualization, a handbook for data driven design" - the three words there
 
 Too many choices - what are things you should choose by?
 - Ensure all variables in your goal/question are in/answered by your graph
+	- "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
 	- whether in axes, multiples/facets, or groupings (shapes, colors, line types)
 	- Data density (quantitative data)
 	- Library thought: what's the common way to present this in your field?  Searching in captions in some databases.
@@ -70,10 +72,14 @@ Too many choices - what are things you should choose by?
 	- Add smallest effective differences (Visual Explanation book)
 	- Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
 	- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it)
+	- Collective vs individual geoms (ggplot book)
 - design considerations (Quantitative Data)
-	- Data/ink
-	- "Chart junk"
-
+	- Type
+	- Effective - summaries, trends, effectiveness
+	- Clarity
+	- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
+	- Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book.
+- "trustworthy (reasonable, faithful, integrity), accessible (usuable, understandable), elegant (aesthetic, appealing)" - Kirk  book
 - 
 
 Making it easy to do the right thing (5 min)
