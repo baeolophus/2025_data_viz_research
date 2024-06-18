@@ -55,36 +55,51 @@ Start with activity of critiquing a chart
 
 Main message: don't let defaults get in the way of your goal
 
-What is your goal?
-- telling a story (often to supplement or explain a statistical analysis or describe your data)
-- exploring (often earlier in analysis or for descriptive studies)
-- there is no right answer, there is the right answer FOR YOUR SITUATION
+Purpose What is your goal?
+- "trustworthy (reasonable, faithful, integrity), accessible (usuable, understandable), elegant (aesthetic, appealing)" - Kirk  book
 - "visual representation and presentation of data to facilitate understanding" - Andy Kirk, "Data visualization, a handbook for data driven design" - the three words there
-
-Too many choices - what are things you should choose by?
-- Ensure all variables in your goal/question are in/answered by your graph
+	- telling a story (often to supplement or explain a statistical analysis or describe your data)
+	- exploring (often earlier in analysis or for descriptive studies)
+- Trustworthy, reasonable, faithful, integrity.
+Ensure all variables in your goal/question are in/answered by your graph
 	- "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
-	- whether in axes, multiples/facets, or groupings (shapes, colors, line types)
+	- whether in axes, multiples/facets, or groupings (shapes, colors, line types) 	- Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
 	- Data density (quantitative data)
 	- Library thought: what's the common way to present this in your field?  Searching in captions in some databases.
-- Human perceptual abilities (Robbins book)
-	- Accessibility (universal design) in presentations and reading/paper/computer
-	- Add smallest effective differences (Visual Explanation book)
-	- Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
-	- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it)
-	- Collective vs individual geoms (ggplot book)
-- design considerations (Quantitative Data)
-	- Type
-	- Effective - summaries, trends, effectiveness
-	- Clarity
-	- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
-	- Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book.
-- "trustworthy (reasonable, faithful, integrity), accessible (usuable, understandable), elegant (aesthetic, appealing)" - Kirk  book
-- 
+	- statistics thought - what numbers are you talking about?  raw vs collective/summaries
+		- Collective vs individual geoms (ggplot book)
+- there is no right answer, there is the right answer FOR YOUR SITUATION
 
+
+Too much choice.  How to choose?  Presentation, accessible, usable, understandable.
+- Human perceptual abilities (Robbins book chapter 3)
+	- Accessibility (universal design) in presentations and reading/paper/computer
+	- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it) Robbins chapter 3
+- design considerations (Quantitative Data, and chapter 6 Robbins)
+	- Clarity
+		- Data should stand out (pp 159)
+		- visually prominent (pg 163)
+		- comparisons should be legible (pp 168-171)
+		- reduce interoir clutter (175-183) in grids, ticks, labels
+		- can you change scale?  pp 190-191
+		- consistency with text (193)
+	- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
+	- Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book.  Chapter 6 Robbins talks about general principles.
+	- Add smallest effective differences (Visual Explanation book)
+	- common baselines wherever possible (207).  area vs volume difficult.  label directly if not clutter (213)
+	- don't have reader make calculations (216).  PLOT THE VARIABLE OF INTEREST.  plot improvement vs before and after.  (216-217).
+	- choose the principle least likely to mislead.
+	- graph data more than once to show different aspects.  experiment.  data desnity (224)
+Publication aethetics, appealing, meeting standards
+-journals
+-talks
 Making it easy to do the right thing (5 min)
 - Learn how to save settings for graphs in code
 - Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
+
+
+
+
 
 Ending activity (10 min)
 - Original graphs, what would they recommend fixing now?
