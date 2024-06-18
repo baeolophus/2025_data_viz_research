@@ -75,6 +75,7 @@ Too much choice.  How to choose?  Presentation, accessible, usable, understandab
 - Human perceptual abilities (Robbins book chapter 3)
 	- Accessibility (universal design) in presentations and reading/paper/computer
 	- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it) Robbins chapter 3
+	- Visual patterns as an augment to working memory limitations of humans (pg 52, Few, Now you see it)
 - design considerations (Quantitative Data, and chapter 6 Robbins)
 	- Clarity
 		- Data should stand out (pp 159)
@@ -83,13 +84,15 @@ Too much choice.  How to choose?  Presentation, accessible, usable, understandab
 		- reduce interoir clutter (175-183) in grids, ticks, labels
 		- can you change scale?  pp 190-191
 		- consistency with text (193)
+	- "Highlight", "organize", "integrate text" - Few - 2012, 
 	- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
 	- Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book.  Chapter 6 Robbins talks about general principles.
-	- Add smallest effective differences (Visual Explanation book)
+	- Add smallest effective differences (Visual Explanation book).  "visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data" (Few, pg 49, Now You See It).
 	- common baselines wherever possible (207).  area vs volume difficult.  label directly if not clutter (213)
 	- don't have reader make calculations (216).  PLOT THE VARIABLE OF INTEREST.  plot improvement vs before and after.  (216-217).
 	- choose the principle least likely to mislead.
 	- graph data more than once to show different aspects.  experiment.  data desnity (224)
+	- True message vs artifact of technique (Cleveland et al. Graphical Methods for Data Analysis chapter 8)
 Publication aethetics, appealing, meeting standards
 -journals
 -talks
