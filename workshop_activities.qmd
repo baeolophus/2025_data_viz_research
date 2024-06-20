@@ -5,128 +5,215 @@ format: pptx
 editor: visual
 ---
 
-## Quarto
+/\* file: style.css \*/ #vcenter { vertical-align: middle; }
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-
-
-## Getting started
-- Ice breaker activities
-- Pronouns if comfortable
-- A boring fact about yourself
-
-
-::: {.notes}
-5 min, use this time to let late arrivals settle in.
-- In person
-	- Confirm everyone has at least one person to discuss with (in person)
-	- Provide paper copies of handouts (in person)
-	- Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries)
-- Online
-	- Provide link to handouts (online)
-	- Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
-:::
-
-## Activity
-Start with activity of critiquing a chart (10 min)
-- Perhaps two versions of the same thing?
-- what are differences adn what do you think about the message of the graph?
+# Getting started (5 min)
 
 ## Main message
-Don't let defaults get in the way of your goal???  (the why and how of data-driven visualizations)
 
-## Purpose What is your goal?
-- "trustworthy (reasonable, faithful, integrity), accessible (usuable, understandable), elegant (aesthetic, appealing)" - Kirk  book
-- "visual representation and presentation of data to facilitate understanding" - Andy Kirk, "Data visualization, a handbook for data driven design" - the three words there
-	- telling a story (often to supplement or explain a statistical analysis or describe your data)
-	- exploring (often earlier in analysis or for descriptive studies)
+-   What, why, and how of data-driven visualizations
+-   Don't let defaults get in the way of your message
 
+## Ice breakers
 
-## What? you need the graph to be: Trustworthy, reasonable, faithful, integrity.
-	- Ensure all variables in your goal/question are in/answered by your graph
-	- whether in axes, multiples/facets, or groupings (shapes, colors, line types) 
-		- Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
-		- Data density (quantitative data)
-		- Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it) Robbins chapter 3
-	- Library thought: what's the common way to present this in your field?  Searching in captions in some databases.
-	- statistics thought - what numbers are you talking about?  raw vs collective/summaries
-		- Collective vs individual geoms (ggplot book)
-## there is no right answer, there is the right answer FOR YOUR SITUATION
-	- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
-	- graph data more than once to show different aspects.  experiment.  data desnity (224)
-	
-## Why graphs work Presentation, accessible, usable, understandable.
-	- Human perceptual abilities (Robbins book chapter 3)
-	- Accessibility (universal design) in presentations and reading/paper/computer
-	- Visual patterns as an augment to working memory limitations of humans (pg 52, Few, Now you see it)
-	- Robbins pg 61 Ordered Elementary Tasks
-		- position along a common scale
-		- position along identical, non-aligned scales
-		- Length
-		- angle/slope - we can do slopes, but not angles (this is part of why pie charts difficult)
-		- area
-		- volume
-		- color hue- color saturation - density
-		- choose the principle least likely to mislead. (Robbins 224)
-## How: design considerations (Quantitative Data, and chapter 6 Robbins)
-	- Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book.  Chapter 6 Robbins talks about general principles.
-	- "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
-	- True message vs artifact of technique (Cleveland et al. Graphical Methods for Data Analysis chapter 8)
-	- Add smallest effective differences (Visual Explanation book).  "visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data" (Few, pg 49, Now You See It).
-	- "Highlight", "organize", "integrate text" - Few - 2012, Clarity (pg Robbins)
-		- Highlight
-			- Data should stand out (pp 159)
-			- visually prominent (pg 163)
-			- common baselines wherever possible (207).  area vs volume difficult.
-		-organize
-			- comparisons should be legible (pp 168-171)
-			- reduce interoir clutter (175-183) in grids, ticks, labels
-			- can you change scale?  pp 190-191
-			- don't have reader make calculations (216).  PLOT THE VARIABLE OF INTEREST.  plot improvement vs before and after.  (216-217).
-		- Integrate text and labels
-			- consistency with text (193)
-			- label directly if not clutter (213)
-		
+-   Ice breaker activities
+-   Pronouns if comfortable
+-   A boring fact about yourself
 
+::: notes
+5 min, use this time to let late arrivals settle in. - In person - Confirm everyone has at least one person to discuss with (in person) - Provide paper copies of handouts (in person) - Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries) - Online - Provide link to handouts (online) - Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
+:::
 
+## Warm up your graphics brain (5 min)
 
+::: columns
+::: {#vcenter .column .fragment width="50%"}
+-   What is the message of this graph?
 
-## PS More how: Publication aethetics, appealing, meeting standards
-- journals
-- talks
-Making it easy to do the right thing (5 min)
-- Learn how to save settings for graphs in code
-- Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
+-   What is confusing?
 
+-   What do you understand?
+:::
 
-## Ending activity (10 min)
-- Original graphs, what would they recommend fixing now?
+::: {.column .fragment width="50%"}
+```{r}
+library(palmerpenguins)
+(original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm))
+```
+:::
+:::
 
+## What is data-driven visualization?
+
+-   Definition: "visual representation and presentation of data to facilitate understanding"
+-   Use
+    -   telling a story (often to supplement or explain a statistical analysis or describe your data)
+    -   exploring (often earlier in analysis or for descriptive studies)
+
+::: notes
+Andy Kirk, 2007 "Data visualization, a handbook for data driven design"
+:::
+
+## What are key elements of good visualization?
+
+Aka what is "good" here?
+
+-   "trustworthy (reasonable, faithful, integrity)
+-   accessible (usuable, understandable)
+-   elegant (aesthetic, appealing)"
+
+::: notes
+These adapted from pg. in Kirk 2007
+:::
+
+# Goals: **What** you need the graph to be
+
+## Trustworthy, reasonable, faithful, integrity.
+
+-   Ensure all variables in your goal/question are in/answered by your graph
+    -   whether in axes, multiples/facets, or groupings (shapes, colors, line types)
+    -   Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
+    -   Data density (quantitative data)
+    -   Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it) Robbins chapter 3
+
+## Field-specific thoughts
+
+-   Library thought: what's the common way to present this in your field? Searching in captions in some databases.
+-   statistics thought - what numbers are you talking about? are the relevant numbers and uncertainty shown in the graph?
+    -   Collective vs individual geoms (ggplot book)
+
+## there is no right answer, there is the right answer **FOR YOUR SITUATION**
+
+```         
+- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
+- graph data more than once to show different aspects.  experiment.  data desnity (224)
+```
+
+# Perception: Why graphs work
+
+## Presentation, accessible, usable, understandable.
+
+```         
+- Visual patterns as an augment to working memory limitations of humans (pg 52, Few, Now you see it)
+- Accessibility (universal design) in presentations and reading/paper/computer
+```
+
+## Limitations of "typical" human perception
+
+```         
+- Robbins pg 61 Ordered Elementary Tasks
+```
+
+## Top three
+
+```         
+    - position along a common scale
+    - position along identical, non-aligned scales
+    - Length
+```
+
+## Getting more difficult to judge
+
+```         
+    - angle/slope - we can do slopes, but not angles (this is part of why pie charts difficult)
+    - area
+    - volume
+    - color hue- color saturation - density
+    
+```
+
+## When in doubt
+
+-   choose the principle least likely to mislead. (Robbins 224)
+
+## Accessibility
+
+-   Use multiple for same, if possible (Universal design)
+
+# Design: how to communicate your message
+
+## Keep it simple
+
+-   Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book. Chapter 6 Robbins talks about general principles.
+-   "visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data" (Few, pg 49, Now You See It).
+
+::: notes
+(Quantitative Data, and chapter 6 Robbins)
+:::
+
+## Don't let the tool get in the way of the goal
+
+-   "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
+-   True message vs artifact of technique (Cleveland et al. Graphical Methods for Data Analysis chapter 8)
+
+## Three ways to design systematically
+
+```         
+- "Highlight", "organize", "integrate text" - Few - 2012, Clarity (pg Robbins)
+```
+
+## Highlight
+
+-   Data should stand out (pp 159) but use smallest effective differences (Visual Explanation book).\
+-   Important parts should be visually prominent (pg 163)
+-   don't have reader make calculations (216). PLOT THE VARIABLE OF INTEREST.
+
+## Organize
+
+-   Use common baselines wherever possible (207).
+-   comparisons should be legible (pp 168-171)
+-   reduce interior clutter (175-183) in grids, ticks, labels
+-   can you change scale? pp 190-191
+
+## Integrate graphics with context
+
+-   consistency with text (193)
+-   label directly if not clutter (213)
+
+## What about journals and conferences?
+
+Publication aethetics, appealing, meeting standards - journals - talks
+
+## Making it easy to do the right thing (5 min)
+
+-   Learn how to save settings for graphs in code
+-   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
+
+# Ending activity (10 min)
+
+## What recommendations do you have for the original graph?
+
+```{r}
+library(palmerpenguins)
+(original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm))
+```
+
+## Some possibilities
+
+:::: {.columns} ::: {.column #vcenter width="50%" .fragment}
+
+```{r}
+library(palmerpenguins)
+(original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm))
+```
+
+:::
+
+::: {.column .fragment width="50%"}
+```{r}
+library(palmerpenguins)
+library(ggplot2)
+ggplot(data = palmerpenguins::penguins, mapping = aes(x = species, y = flipper_length_mm, fill = island)) + geom_boxplot(notch = TRUE)+geom_point(stat = "summary", fun = mean, shape = "x", size = 10)
+```
+:::
 
 ## Get more help
-- Resource handout w/checklist
-- DSDS office hours/contact form
+
+-   Resource handout w/checklist
+-   DSDS office hours/contact form
 
 ## Please provide feedback
-- Survey link + QR code
 
+Survey link
 
-
-
+![QR Code](qrcode_ou-libwizard-com.png)
