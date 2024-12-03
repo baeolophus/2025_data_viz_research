@@ -1,80 +1,139 @@
 ---
 title: "Survival Skills: Concepts of Data-Driven Visualization"
 author: "Curry, Tweedy, Schilling"
-format: pptx
-editor: visual
+format: 
+  revealjs:
+    logo: logo.png
+    # footer: "STEM Services"
+    slide-number: true
+    #show-notes: separate-page #https://revealjs.com/pdf-export/
+    preview-links: true
+    slide-tone: true
+    controls: true
+    smaller: true
+    center-title-slide: false
+    hash: true
+editor: source
 ---
 
-/\* file: style.css \*/ #vcenter { vertical-align: middle; }
 
 # Getting started (5 min)
 
-## Main message
+## What we will discuss today
 
--   What, why, and how of data-driven visualizations
--   Don't let defaults get in the way of your message
+- What, why, and how of data-driven visualizations
+
+  - What: goals
+
+  - Why: human perception
+
+  - How: design and defaults
+
 
 ## Ice breakers
 
--   Ice breaker activities
+-   5 min ice breaker activity: A boring fact about yourself
 -   Pronouns if comfortable
--   A boring fact about yourself
 
 ::: notes
-5 min, use this time to let late arrivals settle in. - In person - Confirm everyone has at least one person to discuss with (in person) - Provide paper copies of handouts (in person) - Ask tables to introduce themselves to each other with your preferred professional icebreaker ("describe your research in 1-3 words" is a good one from Carpentries) - Online - Provide link to handouts (online) - Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
+5 min, use this time to let late arrivals settle in.
+
+  - In person
+    - Confirm everyone has at least one person to discuss with (in person) 
+    - Provide paper copies of handouts (in person)
+    - Ice Breaker at table
+
+  - Online
+    - Provide link to handouts (online)
+    - Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
+    
 :::
 
-## Warm up your graphics brain (5 min)
+## Consider this visualization (5 min)
 
-::: columns
-::: {#vcenter .column .fragment width="50%"}
--   What is the message of this graph?
-
--   What is confusing?
-
--   What do you understand?
-:::
+::::: columns
 
 ::: {.column .fragment width="50%"}
 ```{r}
 library(palmerpenguins)
-(original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm))
+original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm)
 ```
 :::
+
+
+::: {#vcenter .column .fragment width="50%"}
+
+-   What do you understand?
+
+-   What is the message?
+
+-   What is confusing?
+
 :::
+
+:::::
+
 
 ## What is data-driven visualization?
 
 -   Definition: "visual representation and presentation of data to facilitate understanding"
--   Use
-    -   telling a story (often to supplement or explain a statistical analysis or describe your data)
-    -   exploring (often earlier in analysis or for descriptive studies)
+-   We use visualizations (graphs, figures, plots) for
+    -   exploring 
+    -   telling a story 
 
-::: notes
-Andy Kirk, 2007 "Data visualization, a handbook for data driven design"
+::: aside
+Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
 :::
 
-## What are key elements of good visualization?
+::: notes
+Exploring is often earlier in analysis or for descriptive studies.
+Telling a story is often to supplement or explain a statistical analysis or describe your data.
+:::
 
-Aka what is "good" here?
+## What makes a visualization good?
+
+What do we mean when we say "good"?
 
 -   "trustworthy (reasonable, faithful, integrity)
 -   accessible (usuable, understandable)
 -   elegant (aesthetic, appealing)"
 
-::: notes
-These adapted from pg. in Kirk 2007
+::: aside
+Andy Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
 :::
+
+## Again, here's what we'll cover about visualizations
+
+- What, why, and how of data-driven visualizations
+
+  - What: goals
+
+  - Why: human perception
+
+  - How: design and defaults
+
+- The library way: lots of references to classic visualization resources you may want to read or skim!
+
+
 
 # Goals: **What** you need the graph to be
 
 ## Trustworthy, reasonable, faithful, integrity.
 
 -   Ensure all variables in your goal/question are in/answered by your graph
-    -   whether in axes, multiples/facets, or groupings (shapes, colors, line types)
-    -   Comparisons via parallelism (Visual Explanation), small multiples (Envisioning Info, Quantitative Data)
-    -   Data density (quantitative data)
-    -   Showing comparisons and the ACTUAL QUANTITY NEEDED (change vs making ppl look at it) Robbins chapter 3
+    -   Whether in axes, multiples/facets, or groupings (shapes, colors, line types)
+    -   Comparisons via parallelism (Tufte 1997), small multiples (Tufte 1990, 2001)
+    -   Data density (Tufte 2001)
+    -   When making comparisons, show the actual difference (Robbins 2005, ch. 3)
+    
+::: aside
+
+Robbins, 2005, *Creating More Effective Graphs*, Publisher.
+Tufte, 1990, *Envisioning Information*, Graphics Press.
+Tufte, 1997, *Visual Explanations*, Graphics Press.
+Tufte, 2001, *The Visual Display of Quantitative Information, 2nd Ed.*, Graphics Press.
+
+:::
 
 ## Field-specific thoughts
 
@@ -82,57 +141,78 @@ These adapted from pg. in Kirk 2007
 -   statistics thought - what numbers are you talking about? are the relevant numbers and uncertainty shown in the graph?
     -   Collective vs individual geoms (ggplot book)
 
-## there is no right answer, there is the right answer **FOR YOUR SITUATION**
+## There is no right answer, there is the right answer **for your situation**
 
-```         
-- "possible" vs "useful" to show pg 130 fig 5.6 Kirk book.  possible + useful = relevant.
+- possible + useful = relevant (Kirk 2007:130, fig 5.6)
 - graph data more than once to show different aspects.  experiment.  data desnity (224)
-```
+
+::: aside
+Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
+
+:::
 
 # Perception: Why graphs work
 
 ## Presentation, accessible, usable, understandable.
 
-```         
-- Visual patterns as an augment to working memory limitations of humans (pg 52, Few, Now you see it)
-- Accessibility (universal design) in presentations and reading/paper/computer
-```
+     
+- Visual patterns as an augment to working memory limitations of humans (Few 2021:52)
+
+- Universal design
+  - Size of visualization elements (text, symbols, lines)
+  - Distractions
+  - Limits of human perception
+  
+  
+::: aside
+
+Few, 2021. *Now You See It: an introduction to visual data sensemaking*.  El Dorado Hills: Analytics Press.
+
+:::
 
 ## Limitations of "typical" human perception
 
-```         
-- Robbins pg 61 Ordered Elementary Tasks
-```
+- "Ordered Elementary Tasks" (Robbins 2005, pg 61)
+
+::: aside
+Robbins, 2005, *Creating More Effective Graphs*, Publisher.
+:::
 
 ## Top three
 
-```         
     - position along a common scale
     - position along identical, non-aligned scales
-    - Length
-```
+    - length
 
 ## Getting more difficult to judge
 
-```         
+
     - angle/slope - we can do slopes, but not angles (this is part of why pie charts difficult)
     - area
     - volume
     - color hue- color saturation - density
     
-```
+::: notes
+could I make this a graph with a line on it or some sort of ordering
+:::
+
 
 ## When in doubt
 
--   choose the principle least likely to mislead. (Robbins 224)
+Choose the principle least likely to mislead (pg 224)
 
 ## Accessibility
 
--   Use multiple for same, if possible (Universal design)
+- Use multiple scales for one variable when possible
+- Remember location of audience (paper, screen, projection)
+- Remember not all minds work the same
+- Remember 
+
 
 # Design: how to communicate your message
 
-## Keep it simple
+
+## Keep it simple: elegant (aesthetic, appealing)
 
 -   Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book. Chapter 6 Robbins talks about general principles.
 -   "visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data" (Few, pg 49, Now You See It).
@@ -141,34 +221,60 @@ These adapted from pg. in Kirk 2007
 (Quantitative Data, and chapter 6 Robbins)
 :::
 
-## Don't let the tool get in the way of the goal
+## Don't let the graph get in the way of the goal
 
 -   "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
--   True message vs artifact of technique (Cleveland et al. Graphical Methods for Data Analysis chapter 8)
+-   True message vs artifact of technique ^[Cleveland et al. Graphical Methods for Data Analysis chapter 8]
 
 ## Three ways to design systematically
 
-```         
-- "Highlight", "organize", "integrate text" - Few - 2012, Clarity (pg Robbins)
-```
+- "Highlight", "organize", "integrate text" (Few 2012)
+
+Clarity (pg Robbins)
+
+::: aside
+
+Few, 2012, *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.
+
+:::
+
 
 ## Highlight
 
--   Data should stand out (pp 159) but use smallest effective differences (Visual Explanation book).\
--   Important parts should be visually prominent (pg 163)
--   don't have reader make calculations (216). PLOT THE VARIABLE OF INTEREST.
+-   Data should stand out (pg 159)
+  - Important parts should be visually prominent (pg 163)
+  - but use smallest effective differences (Tufte 1997)
+- Do any calculations for the viewer (pg 216)
+  - This means plot the variable of interest
+  - Differences, not before and after
+
+::: aside
+Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
+:::
+
 
 ## Organize
 
--   Use common baselines wherever possible (207).
+-   Use common baselines wherever possible because of perception limits (207).
 -   comparisons should be legible (pp 168-171)
 -   reduce interior clutter (175-183) in grids, ticks, labels
 -   can you change scale? pp 190-191
 
+::: aside
+Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
+:::
+
+
 ## Integrate graphics with context
 
--   consistency with text (193)
--   label directly if not clutter (213)
+- Consistency with text (193)
+- Label directly if not clutter (213)
+- Make text, symbols, lines big enough to read
+
+::: aside
+Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
+:::
+
 
 ## What about journals and conferences?
 
@@ -203,7 +309,14 @@ library(palmerpenguins)
 ```{r}
 library(palmerpenguins)
 library(ggplot2)
-ggplot(data = palmerpenguins::penguins, mapping = aes(x = species, y = flipper_length_mm, fill = island)) + geom_boxplot(notch = TRUE)+geom_point(stat = "summary", fun = mean, shape = "x", size = 10)
+ggplot(data = palmerpenguins::penguins, mapping = aes(x = species, y = flipper_length_mm)) +
+  geom_boxplot(notch = TRUE) +
+  geom_point(stat = "summary", 
+             fun = mean, 
+             shape = "x", 
+             size = 10)+ 
+  facet_wrap(island~.) + 
+  labs(x = "Penguin species", y = "Flipper length (mm)")
 ```
 :::
 
