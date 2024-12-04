@@ -1,0 +1,54 @@
+---
+title: "Checklist for data-driven visualizations"
+author: "Claire M. Curry and Amanda B. Schilling"
+format: html
+editor: source
+bibliography: data_viz.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/refs/heads/master/nature.csl
+---
+
+# What: goals
+
+Know if you are telling a story or exploring your data.  Then, consider these points:
+
+- [ ] Include all variables from your research question
+- [ ] Checked your field's literature or journal's style guide for example visualizations
+- [ ] Consider if you need more than one visual to tell your story
+
+# Why: human perception
+
+- [ ] Make lines bolder, symbols larger, and font sizes larger than the program default
+- [ ] Use perceptually easy representations such as common baselines, small multiples, or lengths
+- [ ] Remove perceptually confusing representations like angles, volume, area
+
+# How: design and defaults
+
+Make changes to your visualization to tell your story more clearly.  Most program defaults are not designed for presentations, universal accessibility, or ease of reading.
+
+## Highlight
+
+- [ ] Make important parts visually prominent[@robbinsCreatingMoreEffective2005, p 163]
+- [ ] Use smallest effective change in symbol to show differences[@tufteVisualExplanationsImages1997]
+- [ ] Do any calculations for the viewer[@robbinsCreatingMoreEffective2005, p 216]
+- [ ] Enlarge symbols and labels as much as possible without obscuring data
+
+## Organize
+
+- [ ] Use common baselines wherever possible to make group comparisons[@robbinsCreatingMoreEffective2005, p 207].
+- [ ] Comparisons should be legible (pp 168-171)
+- [ ] Can you change scale [to show more]? pp 190-191
+- [ ] Reduce interior clutter[@robbinsCreatingMoreEffective2005, pp 175-183] in grids, ticks, labels
+
+## Integrate with context
+
+- [ ] Label variables consistent with text[@robbinsCreatingMoreEffective2005, p 193]
+- [ ] Label directly on visuals where possible [@robbinsCreatingMoreEffective2005, p 213]
+
+{{< pagebreak >}}
+
+# Suggested readings
+
+::: {#refs}
+:::
+
+# Get more help
