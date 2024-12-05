@@ -17,7 +17,7 @@ Know if you are telling a story or exploring your data.  Then, consider these po
 
 # Why: human perception
 
-- [ ] Make lines bolder, symbols larger, and font sizes larger than software defaults
+- [ ] Make lines bolder, symbols larger, and font sizes larger than software defaults for viewing ease
 - [ ] Use perceptually accurate representations such as common baselines, small multiples, or length[@robbinsCreatingMoreEffective2005, p 61]
 - [ ] Remove perceptually inaccurate representations like angles or slope, area, volume, and colors for quantitative scales[@robbinsCreatingMoreEffective2005, p 61]
 
