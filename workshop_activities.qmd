@@ -220,12 +220,6 @@ Choose the principle least likely to mislead (pg 224)
 - True message vs artifact of technique ^[Cleveland et al. Graphical Methods for Data Analysis chapter 8]
 - "Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few, pg 49, Now You See It]
 
-## Making it easy to do the right thing
-
--   Learn how to save settings for graphs in code
--   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
-
-
 ## What actions to take?
 - Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.] with details from Robbins^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.] and Tufte^[Quantiative data book]
   - Highlight
@@ -261,6 +255,11 @@ Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience
 ::: aside
 Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
 :::
+
+## Making it easy to do the right thing
+
+-   Learn how to save settings for graphs in code
+-   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
 
 
 
