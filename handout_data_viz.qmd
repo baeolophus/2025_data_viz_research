@@ -11,15 +11,15 @@ csl: https://raw.githubusercontent.com/citation-style-language/styles/refs/heads
 
 Know if you are telling a story or exploring your data.  Then, consider these points:
 
-- [ ] Include all variables from your research question
-- [ ] Checked your field's literature or journal's style guide for example visualizations
+- [ ] Include the relevant variables from your research question
+- [ ] Check your field's literature or journal's style guide for example visualizations
 - [ ] Consider if you need more than one visual to tell your story
 
 # Why: human perception
 
-- [ ] Make lines bolder, symbols larger, and font sizes larger than the program default
-- [ ] Use perceptually easy representations such as common baselines, small multiples, or lengths
-- [ ] Remove perceptually confusing representations like angles, volume, area
+- [ ] Make lines bolder, symbols larger, and font sizes larger than software defaults
+- [ ] Use perceptually accurate representations such as common baselines, small multiples, or length[@robbinsCreatingMoreEffective2005, p 61]
+- [ ] Remove perceptually inaccurate representations like angles or slope, area, volume, and colors for quantitative scales[@robbinsCreatingMoreEffective2005, p 61]
 
 # How: design and defaults
 
@@ -27,22 +27,21 @@ Make changes to your visualization to tell your story more clearly.  Most progra
 
 ## Highlight
 
-- [ ] Make important parts visually prominent[@robbinsCreatingMoreEffective2005, p 163]
-- [ ] Use smallest effective change in symbol to show differences[@tufteVisualExplanationsImages1997]
-- [ ] Do any calculations for the viewer[@robbinsCreatingMoreEffective2005, p 216]
-- [ ] Enlarge symbols and labels as much as possible without obscuring data
+- [ ] Make data visually prominent[@robbinsCreatingMoreEffective2005, p 163]
+- [ ] Use smallest[@tufteVisualExplanationsImages1997] effective[@robbinsCreatingMoreEffective2005, pp 168-171] change for differences
+- [ ] Do any comparison calculations for the viewer[@robbinsCreatingMoreEffective2005, p 216]
 
 ## Organize
 
-- [ ] Use common baselines wherever possible to make group comparisons[@robbinsCreatingMoreEffective2005, p 207].
-- [ ] Comparisons should be legible (pp 168-171)
-- [ ] Can you change scale [to show more]? pp 190-191
+- [ ] Use common baselines wherever possible to make group comparisons[@robbinsCreatingMoreEffective2005, p 207]
 - [ ] Reduce interior clutter[@robbinsCreatingMoreEffective2005, pp 175-183] in grids, ticks, labels
+- [ ] Use small multiples to show otherwise overlapping groups[@robbinsCreatingMoreEffective2005, p 171]
 
 ## Integrate with context
 
 - [ ] Label variables consistent with text[@robbinsCreatingMoreEffective2005, p 193]
 - [ ] Label directly on visuals where possible [@robbinsCreatingMoreEffective2005, p 213]
+- [ ] Use consistent symbology in related visualizations[@robbinsCreatingMoreEffective2005, p 221]
 
 {{< pagebreak >}}
 
