@@ -21,6 +21,8 @@ editor: source
 
 ## What we will discuss today
 
+- Define visualizations for data
+
 - What, why, and how of data-driven visualizations
 
   - What: goals
@@ -29,6 +31,7 @@ editor: source
 
   - How: design and defaults
 
+- How to get more help
 
 ## Ice breakers
 
@@ -151,7 +154,7 @@ Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing 
 
 :::
 
-# Perception: Why graphs work
+# Perception: **Why** graphs work
 
 ## Presentation, accessible, usable, understandable.
 
@@ -209,34 +212,25 @@ Choose the principle least likely to mislead (pg 224)
 - Remember 
 
 
-# Design: how to communicate your message
+# Design: **How** to communicate your message
 
 
 ## Keep it simple: elegant (aesthetic, appealing)
+- "Never allow your design or implementation to obscure the reader"^[pg 33 Kirk book, quote by K. Elliott.]
+- True message vs artifact of technique ^[Cleveland et al. Graphical Methods for Data Analysis chapter 8]
+- "Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few, pg 49, Now You See It]
 
--   Audience/setting/stakeholders "what is the "least this can be"? - quote by Alyson Hurt, NPR, in Kirk book. Chapter 6 Robbins talks about general principles.
--   "visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data" (Few, pg 49, Now You See It).
+## Making it easy to do the right thing
 
-::: notes
-(Quantitative Data, and chapter 6 Robbins)
-:::
+-   Learn how to save settings for graphs in code
+-   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
 
-## Don't let the graph get in the way of the goal
 
--   "never allow your design or implementation to obscure the reader understanding the central point" - pg 33 Kirk book, quote by K. Elliott.
--   True message vs artifact of technique ^[Cleveland et al. Graphical Methods for Data Analysis chapter 8]
-
-## Three ways to design systematically
-
-- "Highlight", "organize", "integrate text" (Few 2012)
-
-Clarity (pg Robbins)
-
-::: aside
-
-Few, 2012, *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.
-
-:::
+## What actions to take?
+- Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.] with details from Robbins^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.] and Tufte^[Quantiative data book]
+  - Highlight
+  - Organize
+  - "Integrate text" (context)
 
 
 ## Highlight
@@ -255,10 +249,6 @@ Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience
 
 ## Organize
 
--   Use common baselines wherever possible because of perception limits (207).
--   comparisons should be legible (pp 168-171)
--   reduce interior clutter (175-183) in grids, ticks, labels
--   can you change scale? pp 190-191
 
 ::: aside
 Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
@@ -267,23 +257,12 @@ Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience
 
 ## Integrate graphics with context
 
-- Consistency with text (193)
-- Label directly if not clutter (213)
-- Make text, symbols, lines big enough to read
 
 ::: aside
 Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
 :::
 
 
-## What about journals and conferences?
-
-Publication aethetics, appealing, meeting standards - journals - talks
-
-## Making it easy to do the right thing (5 min)
-
--   Learn how to save settings for graphs in code
--   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
 
 # Ending activity (10 min)
 
