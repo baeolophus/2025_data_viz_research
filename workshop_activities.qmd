@@ -222,7 +222,8 @@ summary_penguin_diffs <- summary_by_year %>%
 
 ggplot(data = summary_penguin_diffs, 
        mapping = aes(x = species, y = diff_flips)) +
-  geom_point(size = 10)+ 
+  geom_point(size = 10) + 
+  ylim(min = -1.5, 0)+
   labs(x = "Penguin species", 
        y = "Difference in flipper length (mm) from 2008 to 2009")
 
@@ -235,8 +236,41 @@ ggplot(data = summary_penguin_diffs,
 "Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few 2021, pg 49]
 
 - Use common baselines wherever possible to make group comparisons^[Robbins 2005, p 207]
-- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
 - Use small multiples to show otherwise overlapping groups^[Robbins 2005, p 168-171]
+- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
+
+::: {.absolute top="50%" left="4%" width="350"}
+```{r}
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     color = species, shape = island)) +
+  geom_point(size = 10) + 
+  labs(x = "Penguin species", 
+       y = "Flipper length (mm)")
+
+```
+:::
+
+::: {.absolute top="55%" left="54%" width="400"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g,
+                     y = flipper_length_mm, 
+                     color = species, 
+                     shape = species)) +
+  geom_point(size = 5) + 
+  facet_wrap(island ~ .)
+  labs(x = "Penguin species", 
+       y = "Flipper length (mm)")
+
+```
+:::
+
 
 ## Integrate with context
 
