@@ -52,6 +52,22 @@ editor: source
     
 :::
 
+## What is data-driven visualization?
+
+-   Definition: "visual representation and presentation of data to facilitate understanding"
+-   We use visualizations (graphs, figures, plots) for
+    -   exploring 
+    -   telling a story 
+
+::: aside
+Kirk, 2019, *Data visualization, a handbook for data driven design, 2nd ed*. Los Angeles: SAGE.
+:::
+
+::: notes
+Exploring is often earlier in analysis or for descriptive studies.
+Telling a story is often to supplement or explain a statistical analysis or describe your data.
+:::
+
 ## Consider this visualization (5 min)
 
 ::::: columns
@@ -66,9 +82,9 @@ original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$fli
 
 ::: {#vcenter .column .fragment width="50%"}
 
--   What do you understand?
+-   What variables are included?
 
--   What is the message?
+-   What is a question this graph could answer?
 
 -   What is confusing?
 
@@ -77,33 +93,7 @@ original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$fli
 :::::
 
 
-## What is data-driven visualization?
 
--   Definition: "visual representation and presentation of data to facilitate understanding"
--   We use visualizations (graphs, figures, plots) for
-    -   exploring 
-    -   telling a story 
-
-::: aside
-Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
-:::
-
-::: notes
-Exploring is often earlier in analysis or for descriptive studies.
-Telling a story is often to supplement or explain a statistical analysis or describe your data.
-:::
-
-## What makes a visualization good?
-
-What do we mean when we say "good"?
-
--   "trustworthy (reasonable, faithful, integrity)
--   accessible (usuable, understandable)
--   elegant (aesthetic, appealing)"
-
-::: aside
-Andy Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
-:::
 
 ## Again, here's what we'll cover about visualizations
 
@@ -115,152 +105,144 @@ Andy Kirk, 2007, *Data visualization, a handbook for data driven design*, Publis
 
   - How: design and defaults
 
-- The library way: lots of references to classic visualization resources you may want to read or skim!
+- Lots of new and classic visualization resources!
 
 
 
 # Goals: **What** you need the graph to be
 
-## Trustworthy, reasonable, faithful, integrity.
+## Trustworthy, reasonable, faithful, integrity^[Kirk, 2019]
 
--   Ensure all variables in your goal/question are in/answered by your graph
-    -   Whether in axes, multiples/facets, or groupings (shapes, colors, line types)
-    -   Comparisons via parallelism (Tufte 1997), small multiples (Tufte 1990, 2001)
-    -   Data density (Tufte 2001)
-    -   When making comparisons, show the actual difference (Robbins 2005, ch. 3)
-    
-::: aside
+-   Ensure all variables from question are included, aka data density^[Tufte 2001, *The Visual Display of Quantitative Information, 2nd Ed.*, Graphics Press.]
+    -   Whether in axes, multiples/facets^[Tufte, 1997, *Visual Explanations*, Graphics Press], or groupings (shapes, colors, line types)
+-   Are the relevant summaries and uncertainty shown?^[Wickham, Navarro, Pederson. 2024. Ggplot2: Elegant Graphics for Data Analysis (3e). https://ggplot2-book.org/]
 
-Robbins, 2005, *Creating More Effective Graphs*, Publisher.
-Tufte, 1990, *Envisioning Information*, Graphics Press.
-Tufte, 1997, *Visual Explanations*, Graphics Press.
-Tufte, 2001, *The Visual Display of Quantitative Information, 2nd Ed.*, Graphics Press.
+## Where appropriate, follow examples
 
-:::
+- What's the common way to present this in your discipline?
+  - Searching in captions in some databases.
+- Check your journal style guide if submitting manuscript
 
-## Field-specific thoughts
 
--   Library thought: what's the common way to present this in your field? Searching in captions in some databases.
--   statistics thought - what numbers are you talking about? are the relevant numbers and uncertainty shown in the graph?
-    -   Collective vs individual geoms (ggplot book)
+## Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
 
-## There is no right answer, there is the right answer **for your situation**
+- There is no right answer, there is the right answer for your situation
+- Graph data more than once to show different aspects
 
-- possible + useful = relevant (Kirk 2007:130, fig 5.6)
-- graph data more than once to show different aspects.  experiment.  data desnity (224)
 
-::: aside
-Kirk, 2007, *Data visualization, a handbook for data driven design*, Publishing Company.
-
-:::
 
 # Perception: **Why** graphs work
 
 ## Presentation, accessible, usable, understandable.
 
      
-- Visual patterns as an augment to working memory limitations of humans (Few 2021:52)
+- Visual patterns as an augment to working memory limitations of humans^[Few, 2021, *Now You See It: an introduction to visual data sensemaking*.  El Dorado Hills: Analytics Press. page 52]
 
 - Universal design
   - Size of visualization elements (text, symbols, lines)
-  - Distractions
   - Limits of human perception
   
-  
-::: aside
 
-Few, 2021. *Now You See It: an introduction to visual data sensemaking*.  El Dorado Hills: Analytics Press.
-
-:::
 
 ## Limitations of "typical" human perception
 
-- "Ordered Elementary Tasks" (Robbins 2005, pg 61)
-
-::: aside
-Robbins, 2005, *Creating More Effective Graphs*, Publisher.
-:::
-
-## Top three
-
-    - position along a common scale
-    - position along identical, non-aligned scales
-    - length
-
-## Getting more difficult to judge
+- "Ordered Elementary Tasks"^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.]
 
 
-    - angle/slope - we can do slopes, but not angles (this is part of why pie charts difficult)
-    - area
-    - volume
-    - color hue- color saturation - density
+### Top three "perceptually accurate representations"
+
+- Position along a common scale (common baseline)
+- Position along identical, non-aligned scales (small multiples^[Tufte, 1990, *Envisioning Information*, Graphics Press.])
+- Length
+
+## More difficult to judge^[Robbins 2005, pg 61]
+
+- Angle/slope
+  - We can do slopes, but not angles (this is part of why pie charts difficult)
+- Area
+- Volume
+- Color hue - color saturation - density
     
-::: notes
-could I make this a graph with a line on it or some sort of ordering
-:::
+
+### When in doubt
+
+Choose the principle least likely to mislead^[Robbins 2005, pg 224]
 
 
-## When in doubt
-
-Choose the principle least likely to mislead (pg 224)
-
-## Accessibility
-
-- Use multiple scales for one variable when possible
-- Remember location of audience (paper, screen, projection)
-- Remember not all minds work the same
-- Remember 
 
 
 # Design: **How** to communicate your message
 
+## Program defaults usually not great
 
-## Keep it simple: elegant (aesthetic, appealing)
-- "Never allow your design or implementation to obscure the reader"^[pg 33 Kirk book, quote by K. Elliott.]
-- True message vs artifact of technique ^[Cleveland et al. Graphical Methods for Data Analysis chapter 8]
-- "Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few, pg 49, Now You See It]
+- Consider location of audience (paper, screen, projection)
+- Not all minds or eyes work the same - universal design
+- Make changes to tell your story more clearly^[Kirk 2017, pg 33]
+  - Learn how to save settings for graphs in code
 
 ## What actions to take?
-- Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.] with details from Robbins^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.] and Tufte^[Quantiative data book]
+- Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.]
+
   - Highlight
   - Organize
   - "Integrate text" (context)
 
 
 ## Highlight
-
--   Data should stand out (pg 159)
-  - Important parts should be visually prominent (pg 163)
-  - but use smallest effective differences (Tufte 1997)
-- Do any calculations for the viewer (pg 216)
+- Make data visually prominent^[Robbins 2005, pg 163]
+- Use smallest^[Tufte 1997] effective change for differences
+  - What does this mean?  Resolution, subtlety, don't jar viewer
+- Do any calculations for the viewer^[Robbins 2005, pg 216]
   - This means plot the variable of interest
   - Differences, not before and after
 
-::: aside
-Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
-:::
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+names(palmerpenguins::penguins)
+
+summary_by_year <- palmerpenguins::penguins %>%
+  group_by(species, year) %>%
+  dplyr::filter(species != "Gentoo", year != 2007) %>%
+  summarize(mean_flips = mean(flipper_length_mm)) %>%
+  arrange(mean_flips)
+
+ggplot(data = summary_by_year, 
+       mapping = aes(x = species, y = mean_flips, color = as.factor(year))) +
+  geom_point()+ 
+  labs(x = "Penguin species", y = "Flipper length (mm)")
+
+
+
+summary_penguin_diffs <- summary_by_year %>%
+  ungroup()%>%
+  pivot_wider(names_from = year, values_from = mean_flips)%>%
+  mutate(diff_flips = `2008`-`2009`)
+
+ggplot(data = summary_penguin_diffs, 
+       mapping = aes(x = species, y = diff_flips)) +
+  geom_point(size = 10)+ 
+  labs(x = "Penguin species", 
+       y = "Difference in flipper length (mm) from 2008 to 2009")
+
+```
+
 
 
 ## Organize
 
+"Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few 2021, pg 49]
 
-::: aside
-Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
-:::
+- Use common baselines wherever possible to make group comparisons^[Robbins 2005, p 207]
+- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
+- Use small multiples to show otherwise overlapping groups^[Robbins 2005, p 168-171]
 
+## Integrate with context
 
-## Integrate graphics with context
-
-
-::: aside
-Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.
-:::
-
-## Making it easy to do the right thing
-
--   Learn how to save settings for graphs in code
--   Change defaults in point-and-click if possible, make yourself a checklist if not (screenshots!!)
-
+- Label variables consistent with text^[Robbins 2005, p 193]
+- Label directly on visuals where possible^[Robbins 2005, p 213]
+- Use consistent symbology in related visualizations^[Robbins 2005, p 221]
 
 
 # Ending activity (10 min)
