@@ -114,8 +114,42 @@ original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$fli
 ## Trustworthy, reasonable, faithful, integrity^[Kirk, 2019]
 
 -   Ensure all variables from question are included, aka data density^[Tufte 2001, *The Visual Display of Quantitative Information, 2nd Ed.*, Graphics Press.]
-    -   Whether in axes, multiples/facets^[Tufte, 1997, *Visual Explanations*, Graphics Press], or groupings (shapes, colors, line types)
 -   Are the relevant summaries and uncertainty shown?^[Wickham, Navarro, Pederson. 2024. Ggplot2: Elegant Graphics for Data Analysis (3e). https://ggplot2-book.org/]
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point() + 
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic()
+
+```
+:::
+
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     color = species, shape = species)) +
+  geom_point(size = 5) + 
+  geom_smooth(method = 'lm')+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic()
+
+```
+:::
+
+
+
 
 ## Where appropriate, follow examples
 
@@ -133,27 +167,145 @@ original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$fli
 
 # Perception: **Why** graphs work
 
+
+## But first, your audience/viewer
+
+  - Exhausted
+  - Busy
+  - Indifferent
+  
+::: {.absolute top="10%" left="40%" width="60%"}
+![](images/cat_struggles_with_academic_book.JPG)
+:::
+
 ## Presentation, accessible, usable, understandable.
 
      
 - Visual patterns as an augment to working memory limitations of humans^[Few, 2021, *Now You See It: an introduction to visual data sensemaking*.  El Dorado Hills: Analytics Press. page 52]
 
+
+::: {.absolute top="35%" left="10%" width="100%"}
+```{r}
+#| attr-output: "style='font-size: 1em'"
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+library(ggplot2)
+
+tiny_data <- data.frame(x = c(0,2,3,4,6,2.5,3,3.5,4,6),
+                        y = c(0.5,1,1,2,1.5,2,3,4,5,6),
+                        z = c(rep("c", 5), rep("t", 5)),
+                        a = c(1:10),
+                        b = c(2,5,7,1,6,8,2,1,6,7),
+                        c = c(3,2,3,1,4,2,3,1,4,1))
+
+print(tiny_data[,1:3])
+
+```
+:::
+
+::: {.absolute top="35%" left="35%" width="50%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+
+(tiny_plot <- ggplot(data = tiny_data, 
+       mapping = aes(x = x,
+                     y = y,
+                     linetype = z)) +
+  geom_line(size = 5) + 
+  labs(x = "Time (s)", 
+       y = "Volume (mL)",
+       z = "Treatment")) +
+  theme_classic()
+
+```
+:::
+
+
+
+
+
+
+## Limits of "typical" human perception
+
 - Universal design
   - Size of visualization elements (text, symbols, lines)
   - Limits of human perception
-  
-
-
-## Limitations of "typical" human perception
 
 - "Ordered Elementary Tasks"^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.]
 
 
-### Top three "perceptually accurate representations"
+## Top three "perceptually accurate representations"
 
-- Position along a common scale (common baseline)
-- Position along identical, non-aligned scales (small multiples^[Tufte, 1990, *Envisioning Information*, Graphics Press.])
-- Length
+1. Position along a common scale (common baseline)
+
+::: {.absolute top="30%" left="0%" width="80%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+library(ggplot2)
+
+ggplot(data = palmerpenguins::penguins, 
+       mapping = aes(x = bill_length_mm,
+                     y = flipper_length_mm, 
+                     linetype = species))+
+  geom_smooth(method = "lm", size = 2) + 
+  labs(x = "Bill length (mm)", 
+       y = "Flipper length (mm)") +
+  guides(linetype = "none")+
+  theme_classic()
+
+
+```
+:::
+
+
+## Top three "perceptually accurate representations"
+
+2. Position along identical, non-aligned scales (small multiples^[Tufte, 1990, *Envisioning Information*, Graphics Press.])
+
+::: {.absolute top="30%" left="0%" width="80%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+
+ggplot(data = palmerpenguins::penguins, 
+       mapping = aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     shape = species))+
+  geom_point() + 
+  facet_wrap(species ~ .)+
+  labs(x = "Bill length (mm)", 
+       y = "Bill depth (mm)") +
+  guides(shape = "none")+
+  theme_classic()
+
+```
+:::
+
+## Top three "perceptually accurate representations"
+3. Length - both figures have a 1 "unit" difference
+
+
+::: {.absolute top="35%" left="0%" width="100%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all', fig.height = 3, fig.width = 10}
+
+length_data <- data.frame(x = c(4, 5, 4, 6, 2, 88, 2, 87),
+                          y = c(1, 1, 2, 2, 1, 1, 2, 2),
+                          line = c("line1", "line1",
+                                   "line2", "line2",
+                                   "line3", "line3",
+                                   "line4", "line4"),
+                          panel = c(rep("Proportionately large difference", 4),
+                                    rep("Proportionately small difference", 4)))
+
+ggplot(data = length_data,
+       mapping = aes(x = x,
+                     y = y, group = line))+
+  geom_line() +
+  facet_wrap(panel ~ ., scale = "free") +
+  theme_classic() +
+  ylim(0,3)
+
+```
+:::
+
+
 
 ## More difficult to judge^[Robbins 2005, pg 61]
 
@@ -173,12 +325,13 @@ Choose the principle least likely to mislead^[Robbins 2005, pg 224]
 
 # Design: **How** to communicate your message
 
-## Program defaults usually not great
-
-- Consider location of audience (paper, screen, projection)
+## Consider location of audience (paper, screen, projection)
 - Not all minds or eyes work the same - universal design
 - Make changes to tell your story more clearly^[Kirk 2017, pg 33]
+  - Program defaults usually not great
   - Learn how to save settings for graphs in code
+
+![](/images/sun_in_eyes.jpg)
 
 ## What actions to take?
 - Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.]
@@ -189,18 +342,104 @@ Choose the principle least likely to mislead^[Robbins 2005, pg 224]
 
 
 ## Highlight
+
+Show what you need to show!
+
+::: {.absolute top="20%" left="0%" width="50%"}
+![](images/fancy_gridded_cat.jpg)
+:::
+
+::: {.absolute top="35%" left="55%" width="50%"}
+![](images/highlight_cat.png)
+:::
+
+
+## Highlight: make data obvious
+
 - Make data visually prominent^[Robbins 2005, pg 163]
-- Use smallest^[Tufte 1997] effective change for differences
-  - What does this mean?  Resolution, subtlety, don't jar viewer
+
+
+::: {.absolute top="35%" left="5%" width="50%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+
+ggplot(data = tiny_data, 
+       mapping = aes(x = x,
+                     y = y, 
+                     linetype = z)) +
+  geom_line() + 
+  labs(x = "Time (s)", 
+       y = "Volume (mL)",
+       z = "Treatment",
+       title = "Default ggplot2")
+
+```
+:::
+
+::: {.absolute top="35%" left="45%" width="50%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+
+tiny_plot + theme_classic() + labs(title = "Settings updated")
+
+```
+:::
+
+
+
+## Highlight: smallest effective differences
+
+- Use smallest^[Tufte, 1997, *Visual Explanations*, Graphics Press] effective contrast for differences
+
+
+::: {.absolute top="35%" left="4%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     fill = species, shape = species)) +
+  geom_point(size = 5) + 
+  geom_smooth(method = 'lm', color = "black")+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic() +
+  scale_fill_manual(values = c("black",
+                                "white"))+
+  
+  scale_shape_manual(values = c(21,23))
+
+```
+:::
+
+::: {.absolute top="35%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       color = "black",
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     fill = species, shape = species)) +
+  geom_point(size = 5) + 
+  geom_smooth(method = 'lm', mapping = (aes(color = species)))+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic() +
+  scale_color_manual(values = c("black", "darkgray"))+
+  scale_fill_manual(values = c("black",
+                               "darkgray"))+
+  
+  scale_shape_manual(values = c(21,23))
+
+```
+:::
+
+  
+## Highlight: calculate before plotting
+
 - Do any calculations for the viewer^[Robbins 2005, pg 216]
   - This means plot the variable of interest
   - Differences, not before and after
 
+::: {.absolute top="35%" left="-5%" width="50%"}
 ```{r}
 library(dplyr)
 library(ggplot2)
 library(tidyr)
-names(palmerpenguins::penguins)
 
 summary_by_year <- palmerpenguins::penguins %>%
   group_by(species, year) %>%
@@ -209,11 +448,19 @@ summary_by_year <- palmerpenguins::penguins %>%
   arrange(mean_flips)
 
 ggplot(data = summary_by_year, 
-       mapping = aes(x = species, y = mean_flips, color = as.factor(year))) +
-  geom_point()+ 
-  labs(x = "Penguin species", y = "Flipper length (mm)")
+       mapping = aes(x = species, y = mean_flips, fill = as.factor(year))) +
+  geom_col(position = "dodge")+ 
+  labs(x = "Penguin species", y = "Flipper length (mm)",
+       fill = "Year")+
+  theme_classic() + 
+  coord_flip()
 
+```
 
+:::
+
+::: {.absolute top="35%" left="45%" width="50%"}
+```{r}
 
 summary_penguin_diffs <- summary_by_year %>%
   ungroup()%>%
@@ -225,21 +472,57 @@ ggplot(data = summary_penguin_diffs,
   geom_point(size = 10) + 
   ylim(min = -1.5, 0)+
   labs(x = "Penguin species", 
-       y = "Difference in flipper length (mm) from 2008 to 2009")
+       y = "Difference in flipper length (mm) from 2008 to 2009")+
+  theme_classic() +
+  coord_flip() +
+  theme(  panel.grid.major.y = element_line())
 
 ```
 
-
+:::
 
 ## Organize
 
 "Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few 2021, pg 49]
 
-- Use common baselines wherever possible to make group comparisons^[Robbins 2005, p 207]
-- Use small multiples to show otherwise overlapping groups^[Robbins 2005, p 168-171]
-- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
 
-::: {.absolute top="50%" left="4%" width="350"}
+::: {.absolute top="35%" left="0%" width="45%"}
+![](images/overly_complex_graph_cat.jpg)
+:::
+
+::: {.absolute top="35%" left="60%" width="20%"}
+![](images/cleaned_graph_cat.jpg)
+
+:::
+
+
+## Organize: comparisons
+- Use common baselines wherever possible to make group comparisons^[Robbins 2005, p 207]
+
+::: {.absolute top="35%" left="05%" width="50%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+
+tiny_plot+
+  theme_classic() +
+  facet_wrap(z ~ ., scales = "free")
+
+```
+
+:::
+::: {.absolute top="35%" left="45%" width="50%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+
+tiny_plot+
+  theme_classic()
+
+```
+
+:::
+
+## Organize: separate overlaps
+- Use small multiples to show otherwise overlapping groups^[Robbins 2005, p 168-171]
+
+::: {.absolute top="50%" left="4%" width="45%"}
 ```{r}
 subset_penguins <- palmerpenguins::penguins %>%
   dplyr::filter(species != "Gentoo", year != 2007)
@@ -249,12 +532,35 @@ ggplot(data = subset_penguins,
                      color = species, shape = island)) +
   geom_point(size = 10) + 
   labs(x = "Penguin species", 
-       y = "Flipper length (mm)")
+       y = "Flipper length (mm)")+
+  theme_classic()
 
 ```
 :::
 
-::: {.absolute top="55%" left="54%" width="400"}
+::: {.absolute top="50%" left="54%" width="45%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g,
+                     y = flipper_length_mm, 
+                     color = species, 
+                     shape = species)) +
+  geom_point(size = 5) + 
+  facet_wrap(island ~ .)+
+  labs(x = "Penguin species", 
+       y = "Flipper length (mm)")+
+  theme_classic()
+
+```
+:::
+
+## Organize: reduce clutter
+
+- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
+
+::: {.absolute top="30%" left="4%" width="45%"}
 ```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
 # learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
 
@@ -271,12 +577,162 @@ ggplot(data = subset_penguins,
 ```
 :::
 
+::: {.absolute top="30%" left="54%" width="45%"}
+```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
+# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g,
+                     y = flipper_length_mm, 
+                     color = species, 
+                     shape = species)) +
+  geom_point(size = 5) + 
+  facet_wrap(island ~ .)+
+  labs(x = "Penguin species", 
+       y = "Flipper length (mm)") +
+  theme_classic()
+
+```
+:::
+
 
 ## Integrate with context
 
-- Label variables consistent with text^[Robbins 2005, p 193]
-- Label directly on visuals where possible^[Robbins 2005, p 213]
+::: {.absolute top="20%" left="0%" width="50%"}
+![](images/nervous_dog.png)
+:::
+
+::: {.absolute top="20%" left="55%" width="50%"}
+![](images/nervous_dog_context.jpg)
+:::
+
+
+
+## Context: consistency with text
+
+- Label variables consistent with text^[Robbins 2005, p 193], not data abbreviations
+
+::: {.absolute top="20%" left="4%" width="45%"}
+```{r}
+print(tiny_data[,1:3])
+```
+:::
+
+::: {.absolute top="20%" left="30%" width="45%"}
+```{r,fig.height=4, fig.width=4.5}
+tiny_plot +
+  theme_classic()+
+  labs(linetype = "Treatment")
+```
+:::
+
+
+
+## Context: consistency in symbols (default, not good)
+
 - Use consistent symbology in related visualizations^[Robbins 2005, p 221]
+
+::: {.absolute top="30%" left="4%" width="45%"}
+```{r}
+
+ggplot(data = palmerpenguins::penguins,
+       mapping = aes(x = bill_depth_mm,
+                     y = bill_length_mm,
+                     shape = species,
+                     color = species)) + 
+         geom_point(size = 5) +
+    scale_color_manual(values = c("#A6CEE3",
+                               "#1F78B4",
+                               "#B2DF8A"))+
+  scale_shape_manual(values = c(15,16,17))
+```
+:::
+
+::: {.absolute top="30%" left="54%" width="45%"}
+
+```{r}
+ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie",],
+       mapping = aes(x = body_mass_g,
+                     y = flipper_length_mm,
+                     shape = species,
+                     color = species)) + 
+         geom_point(size = 5)+
+  scale_color_manual(values = c("#A6CEE3",
+                               "#1F78B4"))+
+  scale_shape_manual(values = c(16,17))
+
+
+```
+
+:::
+
+
+## Context: consistency in symbols (updated)
+
+- Use consistent symbology in related visualizations^[Robbins 2005, p 221]
+
+::: {.absolute top="30%" left="4%" width="45%"}
+```{r}
+
+ggplot(data = palmerpenguins::penguins,
+       mapping = aes(x = bill_depth_mm,
+                     y = bill_length_mm,
+                     shape = species,
+                     color = species)) + 
+         geom_point(size = 5) +
+  scale_color_manual(values = c("#A6CEE3",
+                               "#1F78B4",
+                               "#B2DF8A"))+
+  scale_shape_manual(values = c(15,16,17))
+```
+  
+  
+:::
+  
+::: {.absolute top="30%" left="54%" width="45%"}             
+```{r}
+ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie",],
+       mapping = aes(x = body_mass_g,
+                     y = flipper_length_mm,
+                     shape = species,
+                     color = species)) + 
+         geom_point(size = 5) +
+  scale_color_manual(values = c(
+                               "#1F78B4",
+                               "#B2DF8A"))+
+  scale_shape_manual(values = c(16,17))
+
+```
+:::
+
+
+
+
+## Context: labelling
+
+- Label directly on visuals where possible^[Robbins 2005, p 213]
+
+::: {.absolute top="20%" left="4%" width="45%"}
+```{r,fig.height=4, fig.width=4.5}
+tiny_plot +
+  theme_classic()+
+  labs(linetype = "Treatment")
+```
+:::
+
+
+
+::: {.absolute top="20%" left="50%" width="45%"}
+```{r,fig.height=4, fig.width=4}
+
+tiny_plot +
+  annotate(geom = "text", x = 2, y = 4, label = "control", size = 10, angle = 25)+
+  annotate(geom = "text", x = 4, y = 2.5, label = "treatment", size = 10) +
+  guides(linetype="none") +
+  theme_classic()
+```
+:::
+
 
 
 # Ending activity (10 min)
@@ -290,29 +746,7 @@ library(palmerpenguins)
 
 ## Some possibilities
 
-:::: {.columns} ::: {.column #vcenter width="50%" .fragment}
 
-```{r}
-library(palmerpenguins)
-(original_penguins <- plot(x = palmerpenguins::penguins$species, y = penguins$flipper_length_mm))
-```
-
-:::
-
-::: {.column .fragment width="50%"}
-```{r}
-library(palmerpenguins)
-library(ggplot2)
-ggplot(data = palmerpenguins::penguins, mapping = aes(x = species, y = flipper_length_mm)) +
-  geom_boxplot(notch = TRUE) +
-  geom_point(stat = "summary", 
-             fun = mean, 
-             shape = "x", 
-             size = 10)+ 
-  facet_wrap(island~.) + 
-  labs(x = "Penguin species", y = "Flipper length (mm)")
-```
-:::
 
 ## Get more help
 
