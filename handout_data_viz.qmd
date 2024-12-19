@@ -48,31 +48,36 @@ Make changes to your visualization to tell your story more clearly.  Most progra
 
 - [ ] Make data visually prominent
 - [ ] Use smallest effective change/contrast for differences
-- [ ] Do any comparison calculations for the viewer
+- [ ] Do any calculations for the viewer
 
 ## Organize
 
 - [ ] Use common baselines wherever possible to make group comparisons
-- [ ] Reduce interior clutter in grids, ticks, labels
 - [ ] Use small multiples to show otherwise overlapping groups
+- [ ] Reduce interior clutter in grids, ticks, labels, etc
+
 
 ## Integrate with context
 
-- [ ] Label variables consistent with text
-- [ ] Label directly on visuals where possible
+- [ ] Label variables and data consistent with text
 - [ ] Use consistent symbology in related visualizations
+- [ ] Label directly on visuals where possible
+
 
 {{< pagebreak >}}
 
-# Readings: start here
+# Readings
+
+## Start here
 
 ::: {#refs-startHere}
 :::
 
-# Readings: in depth
+## In depth
 
 ::: {#refs-inDepth}
 :::
 
 # Get more help
 
+Visit [libraries.ou.edu/data](https://libraries.ou.edu/data) for consultations, office hours, and more.
