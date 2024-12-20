@@ -316,8 +316,9 @@ ggplot(data = length_data,
 
 ### When in doubt
 
-Choose the principle least likely to mislead^[Robbins 2005, pg 224]
-
+- Choose the principle least likely to mislead^[Robbins 2005, pg 224]
+- Use more than one for each variable for redundancy
+  - For example, use both shape and color
 
 
 
