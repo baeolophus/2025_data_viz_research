@@ -81,3 +81,4 @@ Make changes to your visualization to tell your story more clearly.  Most progra
 # Get more help
 
 Visit [libraries.ou.edu/data](https://libraries.ou.edu/data) for consultations, office hours, and more.
+Slideshow [oulib-resdata.github.io/datavis](https://oulib-resdata.github.io/datavis)
