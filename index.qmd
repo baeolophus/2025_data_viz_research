@@ -107,15 +107,15 @@ Telling a story is often to supplement or explain a statistical analysis or desc
 
 - Lots of new and classic visualization resources!
 
-::: {.absolute top="10%" left="-10%" width="90%"}
+::: {.absolute top="60%" left="0%" width="30%"}
 
-![PDF handout (easy print)](qrcode_osf-handout-pdf.png)
+![Handout (easy print PDF)](qrcode_osf-handout-pdf.png)
 
 :::
 
-::: {.absolute top="10%" left="-10%" width="90%"}
+::: {.absolute top="60%" left="60%" width="30%"}
 
-![HTML handout (clickable)](qrcode_osf-handout-html.png)
+![Handout (clickable HTML)](qrcode_osf-handout-html.png)
 
 :::
 
@@ -900,8 +900,23 @@ ggplot(data = long_graphingdata,
 
 ## Get more help
 
+-   OU Libraries Digital Scholarship and Data Services open office hours (drop in) or contact form at [libraries.ou.edu/data](https://libraries.ou.edu/data)
+
 -   Resource handout w/checklist
--   DSDS office hours/contact form
+
+
+::: {.absolute top="60%" left="0%" width="30%"}
+
+![Handout (easy print PDF)](qrcode_osf-handout-pdf.png)
+
+:::
+
+::: {.absolute top="60%" left="60%" width="30%"}
+
+![Handout (clickable HTML)](qrcode_osf-handout-html.png)
+
+:::
+
 
 ## Please provide feedback
 
