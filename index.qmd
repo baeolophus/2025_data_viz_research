@@ -175,7 +175,7 @@ ggplot(data = subset_penguins,
   - Indifferent
   
 ::: {.absolute top="10%" left="40%" width="60%"}
-![](images/cat_struggles_with_academic_book.JPG)
+![](images/cat_struggles_with_academic_book.jpg)
 :::
 
 ## Presentation, accessible, usable, understandable.
@@ -534,11 +534,11 @@ ggplot(data = summary_penguin_diffs,
 
 
 ::: {.absolute top="35%" left="0%" width="45%"}
-![](images/overly_complex_graph_cat.JPG)
+![](images/overly_complex_graph_cat.jpg)
 :::
 
 ::: {.absolute top="35%" left="60%" width="20%"}
-![](images/cleaned_graph_cat.JPG)
+![](images/cleaned_graph_cat.jpg)
 
 :::
 
