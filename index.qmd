@@ -534,11 +534,11 @@ ggplot(data = summary_penguin_diffs,
 
 
 ::: {.absolute top="35%" left="0%" width="45%"}
-![](images/overly_complex_graph_cat.jpg)
+![](images/overly_complex_graph_cat.JPG)
 :::
 
 ::: {.absolute top="35%" left="60%" width="20%"}
-![](images/cleaned_graph_cat.jpg)
+![](images/cleaned_graph_cat.JPG)
 
 :::
 
