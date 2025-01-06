@@ -1,5 +1,4 @@
 # Survival Skills: Concepts of Data-Driven Visualizations"
-## Last updated: June 17, 2024
 ## Authors
 
 Claire Curry (OU), Beth Tweedy (OU now UCDavis), Amanda Schilling (OU)
