@@ -900,13 +900,11 @@ ggplot(data = long_graphingdata,
 
 ## Get more help
 
--   OU Libraries Digital Scholarship and Data Services open office hours (drop in) and contact form
+OU Libraries Digital Scholarship and Data Services open office hours (drop in) and contact form
 
 ![[libraries.ou.edu/data](https://libraries.ou.edu/data)](qrcode_dsds.png)
 
 
 ## Please provide feedback
 
-Survey link
-
-![QR Code](qrcode_ou-libwizard-com.png)
+![[ou.libwizard.com/f/datasurvey](https://ou.libwizard.com/f/datasurvey)](qrcode_ou-libwizard-com.png)
