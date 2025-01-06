@@ -107,6 +107,17 @@ Telling a story is often to supplement or explain a statistical analysis or desc
 
 - Lots of new and classic visualization resources!
 
+::: {.absolute top="10%" left="-10%" width="90%"}
+
+![PDF handout (easy print)](qrcode_osf-handout-pdf.png)
+
+:::
+
+::: {.absolute top="10%" left="-10%" width="90%"}
+
+![HTML handout (clickable)](qrcode_osf-handout-html.png)
+
+:::
 
 
 # Goals: **What** you need the graph to be
