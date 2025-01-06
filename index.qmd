@@ -900,22 +900,9 @@ ggplot(data = long_graphingdata,
 
 ## Get more help
 
--   OU Libraries Digital Scholarship and Data Services open office hours (drop in) or contact form at [libraries.ou.edu/data](https://libraries.ou.edu/data)
+-   OU Libraries Digital Scholarship and Data Services open office hours (drop in) and contact form
 
--   Resource handout w/checklist
-
-
-::: {.absolute top="60%" left="0%" width="30%"}
-
-![Handout (easy print PDF)](qrcode_osf-handout-pdf.png)
-
-:::
-
-::: {.absolute top="60%" left="60%" width="30%"}
-
-![Handout (clickable HTML)](qrcode_osf-handout-html.png)
-
-:::
+![[libraries.ou.edu/data](https://libraries.ou.edu/data)](qrcode_dsds.png)
 
 
 ## Please provide feedback
