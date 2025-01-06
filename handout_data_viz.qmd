@@ -1,7 +1,15 @@
 ---
-title: "Checklist for data-driven visualizations"
-author: "Claire M. Curry and Amanda B. Schilling"
-format: html
+format:
+  html:
+    toc: false
+  pdf:
+    keeptex: false
+    papersize: letter
+    geometry:
+      - top=20mm
+      - left=20mm
+      - right=20mm
+      - bottom=20mm
 editor: source
 
 # These three entries allow two separate bibliographies.
@@ -20,11 +28,12 @@ nocite: '@*'
 # the csl can be downloaded into the repository or direct linked to the raw file on github
 # this style chosen as relatively general and has indents for easier reading on handouts.
 csl: https://raw.githubusercontent.com/citation-style-language/styles/refs/heads/master/oxford-university-press-scimed-author-date.csl
-
-
 ---
+# Checklist for data-driven visualizations
 
-# What: goals
+University of Oklahoma Libraries
+
+## What: goals
 
 Know if you are telling a story or exploring your data.  Then, consider these points:
 
@@ -32,32 +41,32 @@ Know if you are telling a story or exploring your data.  Then, consider these po
 - [ ] Check your field's literature or journal's style guide for example visualizations
 - [ ] Consider if you need more than one visual to tell your story
 
-# Why: human perception
+## Why: human perception
 
 People (including you, the author) need to read and see your visualization to understand your story.
 
-- [ ] Make lines bolder, symbols larger, and font sizes larger than software defaults for viewing ease
+- [ ] Make lines bolder, symbols larger, and font larger than software defaults
 - [ ] Use perceptually accurate representations such as common baselines, small multiples, or length
 - [ ] Remove perceptually inaccurate representations like angles or slope, area, volume, and colors for quantitative scales
 
-# How: design and defaults
+## How: design and defaults
 
 Make changes to your visualization to tell your story more clearly.  Most program defaults are not designed for presentations, universal accessibility, or ease of reading.
 
-## Highlight
+### Highlight
 
 - [ ] Make data visually prominent
 - [ ] Use smallest effective change/contrast for differences
 - [ ] Do any calculations for the viewer
 
-## Organize
+### Organize
 
 - [ ] Use common baselines wherever possible to make group comparisons
 - [ ] Use small multiples to show otherwise overlapping groups
 - [ ] Reduce interior clutter in grids, ticks, labels, etc
 
 
-## Integrate with context
+### Integrate with context
 
 - [ ] Label variables and data consistent with text
 - [ ] Use consistent symbology in related visualizations
@@ -66,19 +75,20 @@ Make changes to your visualization to tell your story more clearly.  Most progra
 
 {{< pagebreak >}}
 
-# Readings
+## Readings
 
-## Start here
+### Start here
 
 ::: {#refs-startHere}
 :::
 
-## In depth
+### In depth
 
 ::: {#refs-inDepth}
 :::
 
-# Get more help
+## Get more help
 
-Visit [libraries.ou.edu/data](https://libraries.ou.edu/data) for consultations, office hours, and more.
-In-depth slide show [oulib-resdata.github.io/datavis](https://oulib-resdata.github.io/datavis/)
+- Visit [libraries.ou.edu/data](https://libraries.ou.edu/data) for consultations, office hours, and more.
+
+- In-depth slide show [oulib-resdata.github.io/datavis](https://oulib-resdata.github.io/datavis/)
