@@ -887,14 +887,73 @@ ggplot(data = long_graphingdata,
 :::
 
 
+::: {.absolute top="60%" left="-10%" width="20%"}
+
+
 ```{r}
 
+# Library
+library(ggplot2)
 
+# Toy data
+# Creating output to look like this effect size function output
+# https://rpkgs.datanovia.com/rstatix/reference/cohens_d.html
+
+group1 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
+group2 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
+combinations <- expand.grid(group1 = group1, group2  = group2)
+combinations$effsize <- c(NA, 2.5, 2.1, 1.2,
+                          NA, NA, 0.1, 0.75,
+                          NA, NA, NA, 0.5,
+                          NA, NA, NA, NA)
+combinations$pvalues <- c(NA, 0.01, 0.001, 0.02,
+                          NA, NA, 1, 1,
+                          NA, NA, NA, 0.02,
+                          NA, NA, NA, NA)
+combinations$group1_n <- c("", "", "", "",
+                          "20", "", "", "",
+                          "22", "22", "", "",
+                          "20", "20", "20", "")
+combinations$group2_n <- c("", "", "", "",
+                          "10", "", "", "",
+                          "10", "19", "", "",
+                          "10", "19", "22", "")
+ 
+# Heatmap 
+ggplot(combinations) + 
+
+    geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(group1_n),
+                          size = 20,
+                          hjust = "right",
+                          vjust = "bottom"))+
+      geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(group2_n),
+                          size = 20,
+                          hjust = "left",
+                          vjust = "top"))+
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    geom_label(mapping = aes(x = group1, y = group2,
+                          label = pvalues,
+                          alpha = 1-pvalues,
+                          size = 20))+
+  labs(title = "5000 Hz",
+       x = "",
+       y = "") +
+  theme_classic()+
+  scale_fill_gradient(high = "gray10",
+                      low = "gray80",
+                      na.value = "transparent")+
+  guides(fill = "none",
+         size = "none",
+         color = "none",
+         alpha = "none")
 
 
 ```
 
 
+:::
 
 
 
