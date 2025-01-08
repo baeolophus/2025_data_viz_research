@@ -848,40 +848,36 @@ tiny_plot +
 # https://stackoverflow.com/a/66220111
 library(png)
 sparrow <- readPNG(source = "./images/sparrow.png")
-graphingdata <- read.csv("graphingdata.csv")
-long_graphingdata <- pivot_longer(data = graphingdata,
-                                  cols = Drilling.Playback:Screwpump,
-                                  values_to = "dBZ",
-                                  names_to = "Treatment")
+long_graphingdata <- read.csv("example_toy_data.csv")
 
 ggplot(data = long_graphingdata,
-       mapping = aes(x = Freq,
-                     y = dBZ,
-                     linetype = Treatment,
-                     shape = Treatment)) +
+       mapping = aes(x = freq_ex,
+                     y = dbZ,
+                     linetype = treatment,
+                     shape = treatment)) +
   geom_line() +
   geom_point()+
   theme_classic() +
-  geom_ribbon(mapping = aes(ymin = backgroundlowerCI,
-                            ymax = backgroundupperCI),
-              alpha = 0.1) +
-  geom_ribbon(mapping = aes(ymin = playbacklowerCI,
-                            ymax = playbackupperCI),
-              alpha = 0.1) +
-  geom_ribbon(mapping = aes(ymin = pumpjacklowerCI,
-                            ymax = pumpjackupperCI),
-              alpha = 0.1) +
-  geom_ribbon(mapping = aes(ymin = screwpumplowerCI,
-                            ymax = screwpumpupperCI),
-              alpha = 0.1)+
+  # geom_ribbon(mapping = aes(ymin = backgroundlowerCI,
+  #                           ymax = backgroundupperCI),
+  #             alpha = 0.1) +
+  # geom_ribbon(mapping = aes(ymin = playbacklowerCI,
+  #                           ymax = playbackupperCI),
+  #             alpha = 0.1) +
+  # geom_ribbon(mapping = aes(ymin = pumpjacklowerCI,
+  #                           ymax = pumpjackupperCI),
+  #             alpha = 0.1) +
+  # geom_ribbon(mapping = aes(ymin = screwpumplowerCI,
+  #                           ymax = screwpumpupperCI),
+  #             alpha = 0.1)+
   geom_vline(xintercept=c(4000, 8000)) +
   annotation_raster(raster = sparrow,
                     xmin = 4100,
                     xmax = 7900,
                     ymin = 65,
                     ymax = 73) +
-  xlab("Frequency (Hz), measurements at 1/3 octave intervals")+
-  ylab("Sound pressure level at 10 m [dB(Z)]")
+  xlab("(Simulated) Frequency (Hz), measurements at 1/3 octave intervals")+
+  ylab("(Simulated) Sound pressure level at 10 m [dB(Z)]")
 
 ```
 :::
