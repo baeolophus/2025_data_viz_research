@@ -844,13 +844,14 @@ tiny_plot +
 ::: {.absolute top="10%" left="-10%" width="70%"}
 
 ```{r}
-
+library(ggplot2)
+library(gridExtra)
 # https://stackoverflow.com/a/66220111
 library(png)
 sparrow <- readPNG(source = "./images/sparrow.png")
 long_graphingdata <- read.csv("example_toy_data.csv")
 
-ggplot(data = long_graphingdata,
+freq_line_plot <- ggplot(data = long_graphingdata,
        mapping = aes(x = freq_ex,
                      y = dbZ,
                      linetype = treatment,
@@ -879,18 +880,6 @@ ggplot(data = long_graphingdata,
   xlab("(Simulated) Frequency (Hz), measurements at 1/3 octave intervals")+
   ylab("(Simulated) Sound pressure level at 10 m [dB(Z)]")
 
-```
-:::
-
-
-::: {.absolute top="60%" left="-10%" width="20%"}
-
-
-```{r}
-
-# Library
-library(ggplot2)
-
 # Toy data
 # Creating output to look like this effect size function output
 # https://rpkgs.datanovia.com/rstatix/reference/cohens_d.html
@@ -914,9 +903,13 @@ combinations$group2_n <- c("", "", "", "",
                           "10", "", "", "",
                           "10", "19", "", "",
                           "10", "19", "22", "")
+combinations$treatment_labels <- c("Control", "", "", "",
+                          "", "DP", "", "",
+                          "", "", "PJ", "",
+                          "", "", "", "SP")
  
 # Heatmap 
-ggplot(combinations) + 
+heatmaps <- ggplot(combinations) + 
 
     geom_text(mapping = aes(x = group1, y = group2,
                           label = paste(group1_n),
@@ -928,6 +921,11 @@ ggplot(combinations) +
                           size = 20,
                           hjust = "left",
                           vjust = "top"))+
+        geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(treatment_labels),
+                          size = 20,
+                          hjust = "center",
+                          vjust = "center"))+
     geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
     geom_label(mapping = aes(x = group1, y = group2,
                           label = pvalues,
@@ -937,6 +935,8 @@ ggplot(combinations) +
        x = "",
        y = "") +
   theme_classic()+
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank())+
   scale_fill_gradient(high = "gray10",
                       low = "gray80",
                       na.value = "transparent")+
@@ -944,6 +944,10 @@ ggplot(combinations) +
          size = "none",
          color = "none",
          alpha = "none")
+
+
+
+grid.arrange(freq_line_plot, heatmaps)
 
 
 ```
