@@ -848,6 +848,7 @@ library(ggplot2)
 library(gridExtra)
 # https://stackoverflow.com/a/66220111
 library(png)
+songs <- readPNG(source = "./images/songs.png")
 sparrow <- readPNG(source = "./images/sparrow.png")
 long_graphingdata <- read.csv("example_toy_data.csv")
 
@@ -873,10 +874,15 @@ freq_line_plot <- ggplot(data = long_graphingdata,
   #             alpha = 0.1)+
   geom_vline(xintercept=c(4000, 8000)) +
   annotation_raster(raster = sparrow,
-                    xmin = 4100,
-                    xmax = 7900,
-                    ymin = 65,
-                    ymax = 73) +
+                    xmin = 4900,
+                    xmax = 7000,
+                    ymin = 50,
+                    ymax = 60) +
+  annotation_raster(raster = songs,
+                    xmin = 4600,
+                    xmax = 7400,
+                    ymin = 62,
+                    ymax = 75) +
   xlab("(Simulated) Frequency (Hz), measurements at 1/3 octave intervals")+
   ylab("(Simulated) Sound pressure level at 10 m [dB(Z)]")
 
@@ -909,29 +915,137 @@ combinations$treatment_labels <- c("Control", "", "", "",
                           "", "", "", "SP")
  
 # Heatmap 
-heatmaps <- ggplot(combinations) + 
-
-    geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(group1_n),
-                          size = 20,
-                          hjust = "right",
-                          vjust = "bottom"))+
-      geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(group2_n),
-                          size = 20,
-                          hjust = "left",
-                          vjust = "top"))+
+heatmaps1 <- ggplot(combinations) + 
+# 
+#     geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group1_n),
+#                           size = 20,
+#                           hjust = "right",
+#                           vjust = "bottom"))+
+#       geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group2_n),
+#                           size = 20,
+#                           hjust = "left",
+#                           vjust = "top"))+
         geom_text(mapping = aes(x = group1, y = group2,
                           label = paste(treatment_labels),
                           size = 20,
                           hjust = "center",
                           vjust = "center"))+
     geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
-    geom_label(mapping = aes(x = group1, y = group2,
-                          label = pvalues,
-                          alpha = 1-pvalues,
-                          size = 20))+
+    # geom_label(mapping = aes(x = group1, y = group2,
+    #                       label = pvalues,
+    #                       alpha = 1-pvalues,
+    #                       size = 20))+
+  labs(title = "4000 Hz",
+       x = "",
+       y = "") +
+  theme_classic()+
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank())+
+  scale_fill_gradient(high = "gray10",
+                      low = "gray80",
+                      na.value = "transparent")+
+  guides(fill = "none",
+         size = "none",
+         color = "none",
+         alpha = "none")
+
+heatmaps2 <- ggplot(combinations) + 
+# 
+#     geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group1_n),
+#                           size = 20,
+#                           hjust = "right",
+#                           vjust = "bottom"))+
+#       geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group2_n),
+#                           size = 20,
+#                           hjust = "left",
+#                           vjust = "top"))+
+        geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(treatment_labels),
+                          size = 20,
+                          hjust = "center",
+                          vjust = "center"))+
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    # geom_label(mapping = aes(x = group1, y = group2,
+    #                       label = pvalues,
+    #                       alpha = 1-pvalues,
+    #                       size = 20))+
   labs(title = "5000 Hz",
+       x = "",
+       y = "") +
+  theme_classic()+
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank())+
+  scale_fill_gradient(high = "gray10",
+                      low = "gray80",
+                      na.value = "transparent")+
+  guides(fill = "none",
+         size = "none",
+         color = "none",
+         alpha = "none")
+
+heatmaps3 <- ggplot(combinations) + 
+# 
+#     geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group1_n),
+#                           size = 20,
+#                           hjust = "right",
+#                           vjust = "bottom"))+
+#       geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group2_n),
+#                           size = 20,
+#                           hjust = "left",
+#                           vjust = "top"))+
+        geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(treatment_labels),
+                          size = 20,
+                          hjust = "center",
+                          vjust = "center"))+
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    # geom_label(mapping = aes(x = group1, y = group2,
+    #                       label = pvalues,
+    #                       alpha = 1-pvalues,
+    #                       size = 20))+
+  labs(title = "6300 Hz",
+       x = "",
+       y = "") +
+  theme_classic()+
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank())+
+  scale_fill_gradient(high = "gray10",
+                      low = "gray80",
+                      na.value = "transparent")+
+  guides(fill = "none",
+         size = "none",
+         color = "none",
+         alpha = "none")
+
+heatmaps4 <- ggplot(combinations) + 
+# 
+#     geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group1_n),
+#                           size = 20,
+#                           hjust = "right",
+#                           vjust = "bottom"))+
+#       geom_text(mapping = aes(x = group1, y = group2,
+#                           label = paste(group2_n),
+#                           size = 20,
+#                           hjust = "left",
+#                           vjust = "top"))+
+        geom_text(mapping = aes(x = group1, y = group2,
+                          label = paste(treatment_labels),
+                          size = 20,
+                          hjust = "center",
+                          vjust = "center"))+
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    # geom_label(mapping = aes(x = group1, y = group2,
+    #                       label = pvalues,
+    #                       alpha = 1-pvalues,
+    #                       size = 20))+
+  labs(title = "8000 Hz",
        x = "",
        y = "") +
   theme_classic()+
@@ -947,7 +1061,12 @@ heatmaps <- ggplot(combinations) +
 
 
 
-grid.arrange(freq_line_plot, heatmaps)
+grid.arrange(freq_line_plot,
+             arrangeGrob(heatmaps1,
+                         heatmaps2,
+                         heatmaps3,
+                         heatmaps4,
+                         ncol = 4))
 
 
 ```
