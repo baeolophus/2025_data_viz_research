@@ -174,7 +174,14 @@ ggplot(data = subset_penguins,
 - There is no right answer, there is the right answer for your situation
 - Graph data more than once to show different aspects
 
+::: {.absolute top="40%" left="4%" width="45%"}
+![](images/clean_cat_image.png)
 
+:::
+
+::: {.absolute top="45%" left="49%" width="45%"}
+![](images/highlight_cat.png)
+:::
 
 # Perception: **Why** graphs work
 
@@ -309,6 +316,12 @@ ggplot(data = length_data,
   geom_line() +
   facet_wrap(panel ~ ., scale = "free") +
   theme_classic() +
+  theme(axis.text = element_text(size = 20),
+        axis.title = element_text(size = 25),
+        axis.title.y = element_text(angle = 0,
+                                    vjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank())+
   ylim(0,3)
 
 ```
@@ -335,7 +348,8 @@ ggplot(data = length_data,
 
 # Design: **How** to communicate your message
 
-## Consider location of audience (paper, screen, projection)
+## Consider location of audience
+- Paper, screen, projected
 - Not all minds or eyes work the same - universal design
 - Make changes to tell your story more clearly^[Kirk 2019, pg 33]
   - Program defaults usually not great
