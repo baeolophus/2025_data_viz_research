@@ -11,7 +11,7 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Curry, Tweedy, Schilling">
+  <meta name="author" content="CM Curry, B Tweedy, A Schilling">
   <title>Survival Skills: Concepts of Data-Driven Visualization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -328,19 +328,20 @@
 
 <section id="title-slide" class="quarto-title-block">
   <h1 class="title">Survival Skills: Concepts of Data-Driven Visualization</h1>
+  <p class="subtitle">OU Libraries</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Curry, Tweedy, Schilling 
+CM Curry, B Tweedy, A Schilling 
 </div>
 </div>
 </div>
 
 </section>
 <section>
-<section id="getting-started-5-min" class="title-slide slide level1">
-<h1>Getting started (5 min)</h1>
+<section id="getting-started" class="title-slide slide level1">
+<h1>Getting started</h1>
 
 </section>
 <section id="what-we-will-discuss-today" class="slide level2">
@@ -349,7 +350,7 @@ Curry, Tweedy, Schilling
 <li><p>Define visualizations for data</p></li>
 <li><p>What, why, and how of data-driven visualizations</p>
 <ul>
-<li><p>What: goals</p></li>
+<li><p>What: goals of graphing</p></li>
 <li><p>Why: human perception</p></li>
 <li><p>How: design and defaults</p></li>
 </ul></li>
@@ -360,7 +361,6 @@ Curry, Tweedy, Schilling
 <h2>Ice breakers</h2>
 <ul>
 <li>5 min ice breaker activity: A boring fact about yourself</li>
-<li>Pronouns if comfortable</li>
 </ul>
 <aside class="notes">
 <p>5 min, use this time to let late arrivals settle in.</p>
@@ -424,8 +424,8 @@ Curry, Tweedy, Schilling
 <div class="absolute" style="top: 15%; left: 70%; width: 50%; ">
 <ul>
 <li><p>What variables are included?</p></li>
-<li><p>What is a question this graph could answer?</p></li>
-<li><p>What is confusing?</p></li>
+<li><p>What question could this graph answer?</p></li>
+<li><p>What is confusing to you?</p></li>
 </ul>
 </div>
 
@@ -462,7 +462,7 @@ Curry, Tweedy, Schilling
 </section></section>
 <section>
 <section id="goals-what-you-need-the-graph-to-be" class="title-slide slide level1">
-<h1>Goals: <strong>What</strong> you need the graph to be</h1>
+<h1>Goals: What you need the graph to be</h1>
 
 </section>
 <section id="trustworthy-reasonable-faithful-integrity" class="slide level2">
@@ -519,26 +519,28 @@ Curry, Tweedy, Schilling
 <aside><ol class="aside-footnotes"><li id="fn4"><p>Kirk, 2019, pg. 130, figure 5.6</p></li></ol></aside></section></section>
 <section>
 <section id="perception-why-graphs-work" class="title-slide slide level1">
-<h1>Perception: <strong>Why</strong> graphs work</h1>
+<h1>Perception: Why graphs work</h1>
 
 </section>
 <section id="but-first-your-audienceviewer" class="slide level2">
 <h2>But first, your audience/viewer</h2>
+<div class="absolute" style="top: 10%; left: 4%; width: 200%; ">
 <ul>
 <li>Exhausted</li>
 <li>Busy</li>
 <li>Indifferent</li>
 </ul>
+</div>
 <div class="absolute" style="top: 10%; left: 40%; width: 60%; ">
 <p><img data-src="images/cat_struggles_with_academic_book.jpg"></p>
 </div>
 </section>
-<section id="presentation-accessible-usable-understandable." class="slide level2">
-<h2>Presentation, accessible, usable, understandable.</h2>
+<section id="presentation-accessible-usable-understandable" class="slide level2">
+<h2>Presentation, accessible, usable, understandable<sup>1</sup></h2>
 <ul>
-<li>Visual patterns as an augment to working memory limitations of humans<sup>1</sup></li>
+<li>Visual patterns as an augment to working memory limitations of humans<sup>2</sup></li>
 </ul>
-<div class="absolute" style="top: 35%; left: 10%; width: 100%; ">
+<div class="absolute" style="top: 35%; left: 4%; width: 100%; ">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre style="font-size: 1em"><code>     x   y z
@@ -566,9 +568,10 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn5"><p>Few, 2021, <em>Now You See It: an introduction to visual data sensemaking</em>. El Dorado Hills: Analytics Press. page 52</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn5"><p>Kirk, 2019</p></li><li id="fn6"><p>Few, 2021, <em>Now You See It: an introduction to visual data sensemaking</em>. El Dorado Hills: Analytics Press. page 52</p></li></ol></aside></section>
 <section id="limits-of-typical-human-perception" class="slide level2">
 <h2>Limits of “typical” human perception</h2>
+<div class="r-fit-text">
 <ul>
 <li>Universal design
 <ul>
@@ -576,7 +579,8 @@ Curry, Tweedy, Schilling
 </ul></li>
 <li>Perceptual accuracy and “ordered elementary tasks”<sup>1</sup></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn6"><p>Robbins, 2005, <em>Creating More Effective Graphs</em>. Hoboken, NJ: Wiley-Interscience.</p></li></ol></aside></section>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn7"><p>Robbins, 2005, <em>Creating More Effective Graphs</em>. Hoboken, NJ: Wiley-Interscience.</p></li></ol></aside></section>
 <section id="top-three-perceptually-accurate-representations" class="slide level2">
 <h2>Top three “perceptually accurate representations”</h2>
 <ol type="1">
@@ -610,7 +614,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn7"><p>Tufte, 1990, <em>Envisioning Information</em>, Graphics Press.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn8"><p>Tufte, 1990, <em>Envisioning Information</em>, Graphics Press.</p></li></ol></aside></section>
 <section id="top-three-perceptually-accurate-representations-2" class="slide level2">
 <h2>Top three “perceptually accurate representations”</h2>
 <ol start="3" type="1">
@@ -639,15 +643,17 @@ Curry, Tweedy, Schilling
 <li>Volume</li>
 <li>Color hue - color saturation - density</li>
 </ul>
-<h3 id="when-in-doubt">When in doubt</h3>
+<aside><ol class="aside-footnotes"><li id="fn9"><p>Robbins 2005, pg 61</p></li></ol></aside></section>
+<section id="when-in-doubt" class="slide level2">
+<h2>When in doubt</h2>
 <ul>
-<li>Choose the principle least likely to mislead<sup>2</sup></li>
-<li>Use more than one for each variable for redundancy
+<li>Choose the principle least likely to mislead<sup>1</sup></li>
+<li>Use more than one aspect for redundancy
 <ul>
 <li>For example, use both shape and color</li>
 </ul></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn8"><p>Robbins 2005, pg 61</p></li><li id="fn9"><p>Robbins 2005, pg 224</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn10"><p>Robbins 2005, pg 224</p></li></ol></aside></section></section>
 <section>
 <section id="design-how-to-communicate-your-message" class="title-slide slide level1">
 <h1>Design: <strong>How</strong> to communicate your message</h1>
@@ -665,7 +671,7 @@ Curry, Tweedy, Schilling
 </ul></li>
 </ul>
 <p><img data-src=".\images/sun_in_eyes.jpg"></p>
-<aside><ol class="aside-footnotes"><li id="fn10"><p>Kirk 2019, pg 33</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn11"><p>Kirk 2019, pg 33</p></li></ol></aside></section>
 <section id="what-actions-to-take" class="slide level2">
 <h2>What actions to take?</h2>
 <ul>
@@ -676,7 +682,7 @@ Curry, Tweedy, Schilling
 <li>“Integrate text” (context)</li>
 </ul></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn11"><p>Few, 2012. <em>Show me the numbers: designing tables and graphs to enlighten, 2nd ed</em>. Burlingame, CA: Analytics Press.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn12"><p>Few, 2012. <em>Show me the numbers: designing tables and graphs to enlighten, 2nd ed</em>. Burlingame, CA: Analytics Press.</p></li></ol></aside></section>
 <section id="highlight" class="slide level2">
 <h2>Highlight</h2>
 <p>Show what you need to show!</p>
@@ -714,7 +720,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn12"><p>Robbins 2005, pg 163</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn13"><p>Robbins 2005, pg 163</p></li></ol></aside></section>
 <section id="highlight-effective-differences" class="slide level2">
 <h2>Highlight: effective differences</h2>
 <div class="absolute" style="top: 30%; left: 4%; width: 70%; ">
@@ -798,7 +804,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn13"><p>Tufte, 1997, <em>Visual Explanations</em>, Graphics Press</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn14"><p>Tufte, 1997, <em>Visual Explanations</em>, Graphics Press</p></li></ol></aside></section>
 <section id="highlight-calculate-before-plotting" class="slide level2">
 <h2>Highlight: calculate before plotting</h2>
 <ul>
@@ -830,7 +836,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn14"><p>Robbins 2005, pg 216</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn15"><p>Robbins 2005, pg 216</p></li></ol></aside></section>
 <section id="organize" class="slide level2">
 <h2>Organize</h2>
 <p>“Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data”<sup>1</sup></p>
@@ -840,7 +846,7 @@ Curry, Tweedy, Schilling
 <div class="absolute" style="top: 35%; left: 60%; width: 20%; ">
 <p><img data-src="images/cleaned_graph_cat.jpg"></p>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn15"><p>Few 2021, pg 49</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn16"><p>Few 2021, pg 49</p></li></ol></aside></section>
 <section id="organize-comparisons" class="slide level2">
 <h2>Organize: comparisons</h2>
 <ul>
@@ -868,13 +874,13 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn16"><p>Robbins 2005, p 207</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn17"><p>Robbins 2005, p 207</p></li></ol></aside></section>
 <section id="organize-separate-overlaps" class="slide level2">
 <h2>Organize: separate overlaps</h2>
 <ul>
 <li>Use small multiples to show otherwise overlapping groups<sup>1</sup></li>
 </ul>
-<div class="absolute" style="top: 50%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 4%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -885,7 +891,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<div class="absolute" style="top: 50%; left: 54%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 54%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -896,13 +902,13 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn17"><p>Robbins 2005, p 168-171</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn18"><p>Robbins 2005, p 168-171</p></li></ol></aside></section>
 <section id="organize-reduce-clutter" class="slide level2">
 <h2>Organize: reduce clutter</h2>
 <ul>
 <li>Reduce interior clutter<sup>1</sup> in grids, ticks, labels</li>
 </ul>
-<div class="absolute" style="top: 30%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 4%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -913,7 +919,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<div class="absolute" style="top: 30%; left: 54%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 54%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -924,7 +930,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn18"><p>Robbins 2005, pp 175-183</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn19"><p>Robbins 2005, pp 175-183</p></li></ol></aside></section>
 <section id="integrate-with-context" class="slide level2">
 <h2>Integrate with context</h2>
 <div class="absolute" style="top: 20%; left: 0%; width: 50%; ">
@@ -939,7 +945,7 @@ Curry, Tweedy, Schilling
 <ul>
 <li>Label variables consistent with text<sup>1</sup>, not data abbreviations</li>
 </ul>
-<div class="absolute" style="top: 20%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 10%; width: 100%; ">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>     x   y z
@@ -956,7 +962,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<div class="absolute" style="top: 20%; left: 30%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 30%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -967,13 +973,13 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn19"><p>Robbins 2005, p 193</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn20"><p>Robbins 2005, p 193</p></li></ol></aside></section>
 <section id="context-consistency-in-symbols-default-not-good" class="slide level2">
 <h2>Context: consistency in symbols (default, not good)</h2>
 <ul>
 <li>Use consistent symbology in related visualizations<sup>1</sup></li>
 </ul>
-<div class="absolute" style="top: 30%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 4%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -984,7 +990,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<div class="absolute" style="top: 30%; left: 54%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 54%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -995,13 +1001,13 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn20"><p>Robbins 2005, p 221</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn21"><p>Robbins 2005, p 221</p></li></ol></aside></section>
 <section id="context-consistency-in-symbols-updated" class="slide level2">
 <h2>Context: consistency in symbols (updated)</h2>
 <ul>
 <li>Use consistent symbology in related visualizations<sup>1</sup></li>
 </ul>
-<div class="absolute" style="top: 30%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 4%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1023,24 +1029,24 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn21"><p>Robbins 2005, p 221</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn22"><p>Robbins 2005, p 221</p></li></ol></aside></section>
 <section id="context-labelling" class="slide level2">
 <h2>Context: labelling</h2>
 <ul>
 <li>Label directly on visuals where possible<sup>1</sup></li>
 </ul>
-<div class="absolute" style="top: 20%; left: 4%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 0%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-30-1.png" width="432"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-30-1.png" width="576"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<div class="absolute" style="top: 20%; left: 50%; width: 45%; ">
+<div class="absolute" style="top: 35%; left: 54%; width: 45%; ">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1051,7 +1057,7 @@ Curry, Tweedy, Schilling
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn22"><p>Robbins 2005, p 213</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn23"><p>Robbins 2005, p 213</p></li></ol></aside></section></section>
 <section>
 <section id="ending-activity-10-min" class="title-slide slide level1">
 <h1>Ending activity (10 min)</h1>
