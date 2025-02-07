@@ -433,7 +433,7 @@ tiny_plot + theme_classic() +
 
 
 
-::: {.absolute top="30%" left="4%" width="70%"}
+::: {.absolute top="35%" left="4%" width="70%"}
 ```{r}
 (graph1 <- ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -459,7 +459,7 @@ tiny_plot + theme_classic() +
 
 - Maximum contrast/difference - does it help?
 
-::: {.absolute top="30%" left="4%" width="70%"}
+::: {.absolute top="35%" left="4%" width="70%"}
 ```{r}
 (graph2 <- ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -482,7 +482,7 @@ tiny_plot + theme_classic() +
 
 ## Highlight: effective differences
 
-::: {.absolute top="30%" left="4%" width="70%"}
+::: {.absolute top="35%" left="4%" width="70%"}
 ```{r}
 (graph3 <- ggplot(data = subset_penguins, 
        color = "black",
@@ -509,19 +509,19 @@ tiny_plot + theme_classic() +
 
 - Use smallest^[Tufte, 1997, *Visual Explanations*, Graphics Press] needed contrast
 
-::: {.absolute top="30%" left="4%" width="33%"}
+::: {.absolute top="35%" left="4%" width="33%"}
 ```{r}
 graph1
 ```
 :::
 
-::: {.absolute top="30%" left="34%" width="33%"}
+::: {.absolute top="35%" left="34%" width="33%"}
 ```{r}
 graph2
 ```
 :::
 
-::: {.absolute top="30%" left="64%" width="33%"}
+::: {.absolute top="35%" left="64%" width="33%"}
 ```{r}
 graph3
 ```
@@ -712,11 +712,11 @@ ggplot(data = subset_penguins,
 
 ## Integrate with context
 
-::: {.absolute top="20%" left="0%" width="50%"}
+::: {.absolute top="35%" left="0%" width="50%"}
 ![](images/nervous_dog.png)
 :::
 
-::: {.absolute top="20%" left="55%" width="50%"}
+::: {.absolute top="35%" left="55%" width="50%"}
 ![](images/nervous_dog_context.jpg)
 :::
 
@@ -815,7 +815,7 @@ ggplot(data = palmerpenguins::penguins,
   
 :::
   
-::: {.absolute top="30%" left="54%" width="45%"}             
+::: {.absolute top="35%" left="54%" width="45%"}             
 ```{r}
 ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie",],
        mapping = aes(x = body_mass_g,
@@ -905,15 +905,19 @@ tiny_plot +
 ## A possibility
 
 ::: {.absolute top="15%" left="60%" width="55%"}
-- Are all revelant variables included?  no effect size
-- Do I need more than one visual?  yes
-- Make lines thicker, add shapes to show actual data points
-- Make proportionally accurate x-axis
-- Highlight the four important frequencies more
-- Comparisons - switch so treatments clearer
-- Organize - small multiples
-- Label variables better
-- Integrate with text and other figures (add sparrow picture)
+- Goals 
+  - Effect size not reported
+- Highlight
+  - Make lines thicker, add shapes at data
+  - Highlight relevant frequencies
+- Organize
+  - Small multiples for effect sizes
+  - Make comparisons clearer with heat map
+- Context
+  - Label variables 
+  - Make proportionally accurate x-axis
+  - Integrate with text via images
+
 :::
 
 ::: {.absolute top="10%" left="-10%" width="70%"}
