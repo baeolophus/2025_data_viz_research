@@ -1,7 +1,7 @@
 ---
 title: "Survival Skills: Concepts of Data-Driven Visualization"
-subtitle: "OU Libraries"
-author: "CM Curry, B Tweedy, A Schilling"
+subtitle: "University of Oklahoma Libraries"
+# author: "CM Curry, B Tweedy, A Schilling"
 format: 
   revealjs:
     logo: logo.png
@@ -170,6 +170,12 @@ ggplot(data = subset_penguins,
   - Searching in captions in some databases.
 - Check your journal style guide if submitting manuscript
 
+::: {.absolute top="35%" left="4%" width="40%"}
+
+![](images/cat_struggles_with_academic_book.jpg)
+
+:::
+
 
 ## Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
 
@@ -199,8 +205,8 @@ ggplot(data = subset_penguins,
 :::
 
 
-::: {.absolute top="10%" left="40%" width="60%"}
-![](images/cat_struggles_with_academic_book.jpg)
+::: {.absolute top="30%" left="25%" width="40%"}
+!["How your email finds me"](images/overwhelmed_cat.jpg)
 :::
 
 ## Presentation, accessible, usable, understandable^[Kirk, 2019]
@@ -352,7 +358,15 @@ ggplot(data = length_data,
 - Area
 - Volume
 - Color hue - color saturation - density
-    
+
+::: {.absolute top="50%" left="04%" width="25%"}
+![](images/pie_angles.JPG)
+:::
+
+::: {.absolute top="50%" left="44%" width="30%"}
+![](images/pie_angles_confuse.JPG)
+
+:::
 
 ## When in doubt
 
@@ -360,6 +374,15 @@ ggplot(data = length_data,
 - Use more than one aspect for redundancy
   - For example, use both shape and color
 
+
+::: {.absolute top="35%" left="04%" width="25%"}
+![](images/one_grouping.JPG)
+:::
+
+::: {.absolute top="35%" left="44%" width="28%"}
+![](images/two_groupings.JPG)
+
+:::
 
 
 # Design: **How** to communicate your message
@@ -763,7 +786,9 @@ ggplot(data = palmerpenguins::penguins,
                                "#B2DF8A"))+
   scale_shape_manual(values = c(15,16,17))+
   theme(text = element_text(size = 24),
-       legend.position="none") 
+       legend.position="none")+
+  labs(x = "Penguin bill depth (mm)",
+       y = "Penguin bill length (mm)")
 
 ```
 :::
@@ -781,7 +806,9 @@ ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie
                                "#1F78B4"))+
   scale_shape_manual(values = c(16,17))+
   theme(text = element_text(size = 24),
-       legend.position="none") 
+       legend.position="none") +
+  labs(x = "Penguin body mass (g)",
+       y = "Penguin flipper length (mm)")
 
 
 
@@ -808,7 +835,9 @@ ggplot(data = palmerpenguins::penguins,
                                "#B2DF8A"))+
   scale_shape_manual(values = c(15,16,17))+
   theme(text = element_text(size = 24),
-       legend.position="none") 
+       legend.position="none") +
+  labs(x = "Penguin bill depth (mm)",
+       y = "Penguin bill length (mm)")
 
 ```
   
@@ -828,7 +857,10 @@ ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie
                                "#B2DF8A"))+
   scale_shape_manual(values = c(16,17))+
   theme(text = element_text(size = 24),
-       legend.position="none") 
+       legend.position="none") +
+  labs(x = "Penguin body mass (g)",
+       y = "Penguin flipper length (mm)")
+
 
 
 ```
@@ -868,9 +900,9 @@ tiny_plot +
 
 
 
-# Ending activity (10 min)
+# Ending activity
 
-## Work on your original graph
+## Think about the original graph
 
 ::: {.absolute top="10%" left="-10%" width="90%"}
 
@@ -902,7 +934,7 @@ tiny_plot +
 
 :::
 
-## A possibility
+## Some possibilities
 
 ::: {.absolute top="15%" left="60%" width="55%"}
 - Goals 
@@ -972,8 +1004,20 @@ freq_line_plot <- ggplot(data = long_graphingdata,
 group1 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
 group2 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
 combinations <- expand.grid(group1 = group1, group2  = group2)
-combinations$effsize <- c(NA, 2.5, 2.1, 1.2,
-                          NA, NA, 0.1, 0.75,
+combinations$effsize4k <- c(NA, 2.5, 2.1, 1.2,
+                          NA, NA, 0.16, 0.05,
+                          NA, NA, NA, 0.5,
+                          NA, NA, NA, NA)
+combinations$effsize5k <- c(NA, 2.5, 2.1, 1.2,
+                          NA, NA, 0.16, 0.15,
+                          NA, NA, NA, 0.5,
+                          NA, NA, NA, NA)
+combinations$effsize6k <- c(NA, 2.5, 2.1, 1.2,
+                          NA, NA, 0.16, 0.75,
+                          NA, NA, NA, 0.5,
+                          NA, NA, NA, NA)
+combinations$effsize8k <- c(NA, 2.5, .8, 1.2,
+                          NA, NA, 0.1, 0.15,
                           NA, NA, NA, 0.5,
                           NA, NA, NA, NA)
 combinations$pvalues <- c(NA, 0.01, 0.001, 0.02,
@@ -1011,7 +1055,7 @@ heatmaps1 <- ggplot(combinations) +
                           size = 20,
                           hjust = "center",
                           vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize4k)) +
     # geom_label(mapping = aes(x = group1, y = group2,
     #                       label = pvalues,
     #                       alpha = 1-pvalues,
@@ -1047,7 +1091,7 @@ heatmaps2 <- ggplot(combinations) +
                           size = 20,
                           hjust = "center",
                           vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize5k)) +
     # geom_label(mapping = aes(x = group1, y = group2,
     #                       label = pvalues,
     #                       alpha = 1-pvalues,
@@ -1083,7 +1127,7 @@ heatmaps3 <- ggplot(combinations) +
                           size = 20,
                           hjust = "center",
                           vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize6k)) +
     # geom_label(mapping = aes(x = group1, y = group2,
     #                       label = pvalues,
     #                       alpha = 1-pvalues,
@@ -1119,7 +1163,7 @@ heatmaps4 <- ggplot(combinations) +
                           size = 20,
                           hjust = "center",
                           vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize)) +
+    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize8k)) +
     # geom_label(mapping = aes(x = group1, y = group2,
     #                       label = pvalues,
     #                       alpha = 1-pvalues,
