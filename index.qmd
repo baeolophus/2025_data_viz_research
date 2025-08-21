@@ -1,7 +1,7 @@
 ---
-title: "Humane Data Visualization"
-subtitle: "An accessibility focused program for scholarship and research"
-author: "Claire M Curry, Ph.D."
+title: "Building community for better data visualization"
+subtitle: "A people-focused, data-driven program for scholarship and research"
+author: "Claire M Curry, Ph.D., candidate for Data Visualization Specialist"
 format: 
   revealjs:
     slide-number: true
@@ -14,12 +14,6 @@ format:
     hash: true
 editor: source
 ---
-
-education/librarianship, research, and
-scholarship
-
-This is the story of what I would do as faculty in data visualization.
-
 ## What is data-driven visualization?
 
 -   Definition: "visual representation and presentation of data to facilitate understanding"
@@ -31,11 +25,9 @@ This is the story of what I would do as faculty in data visualization.
 Kirk, 2019, *Data visualization, a handbook for data driven design, 2nd ed*. Los Angeles: SAGE.
 :::
 
-## How easy is it to fix your graphs?
+# How much work is it to improve a graph?
 
-How many settings to improve this graph to publication quality?
-  
-
+## How many settings to get to publication quality?
 
 ::: {.absolute top="45%" left="4%" width="45%"}
 ```{r}
@@ -234,51 +226,26 @@ ggplot(data = subset_penguins,
 ```
 :::
 
-## Now, think about what's happening in health sciences research right now
+# Now, think about what's happening in health sciences research right now
 
-::: {.absolute top="30%" left="25%" width="40%"}
-!["How your email finds me"](images/overwhelmed_cat.jpg)
+
+## "How your email finds me"
+::: {.absolute top="20%" left="25%" width="60%"}
+!["A gray tabby cat laying face down in the crack between sofa cushions"](images/overwhelmed_cat.jpg)
 :::
 
 ## People don't pay attention until their point of need
 
-- Pouring energy into workshops and promotion that doesn't work [^Inside Higher Ed article recently] because people have a lot going on [Oliver Burkeman book, can't even book]
-- We need workshops, but we need effective workshops
+- Pouring energy into workshops and promotion doesn't work on its own^[https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion] because researchers have limited time and attention
+- We need workshops, but we need effective workshops with long-term changes in behavior
 
 
 # Data-driven research and librarianship to address
 
-- what our researchers already know
-- what gets them to show up
-- how to get the learning to stick
+- What our researchers already know
+- What gets them to show up
+- How to get the learning to stick
 
-
-## What I would bring to this position
-
-- Researcher in life sciences (evolutionary biology and ecology)
-- 7 years of science librarianship and data and stats consultation
-- R, Rshiny
-- Enthusiasm for learning
-  - This workshop is in Quarto
-
-Goal: Helping people get the skills to make an impact in their chosen field
-
-
-
-
-
-## Key tenets of my approach
-
-- Evidence-based learner-centered pedagogy
-- Human relationships and reciprocity
-- Scaling sustainably
-
-
-## Learner centered (The Carpentries pedagogy, disability studies, universal design)
-    - Activation barriers lowering
-    - Reduce "inessential weirdnesses" [^keynote]
-    - People are tired (burnout can’t even book), cognitive load (teaching tech together)
-    - Disability studies: universal design helps [^citation with complaints in common]
 
 ::: {.absolute top="35%" left="4%" width="40%"}
 
@@ -286,59 +253,84 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 :::
 
+## What I would bring to this position
 
-## Human connection and relationships  Creating good relationships post (email citation?)
+- Experience
+  - Trained as researcher in life sciences (evolutionary biology and ecology)
+  - Now, seven years of science librarianship
+- Tools: R, RShiny, more
+- Enthusiasm for learning (example, this presentation is in Quarto)
+- Enthusiasm for connecting people, which makes for a successful librarian-researcher^[Kennedy, Marie R., Kristine R. Brancolini, and David P. Kennedy. 2020. “An Exploratory Study of Accomplished Librarian-Researchers”. Evidence Based Library and Information Practice 15 (1):179-217. https://doi.org/10.18438/eblip29655.]
 
-- Learner centered pedagogy is about making it more than one-way, but it's still pretty one-way
+Goal: Helping people get the skills to make an impact in their chosen field
+
+
+
+# Philosophy
+
+## Key tenets of my approach
+
+- Evidence-based, learner-centered pedagogy
+- Human relationships and reciprocity
+- Scaling sustainably
+
+
+## Learner centered
+- People are tired ^[A.H. Petersen, Can't Even: Why Millenials are the Burnout Generation. Press, Location.] and have limited cognitive load^[G. Wilson, Teaching Tech Together]
+- Universal design helps^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.] and many things we do are just "tradition" or "inessential weirdnesses"^[S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.]
+- Story-based to capture you with actionable items^[Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma, February 28. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.]
+- We need to lower activation barriers lowering^[https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion]
+
+
+
+## Human connection and relationships
+
 - Relationships
-  - Room for vulnerability [data viz example] of lived experience [Milos Savic book]
-  - CORE e-forum: we are afraid to be approachable at the risk of not being taken seriously.^[CORE e-forum 2025]
-  - Social capital to be silly 
+  - Room for vulnerability^[data viz example] of lived experience ^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.]
+  - "We are afraid to be approachable at the risk of not being taken seriously".^[CORE e-forum 2025]
 - Clear boundaries (aka the service model) are kind
   - Privacy in assessment data - really loved the UNMHS privacy page
-- Justice: IRB framework for AI use
+- Justice: IRB framework for AI use^[Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.]
 
 
 
-## Scaling up
+## Scaling in a sustainable way
+
+- "Harm reduction": get biggest, not always easiest, things first^[Shelby, Renee, Shalaleh Rismani, Kathryn Henne, et al. 2023. “Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction.” Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society (New York, NY, USA), AIES ’23, August 29, 723–41. https://doi.org/10.1145/3600211.3604673.]
+- Making sure our offerings meet needs^[Cogito, Ergo Sumana. n.d. “What Should We Stop Doing? (FLOSS Community Metrics Meeting Keynote).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/what-should-we-stop-doing-floss-community-metrics-meeting-keynote/.]
+- Staff burnout and accessibility^[Davis, Nicollette, Mondo Vaden, Marco Seiferle-Valencia, Jess Saldaña, and DeAnn Brame. 2024. “The Library Is NOT for Everyone (Yet): Disability, Accommodations, and Working in Libraries.” College & Research Libraries News 85 (2): 58. https://doi.org/10.5860/crln.85.2.58.]
+
+
+# Scholarly Output
+
+## Taking these three concepts to my proposed program of scholarship
 
 
 "Visual [program] complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data [needs]"^[Few 2021, pg 49]
 
 
 ::: {.absolute top="35%" left="0%" width="45%"}
-![](images/overly_complex_graph_cat.jpg)
+![The workshop we envision at first](images/overly_complex_graph_cat.jpg)
 :::
 
 ::: {.absolute top="35%" left="60%" width="20%"}
-![](images/cleaned_graph_cat.jpg)
+![The workshop the learner needs](images/cleaned_graph_cat.jpg)
 
 :::
 
-## Scaling in a sustainable way
-
-- designed around campus needs and personnel skills/time
-- Evidence-based what shoudl we stop doing (FLOSS keynote Sumana H): just because I really love XYZ doesn't mean people actually want/need it.
-- What's the metric and why should it not be "efficiency" or quantity/dollars
-- "Harm reduction": get biggest things first (evidence synthesis example from my work)
-
-
-# How would these three concepts (pedagogy, relationships, scale) become scholarship?
-
+# Getting started with data and community
 
 ## Workshop development and collaboration
 
-
-- Scaling up the basics in workshops
+- Scaling up the basics in workshops: the datasets and experimental grounds for upcoming ideas
   - Universal design of materials but also on how to implement
   - "Accessibility carpentries": a new program I've wanted to do
-  - Opportunity for collabration with campus Carpentries and CARC
+  - Opportunity for collaboration with campus Carpentries and CARC
     - Listen to campus about needs and problems!
-    - Listen again to both people^[Smoother meetings note] and data
+    - Listen again to both people^[Smoother meetings note] and data^[
+DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications, September 1. https://digitalcommons.unl.edu/libraryscience/446.]
 
-- Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
-  - There is no right answer, there is the right answer for your situation
-  
+## Which is the right cat (workshop)?
 
 ::: {.absolute top="40%" left="4%" width="45%"}
 ![](images/clean_cat_image.png)
@@ -349,136 +341,130 @@ Goal: Helping people get the skills to make an impact in their chosen field
 ![](images/highlight_cat.png)
 :::
   
-  
+
+## Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
+  - There is no right answer, there is the right answer for your situation
+  - So much already exists, don't reinvent the wheel^[FORRT - Framework for Open and Reproducible Research Training. n.d. “FORRT Lesson Plans.” Accessed August 15, 2025. https://forrt.org/lesson-plans/.]
+  - Timeline: 2-4 new workshops a semester until rotating through 5-10 rotating
+
+## Workshop and asynchronous materials design
+- Methods:
+  - Evidence synthesis: what works in other programs and in health education, education to inform our work (2-5 years in)
+  - Text and theme analysis of design and wording choices, objectives 
+  - Attendance and satisfaction metrics... easy to get if worded well
+    - Current work in progress at current institution: LibInsights pathway
+    - Quantitative analysis: conditional inference trees, non-parametric t-tests, contingency tables
+    - What's the metric and why should it not be "efficiency" or quantity/dollars^[]
+  - Case studies^[Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.] and interviews^[Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.]
+
+## Data visualization wall for cross-pollination
+
+- Three potential interactive paths to use it
+  - Do you want to do something that’s an example here on your own data?
+  - Do you want to feature something new?
+  - Are you looking for collaborators?  Facilitating connection (a sort of ideas pollination!)
+- Qualitative case study until long-term (numbers of collaborations, grants)
+- Timeline: year 1
+
+## Potential course: deep dive in health sciences visualizations
+
+- Graduate or upper-level undergraduate: bring your own data
+- Literature searching to find field-appropriate data visualization types
+- Exploring known human perceptions
+- Discipline-specific data visualization in outreach
+- Setting up individual workflows for universal design^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.] in R, Python, Tableau, etc
+- Timeline: year 2 or later
 
 
 
-## Studying skill retention in researcher workflows
-- How much does our training impact people’s actual work products, not just the post-workshop assessment initially?
-- Potential focus questions
-  - what perceived need did this workshop meet?
-  - what were barriers to long-term implementation?  
-  - what worked for long-term implementation?  (how many people get grants because of our services^(Caryn grant))
-  
-::: {.absolute top="35%" left="0%" width="50%"}
+# Research into improvements
+
+## What are the hidden barriers for researchers?
+
+::: {.absolute top="25%" left="0%" width="50%"}
 ![](images/nervous_dog.png)
 :::
 
-::: {.absolute top="35%" left="55%" width="50%"}
+::: {.absolute top="25%" left="55%" width="50%"}
 ![](images/nervous_dog_context.jpg)
 :::
   
-- Methods: IRB, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, Ithaka project, maps project (in progress)
+- Marketing, skill retention, approachability of librarians, accessibility
+
+## Skill retention in researcher workflows
+
+- How much does our training impact people’s actual work products, not just the post-workshop assessment initially?
+  - Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
+
+- Potential focus questions
+  - what perceived need did this workshop meet?  is it what we thought the need was?
+  - what were barriers to long-term retention or use?  
+  - what worked for long-term implementation?  (How many people get grants because of our services?  Win awards?))
+  
+
+- Methods: IRB, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, interviews^[Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.] Ithaka project^[
+Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructure at the Crossroads: Support Needs and Challenges for Universities. Ithaka S+R. https://doi.org/10.18665/sr.316121.], maps project (in progress)
 
 - Funding/logistics
   - Survey cash for incentives
   - Adding on assessment to others' grants to get funding like CAREER grant (research and outreach, has to has an impact on teaching)
 
+- Timeline: first 2-3 years
   
 ## Marketing vs anthropology of workshop descriptions
-aka if you build it, will they actually come? (zoom fatigue vs priorities realignment)
-- Free food/pizza is no longer enough: is the want/need there?  what can make this important enough?
-- Plain language in library services (expand on my past work)
-- What is enough to bring people in?  What tweaks to language work?^[Plain language article]
-- Do we need to know why?  Who on campus could work with?[look up, esp Health outreach people]
-- Health money for workshops?
+- What is enough to bring people in?
+- Focused questions
+  - What tweaks to language work?^[Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.]
+  - Do we need to know why?  Who on campus could work with?^[look up, esp Health outreach people, marketing on main campus, anthropology, or psychology]
+- Funding/logistics:
+  - Health money for workshops?
+- Timeline: first 2-3 years
 
 
-
-## Approachability and social capital in learning
+## Interventions in approachability
 - What helps/impedes people from coming back to us for more help?
   - What interventions get people to follow up?
     - The experiments with writing prompts in classes.  do folks in those workshops come back for more help?
-    - social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
+    - Social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
     - Analysis of “does the asking questions doc” help. 
-  - How, and should, we quantify relationships?  What gets people to listen to us if they don't know they need something.  (if they already know us, are they more likely to come to a thing they're not sure about)
- - Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
+  - How, and should, we quantify relationships?  What gets people to listen to us if they don't know they need something.  (if they already know us, are they more likely to come to a thing they're not sure about^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.])
+- Funding: collaborator with medical folks on what gets people to ask questions of health care professionals
+- Timeline: 2-4 years
 
-
-
-## Case studies: getting to universal design
-- Accessible maps and visualizations (collaboration)
-- Unmet demand: sensory libguide project, experience getting into disability community
-- Current research on unmet needs of disabled students, faculty, staff  mostly research on students, what about others.
-- history of not being listened to, why respond to yet another survey ($ for survey, ??)
-- Money from who?
-
-
-
-## Workshop design analysis
+## Universal design in the library
+- Unmet needs of disabled students, faculty, staff  mostly research on students^[Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.], what about others.^[Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.]
+- Experience:
+  - Sensory libguide and working with GA
 - Methods:
-  - Evidence synthesis: what works in other programs and in health education, education to inform our work
-  - Text and theme analysis of design and wording choices, objectives 
-  - Attendence and satisifcation Metrics... sometimes good, sometimes bad. - Workshop metrics dashboard
-    - Double duty: librarian skills, reporting
-    - Current work in progress at current institution: LibINsights pathway, started for marketing, implementing for attendance metrics
-  - Case studies and interviews [citation for evidence based qualitative] as well as quantitative data based on outliers and typical users.  evidence-based librarianship, assessment literature. 
+  - qualitative interviews and survey free-response
+  - quantitative survey responses
+- Potential issues: history of not being listened to^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.], why respond to yet another survey ($ for survey, ??)
+- Potential collaborators:
+  - Health outreach grants
+  - Campus disability office
+  - Student groups
+- Timeline: year 3-6 (will work better with more established relationships and after hearing more about campus needs)^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.]
 
-
-## AI, you knew it was coming somewhere (or not??)
-- What influences human perceptions of value of AI in the researcher workflow?  Water, labor, skills (identification lab) 
-- Human alternatives (statistics helper, beyond libguides or direct to libguides- what makes them work or not?)
-
-
-## Data visualization wall as a meeting place
-
-- Incorporate data visualization wall as connection node/hub https://hsc.unm.edu/hslic/services/spaces/floor-2/data-visualization-wall.html
-- Three potential interactive paths to use it
-  - Do you want to do something that’s an example here?
-  - Do you want to feature something new?
-  - Are you looking for collaborators?  Facilitating connection (a sort of ideas pollination!)
-
-
+# Collaborations
 
 
 ## Chance favors the prepared data visualization specialist
 
-- Psychology R model
-- Arachnid review
-- Search arXiv (in progress)
-- Adaptive capacity (in progress)
-- Comparing early internet discussion to AI discussion now (in progress)
-- ??? Who knows what here!
-
-
-
-# A connection-focused program for data visualization scholarship
-
-- Let's help our community tell those stories better by equipping them with tools that stick
+- Psychology R model^[Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams [Poster].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.]
+- Arachnid navigation: a narrative review^[Gaffin, Douglas D., and Claire M. Curry. 2020. “Arachnid Navigation – a Review of Classic and Emerging Models.” Journal of Arachnology 48 (1): 1–25. https://doi.org/10.1636/0161-8202-48.1.1.]
+- In progress
+  - Peer-reviewed search arXiv (psychology)
+  - Adaptive capacity: a new review type for conservation (biology)
+  - Comparing early internet discussion to AI discussion now (librarianship)
+- Serendipitous opportunities based on connections and user needs!
 
 
 
 
-## Highlight
-
-Show what you need to show!
-
-::: {.absolute top="20%" left="0%" width="50%"}
-![](images/fancy_gridded_cat.jpg)
-:::
-
-::: {.absolute top="35%" left="55%" width="50%"}
-![](images/highlight_cat.png)
-:::
 
 
-## Organize
+# Building community for better data visualization
 
+Thank you for your time and attention.
 
-- Sometimes they also don't know what they're missing
-::: {.absolute top="60%" left="60%" width="30%"}
-
-![Handout (clickable HTML)](qrcode_osf-handout-html.png)
-
-:::
-
-
-
-::: {.absolute top="40%" left="4%" width="45%"}
-![](images/clean_cat_image.png)
-
-:::
-
-::: {.absolute top="45%" left="49%" width="45%"}
-![](images/highlight_cat.png)
-:::
+Contact: cmcurry@protonmail.com
