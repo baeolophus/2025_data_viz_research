@@ -1,11 +1,9 @@
 ---
-title: "Survival Skills: Concepts of Data-Driven Visualization"
-subtitle: "University of Oklahoma Libraries"
-# author: "CM Curry, B Tweedy, A Schilling"
+title: "Humane Data Visualization"
+subtitle: "An accessibility focused program for scholarship and research"
+author: "Claire M Curry, Ph.D."
 format: 
   revealjs:
-    logo: logo.png
-    # footer: "STEM Services"
     slide-number: true
     #show-notes: separate-page #https://revealjs.com/pdf-export/
     preview-links: true
@@ -17,40 +15,10 @@ format:
 editor: source
 ---
 
+education/librarianship, research, and
+scholarship
 
-# Getting started
-
-## What we will discuss today
-
-- Define visualizations for data
-
-- What, why, and how of data-driven visualizations
-
-  - What: goals of graphing
-
-  - Why: human perception
-
-  - How: design and defaults
-
-- How to get more help
-
-## Ice breakers
-
--   5 min ice breaker activity: A boring fact about yourself
-
-::: notes
-5 min, use this time to let late arrivals settle in.
-
-  - In person
-    - Confirm everyone has at least one person to discuss with (in person) 
-    - Provide paper copies of handouts (in person)
-    - Ice Breaker at table
-
-  - Online
-    - Provide link to handouts (online)
-    - Ask each person to introduce themselves in chat (online) with your preferred professional icebreaker
-    
-:::
+This is the story of what I would do as faculty in data visualization.
 
 ## What is data-driven visualization?
 
@@ -63,69 +31,11 @@ editor: source
 Kirk, 2019, *Data visualization, a handbook for data driven design, 2nd ed*. Los Angeles: SAGE.
 :::
 
-::: notes
-Exploring is often earlier in analysis or for descriptive studies.
-Telling a story is often to supplement or explain a statistical analysis or describe your data.
-:::
+## How easy is it to fix your graphs?
 
-## Consider this visualization (5 min)
+How many settings to improve this graph to publication quality?
+  
 
-::: {.absolute top="10%" left="-10%" width="90%"}
-
-![](images/complex_figure_to_critique.png)
-
-:::
-
-::: {.absolute top="15%" left="70%" width="50%"}
-
--   What variables are included?
-
--   What question could this graph answer?
-
--   What is confusing to you?
-
-:::
-
-::: aside
-
-"Noise source and individual physiology mediate effectiveness of bird songs adjusted to anthropogenic noise", 2018.
-*Scientific Reports* 8:3942.
-
-:::
-
-
-
-## Again, here's what we'll cover about visualizations
-
-- What, why, and how of data-driven visualizations
-
-  - What: goals
-
-  - Why: human perception
-
-  - How: design and defaults
-
-- Lots of new and classic visualization resources!
-
-::: {.absolute top="60%" left="0%" width="30%"}
-
-![Handout (easy print PDF)](qrcode_osf-handout-pdf.png)
-
-:::
-
-::: {.absolute top="60%" left="60%" width="30%"}
-
-![Handout (clickable HTML)](qrcode_osf-handout-html.png)
-
-:::
-
-
-# Goals: What you need the graph to be
-
-## Trustworthy, reasonable, faithful, integrity^[Kirk, 2019]
-
--   Ensure all variables from question are included, aka data density^[Tufte 2001, *The Visual Display of Quantitative Information, 2nd Ed.*, Graphics Press.]
--   Are the relevant summaries and uncertainty shown?^[Wickham, Navarro, Pederson. 2024. Ggplot2: Elegant Graphics for Data Analysis (3e). https://ggplot2-book.org/]
 
 ::: {.absolute top="45%" left="4%" width="45%"}
 ```{r}
@@ -135,23 +45,152 @@ subset_penguins <- palmerpenguins::penguins %>%
   dplyr::filter(species != "Gentoo", year != 2007)
 
 ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +
-  geom_point(size = 8) + 
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic() +
-  theme(text = element_text(size = 24))
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
 
 ```
 :::
 
+## One setting
+
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
 
 ::: {.absolute top="45%" left="54%" width="45%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     color = species, shape = species)) +
-  geom_point(size = 8) + 
+                     shape = species)) +
+  geom_point(size = 4)
+
+```
+:::
+## Two settings
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point(size = 4) + 
+  geom_smooth(method = 'lm')
+
+```
+:::
+
+## Three settings
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point(size = 4) + 
+  geom_smooth(method = 'lm')+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)")
+
+```
+:::
+
+## Four settings
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point(size = 4) + 
+  geom_smooth(method = 'lm')+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic()
+
+```
+:::
+
+## Five settings
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point(size = 4) + 
   geom_smooth(method = 'lm')+
   labs(x = "Penguin weight (g)", 
        y = "Flipper length (mm)") +
@@ -161,14 +200,85 @@ ggplot(data = subset_penguins,
 ```
 :::
 
+## Six settings
+
+And we could still do more to improve.
+
+::: {.absolute top="45%" left="4%" width="45%"}
+```{r}
+library(dplyr)
+library(ggplot2)
+subset_penguins <- palmerpenguins::penguins %>%
+  dplyr::filter(species != "Gentoo", year != 2007)
+
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() 
+
+```
+:::
+
+::: {.absolute top="45%" left="54%" width="45%"}
+```{r}
+ggplot(data = subset_penguins, 
+       mapping = aes(x = body_mass_g, y = flipper_length_mm,
+                     color = species, shape = species)) +
+  geom_point(size = 4) + 
+  geom_smooth(method = 'lm')+
+  labs(x = "Penguin weight (g)", 
+       y = "Flipper length (mm)") +
+  theme_classic()+
+  theme(text = element_text(size = 24))
+
+```
+:::
+
+## Now, think about what's happening in health sciences research right now
+
+::: {.absolute top="30%" left="25%" width="40%"}
+!["How your email finds me"](images/overwhelmed_cat.jpg)
+:::
+
+## People don't pay attention until their point of need
+
+- Pouring energy into workshops and promotion that doesn't work [^Inside Higher Ed article recently] because people have a lot going on [Oliver Burkeman book, can't even book]
+- We need workshops, but we need effective workshops
+
+
+# Data-driven research and librarianship to address
+
+- what our researchers already know
+- what gets them to show up
+- how to get the learning to stick
+
+
+## What I would bring to this position
+
+- Researcher in life sciences (evolutionary biology and ecology)
+- 7 years of science librarianship and data and stats consultation
+- R, Rshiny
+- Enthusiasm for learning
+  - This workshop is in Quarto
+
+Goal: Helping people get the skills to make an impact in their chosen field
 
 
 
-## Where appropriate, follow examples
 
-- What's the common way to present this in your discipline?
-  - Searching in captions in some databases.
-- Check your journal style guide if submitting manuscript
+
+## Key tenets of my approach
+
+- Evidence-based learner-centered pedagogy
+- Human relationships and reciprocity
+- Scaling sustainably
+
+
+## Learner centered (The Carpentries pedagogy, disability studies, universal design)
+    - Activation barriers lowering
+    - Reduce "inessential weirdnesses" [^keynote]
+    - People are tired (burnout can’t even book), cognitive load (teaching tech together)
+    - Disability studies: universal design helps [^citation with complaints in common]
 
 ::: {.absolute top="35%" left="4%" width="40%"}
 
@@ -177,10 +287,58 @@ ggplot(data = subset_penguins,
 :::
 
 
-## Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
+## Human connection and relationships  Creating good relationships post (email citation?)
 
-- There is no right answer, there is the right answer for your situation
-- Graph data more than once to show different aspects
+- Learner centered pedagogy is about making it more than one-way, but it's still pretty one-way
+- Relationships
+  - Room for vulnerability [data viz example] of lived experience [Milos Savic book]
+  - CORE e-forum: we are afraid to be approachable at the risk of not being taken seriously.^[CORE e-forum 2025]
+  - Social capital to be silly 
+- Clear boundaries (aka the service model) are kind
+  - Privacy in assessment data - really loved the UNMHS privacy page
+- Justice: IRB framework for AI use
+
+
+
+## Scaling up
+
+
+"Visual [program] complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data [needs]"^[Few 2021, pg 49]
+
+
+::: {.absolute top="35%" left="0%" width="45%"}
+![](images/overly_complex_graph_cat.jpg)
+:::
+
+::: {.absolute top="35%" left="60%" width="20%"}
+![](images/cleaned_graph_cat.jpg)
+
+:::
+
+## Scaling in a sustainable way
+
+- designed around campus needs and personnel skills/time
+- Evidence-based what shoudl we stop doing (FLOSS keynote Sumana H): just because I really love XYZ doesn't mean people actually want/need it.
+- What's the metric and why should it not be "efficiency" or quantity/dollars
+- "Harm reduction": get biggest things first (evidence synthesis example from my work)
+
+
+# How would these three concepts (pedagogy, relationships, scale) become scholarship?
+
+
+## Workshop development and collaboration
+
+
+- Scaling up the basics in workshops
+  - Universal design of materials but also on how to implement
+  - "Accessibility carpentries": a new program I've wanted to do
+  - Opportunity for collabration with campus Carpentries and CARC
+    - Listen to campus about needs and problems!
+    - Listen again to both people^[Smoother meetings note] and data
+
+- Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
+  - There is no right answer, there is the right answer for your situation
+  
 
 ::: {.absolute top="40%" left="4%" width="45%"}
 ![](images/clean_cat_image.png)
@@ -190,218 +348,105 @@ ggplot(data = subset_penguins,
 ::: {.absolute top="45%" left="49%" width="45%"}
 ![](images/highlight_cat.png)
 :::
+  
+  
 
-# Perception: Why graphs work
 
 
-## But first, your audience/viewer
-
-::: {.absolute top="10%" left="4%" width="200%"}
-
-  - Exhausted
-  - Busy
-  - Indifferent
-
+## Studying skill retention in researcher workflows
+- How much does our training impact people’s actual work products, not just the post-workshop assessment initially?
+- Potential focus questions
+  - what perceived need did this workshop meet?
+  - what were barriers to long-term implementation?  
+  - what worked for long-term implementation?  (how many people get grants because of our services^(Caryn grant))
+  
+::: {.absolute top="35%" left="0%" width="50%"}
+![](images/nervous_dog.png)
 :::
 
-
-::: {.absolute top="30%" left="25%" width="40%"}
-!["How your email finds me"](images/overwhelmed_cat.jpg)
+::: {.absolute top="35%" left="55%" width="50%"}
+![](images/nervous_dog_context.jpg)
 :::
+  
+- Methods: IRB, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, Ithaka project, maps project (in progress)
 
-## Presentation, accessible, usable, understandable^[Kirk, 2019]
+- Funding/logistics
+  - Survey cash for incentives
+  - Adding on assessment to others' grants to get funding like CAREER grant (research and outreach, has to has an impact on teaching)
 
-- Visual patterns as an augment to working memory limitations of humans^[Few, 2021, *Now You See It: an introduction to visual data sensemaking*.  El Dorado Hills: Analytics Press. page 52]
-
-
-::: {.absolute top="35%" left="4%" width="100%"}
-```{r}
-#| attr-output: "style='font-size: 1em'"
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-library(ggplot2)
-
-tiny_data <- data.frame(x = c(0,2,3,4,6,2.5,3,3.5,4,6),
-                        y = c(0.5,1,1,2,1.5,2,3,4,5,6),
-                        z = c(rep("c", 5), rep("t", 5)),
-                        a = c(1:10),
-                        b = c(2,5,7,1,6,8,2,1,6,7),
-                        c = c(3,2,3,1,4,2,3,1,4,1))
-
-print(tiny_data[,1:3])
-
-```
-:::
-
-::: {.absolute top="35%" left="35%" width="50%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-
-(tiny_plot <- ggplot(data = tiny_data, 
-       mapping = aes(x = x,
-                     y = y,
-                     linetype = z)) +
-  geom_line(size = 5) + 
-  labs(x = "Time (s)", 
-       y = "Volume (mL)",
-       linetype = "Treatment")) +
-  theme_classic()+
-  theme(text = element_text(size = 24))
-
-```
-:::
+  
+## Marketing vs anthropology of workshop descriptions
+aka if you build it, will they actually come? (zoom fatigue vs priorities realignment)
+- Free food/pizza is no longer enough: is the want/need there?  what can make this important enough?
+- Plain language in library services (expand on my past work)
+- What is enough to bring people in?  What tweaks to language work?^[Plain language article]
+- Do we need to know why?  Who on campus could work with?[look up, esp Health outreach people]
+- Health money for workshops?
 
 
 
+## Approachability and social capital in learning
+- What helps/impedes people from coming back to us for more help?
+  - What interventions get people to follow up?
+    - The experiments with writing prompts in classes.  do folks in those workshops come back for more help?
+    - social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
+    - Analysis of “does the asking questions doc” help. 
+  - How, and should, we quantify relationships?  What gets people to listen to us if they don't know they need something.  (if they already know us, are they more likely to come to a thing they're not sure about)
+ - Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
 
 
 
-## Limits of "typical" human perception
-
-
-::: {.r-fit-text}
-
-- Universal design
-  - Size of visualization elements (text, symbols, lines)
-- Perceptual accuracy and "ordered elementary tasks"^[Robbins, 2005, *Creating More Effective Graphs*. Hoboken, NJ: Wiley-Interscience.]
-
-:::
-
-
-## Top three "perceptually accurate representations"
-
-1. Position along a common scale (common baseline)
-
-::: {.absolute top="30%" left="0%" width="80%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-library(ggplot2)
-
-ggplot(data = palmerpenguins::penguins, 
-       mapping = aes(x = bill_length_mm,
-                     y = flipper_length_mm, 
-                     linetype = species))+
-  geom_smooth(method = "lm", size = 2) + 
-  labs(x = "Bill length (mm)", 
-       y = "Flipper length (mm)") +
-  guides(linetype = "none")+
-  theme_classic()+
-  theme(text = element_text(size = 24))
-
-
-```
-:::
-
-
-## Top three "perceptually accurate representations"
-
-2. Position along identical, non-aligned scales (small multiples^[Tufte, 1990, *Envisioning Information*, Graphics Press.])
-
-::: {.absolute top="30%" left="0%" width="80%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-
-ggplot(data = palmerpenguins::penguins, 
-       mapping = aes(x = bill_length_mm,
-                     y = bill_depth_mm,
-                     shape = species))+
-  geom_point() + 
-  facet_wrap(species ~ .)+
-  labs(x = "Bill length (mm)", 
-       y = "Bill depth (mm)") +
-  guides(shape = "none")+
-  theme_classic()+
-  theme(text = element_text(size = 24))
-
-```
-:::
-
-## Top three "perceptually accurate representations"
-3. Length - both figures have a 1 "unit" difference
-
-
-::: {.absolute top="35%" left="0%" width="100%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all', fig.height = 3, fig.width = 10}
-
-length_data <- data.frame(x = c(4, 5, 4, 6, 2, 88, 2, 87),
-                          y = c(1, 1, 2, 2, 1, 1, 2, 2),
-                          line = c("line1", "line1",
-                                   "line2", "line2",
-                                   "line3", "line3",
-                                   "line4", "line4"),
-                          panel = c(rep("Proportionately large difference", 4),
-                                    rep("Proportionately small difference", 4)))
-
-ggplot(data = length_data,
-       mapping = aes(x = x,
-                     y = y, group = line))+
-  geom_line() +
-  facet_wrap(panel ~ ., scale = "free") +
-  theme_classic() +
-  theme(axis.text = element_text(size = 20),
-        axis.title = element_text(size = 25),
-        axis.title.y = element_text(angle = 0,
-                                    vjust = 0.5),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank())+
-  ylim(0,3) +
-  labs(x = "",
-       y = "")
-
-```
-:::
+## Case studies: getting to universal design
+- Accessible maps and visualizations (collaboration)
+- Unmet demand: sensory libguide project, experience getting into disability community
+- Current research on unmet needs of disabled students, faculty, staff  mostly research on students, what about others.
+- history of not being listened to, why respond to yet another survey ($ for survey, ??)
+- Money from who?
 
 
 
-## More difficult to judge^[Robbins 2005, pg 61]
-
-- Angle/slope
-  - We can do slopes, but not angles (this is part of why pie charts difficult)
-- Area
-- Volume
-- Color hue - color saturation - density
-
-::: {.absolute top="50%" left="04%" width="25%"}
-![](images/pie_angles.JPG)
-:::
-
-::: {.absolute top="50%" left="44%" width="30%"}
-![](images/pie_angles_confuse.JPG)
-
-:::
-
-## When in doubt
-
-- Choose the principle least likely to mislead^[Robbins 2005, pg 224]
-- Use more than one aspect for redundancy
-  - For example, use both shape and color
+## Workshop design analysis
+- Methods:
+  - Evidence synthesis: what works in other programs and in health education, education to inform our work
+  - Text and theme analysis of design and wording choices, objectives 
+  - Attendence and satisifcation Metrics... sometimes good, sometimes bad. - Workshop metrics dashboard
+    - Double duty: librarian skills, reporting
+    - Current work in progress at current institution: LibINsights pathway, started for marketing, implementing for attendance metrics
+  - Case studies and interviews [citation for evidence based qualitative] as well as quantitative data based on outliers and typical users.  evidence-based librarianship, assessment literature. 
 
 
-::: {.absolute top="35%" left="04%" width="25%"}
-![](images/one_grouping.JPG)
-:::
-
-::: {.absolute top="35%" left="44%" width="28%"}
-![](images/two_groupings.JPG)
-
-:::
+## AI, you knew it was coming somewhere (or not??)
+- What influences human perceptions of value of AI in the researcher workflow?  Water, labor, skills (identification lab) 
+- Human alternatives (statistics helper, beyond libguides or direct to libguides- what makes them work or not?)
 
 
-# Design: **How** to communicate your message
+## Data visualization wall as a meeting place
 
-## Consider location of audience
-- Paper, screen, projected
-- Not all minds or eyes work the same - universal design
-- Make changes to tell your story more clearly^[Kirk 2019, pg 33]
-  - Program defaults usually not great
-  - Learn how to save settings for graphs in code
+- Incorporate data visualization wall as connection node/hub https://hsc.unm.edu/hslic/services/spaces/floor-2/data-visualization-wall.html
+- Three potential interactive paths to use it
+  - Do you want to do something that’s an example here?
+  - Do you want to feature something new?
+  - Are you looking for collaborators?  Facilitating connection (a sort of ideas pollination!)
 
-![](/images/sun_in_eyes.jpg)
 
-## What actions to take?
-- Three ways to design systematically^[Few, 2012. *Show me the numbers: designing tables and graphs to enlighten, 2nd ed*. Burlingame, CA: Analytics Press.]
 
-  - Highlight
-  - Organize
-  - "Integrate text" (context)
+
+## Chance favors the prepared data visualization specialist
+
+- Psychology R model
+- Arachnid review
+- Search arXiv (in progress)
+- Adaptive capacity (in progress)
+- Comparing early internet discussion to AI discussion now (in progress)
+- ??? Who knows what here!
+
+
+
+# A connection-focused program for data visualization scholarship
+
+- Let's help our community tell those stories better by equipping them with tools that stick
+
+
 
 
 ## Highlight
@@ -417,808 +462,23 @@ Show what you need to show!
 :::
 
 
-## Highlight: make data obvious
-
-- Make data visually prominent^[Robbins 2005, pg 163]
-
-
-::: {.absolute top="35%" left="5%" width="50%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-
-ggplot(data = tiny_data, 
-       mapping = aes(x = x,
-                     y = y, 
-                     linetype = z)) +
-  geom_line() + 
-  labs(x = "Time (s)", 
-       y = "Volume (mL)",
-       title = "Default ggplot2")+
-  theme(text = element_text(size = 24),
-        legend.position="none")
-
-```
-:::
-
-::: {.absolute top="35%" left="45%" width="50%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-
-tiny_plot + theme_classic() + 
-  theme(text = element_text(size = 24),
-       legend.position="none") +
-  labs(title = "Settings updated")
-
-```
-:::
-
-
-
-## Highlight: effective differences
-
-
-
-::: {.absolute top="35%" left="4%" width="70%"}
-```{r}
-(graph1 <- ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     fill = species, shape = species)) +
-  geom_point(size = 5) + 
-  geom_smooth(method = 'lm', color = "black")+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic() +
-  scale_fill_manual(values = c("black",
-                                "black"))+
-  
-  scale_shape_manual(values = c(21,23)) + 
-  theme(text = element_text(size = 24),
-       legend.position="none")
-)
-
-```
-:::
-
-
-## Highlight: effective differences
-
-- Maximum contrast/difference - does it help?
-
-::: {.absolute top="35%" left="4%" width="70%"}
-```{r}
-(graph2 <- ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     fill = species, shape = species)) +
-  geom_point(size = 5) + 
-  geom_smooth(method = 'lm', color = "black")+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic() +
-  scale_fill_manual(values = c("black",
-                               "gray95"))+
-  
-  scale_shape_manual(values = c(21,23)) + 
-  theme(text = element_text(size = 24),
-       legend.position="none")
-)
-
-```
-:::
-
-## Highlight: effective differences
-
-::: {.absolute top="35%" left="4%" width="70%"}
-```{r}
-(graph3 <- ggplot(data = subset_penguins, 
-       color = "black",
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     fill = species, shape = species)) +
-  geom_point(size = 5) + 
-  geom_smooth(method = 'lm', mapping = (aes(color = species)))+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic() +
-  scale_color_manual(values = c("black", "darkgray"))+
-  scale_fill_manual(values = c("black",
-                               "darkgray"))+
-  
-  scale_shape_manual(values = c(21,23)) + 
-  theme(text = element_text(size = 24),
-       legend.position="none")
-)
-
-```
-:::
-
-## Highlight: effective differences
-
-- Use smallest^[Tufte, 1997, *Visual Explanations*, Graphics Press] needed contrast
-
-::: {.absolute top="35%" left="4%" width="33%"}
-```{r}
-graph1
-```
-:::
-
-::: {.absolute top="35%" left="34%" width="33%"}
-```{r}
-graph2
-```
-:::
-
-::: {.absolute top="35%" left="64%" width="33%"}
-```{r}
-graph3
-```
-:::
-
-## Highlight: calculate before plotting
-
-- Do the work for the viewer^[Robbins 2005, pg 216]
-  - This means plot the variable of interest
-  - Differences, not before and after
-
-::: {.absolute top="35%" left="-5%" width="50%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-
-summary_by_year <- palmerpenguins::penguins %>%
-  group_by(species, year) %>%
-  dplyr::filter(species != "Gentoo", year != 2007) %>%
-  summarize(mean_flips = mean(flipper_length_mm)) %>%
-  arrange(mean_flips)
-
-ggplot(data = summary_by_year, 
-       mapping = aes(x = species, y = mean_flips, fill = as.factor(year))) +
-  geom_col(position = "dodge")+ 
-  labs(x = "Penguin species", y = "Flipper length (mm)",
-       fill = "Year")+
-  theme_classic() + 
-  coord_flip() + 
-  theme(text = element_text(size = 24),
-       legend.position="none")
-
-```
-
-:::
-
-::: {.absolute top="35%" left="45%" width="50%"}
-```{r}
-
-summary_penguin_diffs <- summary_by_year %>%
-  ungroup()%>%
-  pivot_wider(names_from = year, values_from = mean_flips)%>%
-  mutate(diff_flips = `2008`-`2009`)
-
-ggplot(data = summary_penguin_diffs, 
-       mapping = aes(x = species, y = diff_flips)) +
-  geom_point(size = 10) + 
-  ylim(min = -1.5, 0)+
-  labs(x = "Penguin species", 
-       y = "Difference in flipper length (mm) from 2008 to 2009")+
-  theme_classic() +
-  coord_flip() +
-  theme(  panel.grid.major.y = element_line(),
-          text = element_text(size = 24),
-          legend.position="none")
-
-```
-
-:::
-
 ## Organize
 
-"Visual complexity is distracting and should therefore never be employed to a degree that exceeds the actual complexity in the data"^[Few 2021, pg 49]
 
+- Sometimes they also don't know what they're missing
+::: {.absolute top="60%" left="60%" width="30%"}
 
-::: {.absolute top="35%" left="0%" width="45%"}
-![](images/overly_complex_graph_cat.jpg)
-:::
-
-::: {.absolute top="35%" left="60%" width="20%"}
-![](images/cleaned_graph_cat.jpg)
+![Handout (clickable HTML)](qrcode_osf-handout-html.png)
 
 :::
 
 
-## Organize: comparisons
-- Use common baselines wherever possible to make group comparisons^[Robbins 2005, p 207]
 
-::: {.absolute top="35%" left="05%" width="50%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-
-tiny_plot+
-  theme_classic() +
-  theme(text = element_text(size = 24),
-       legend.position="none") +
-  facet_wrap(z ~ ., scales = "free")
-
-```
-
-:::
-::: {.absolute top="35%" left="45%" width="50%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-
-tiny_plot+
-  theme_classic() +
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
+::: {.absolute top="40%" left="4%" width="45%"}
+![](images/clean_cat_image.png)
 
 :::
 
-## Organize: separate overlaps
-- Use small multiples to show otherwise overlapping groups^[Robbins 2005, p 168-171]
-
-::: {.absolute top="35%" left="4%" width="45%"}
-```{r}
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     color = species, shape = island)) +
-  geom_point(size = 10) + 
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)")+
-  theme_classic()+
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
-:::
-
-::: {.absolute top="35%" left="54%" width="45%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g,
-                     y = flipper_length_mm, 
-                     color = species, 
-                     shape = species)) +
-  geom_point(size = 5) + 
-  facet_wrap(island ~ .)+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)")+
-  theme_classic()+
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
-:::
-
-## Organize: reduce clutter
-
-- Reduce interior clutter^[Robbins 2005, pp 175-183] in grids, ticks, labels
-
-::: {.absolute top="35%" left="4%" width="45%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g,
-                     y = flipper_length_mm, 
-                     color = species, 
-                     shape = species)) +
-  geom_point(size = 5) + 
-  facet_wrap(island ~ .)+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)")+
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
-:::
-
-::: {.absolute top="35%" left="54%" width="45%"}
-```{r, echo=FALSE,warning=FALSE,message=FALSE,error=FALSE, results='hide',fig.keep='all'}
-# learning how to position: https://meghan.rbind.io/blog/2022-07-12-making-slides-in-quarto-with-revealjs/#absolute-position
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g,
-                     y = flipper_length_mm, 
-                     color = species, 
-                     shape = species)) +
-  geom_point(size = 5) + 
-  facet_wrap(island ~ .)+
-  labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic()+
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
-:::
-
-
-## Integrate with context
-
-::: {.absolute top="35%" left="0%" width="50%"}
-![](images/nervous_dog.png)
-:::
-
-::: {.absolute top="35%" left="55%" width="50%"}
-![](images/nervous_dog_context.jpg)
-:::
-
-
-
-## Context: consistency with text
-
-- Label variables consistent with text^[Robbins 2005, p 193], not data abbreviations
-
-::: {.absolute top="35%" left="10%" width="100%"}
-```{r}
-print(tiny_data[,1:3])
-```
-:::
-
-::: {.absolute top="35%" left="30%" width="45%"}
-```{r,fig.height=4, fig.width=4.5}
-tiny_plot +
-  theme_classic()+
-  labs(linetype = "Treatment")+
-  theme(text = element_text(size = 24),
-       legend.position="none") 
-
-```
-:::
-
-
-
-## Context: consistency in symbols (default, not good)
-
-- Use consistent symbology in related visualizations^[Robbins 2005, p 221]
-
-::: {.absolute top="35%" left="4%" width="45%"}
-```{r}
-
-ggplot(data = palmerpenguins::penguins,
-       mapping = aes(x = bill_depth_mm,
-                     y = bill_length_mm,
-                     shape = species,
-                     color = species)) + 
-         geom_point(size = 5) +
-    scale_color_manual(values = c("#A6CEE3",
-                               "#1F78B4",
-                               "#B2DF8A"))+
-  scale_shape_manual(values = c(15,16,17))+
-  theme(text = element_text(size = 24),
-       legend.position="none")+
-  labs(x = "Penguin bill depth (mm)",
-       y = "Penguin bill length (mm)")
-
-```
-:::
-
-::: {.absolute top="35%" left="54%" width="45%"}
-
-```{r}
-ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie",],
-       mapping = aes(x = body_mass_g,
-                     y = flipper_length_mm,
-                     shape = species,
-                     color = species)) + 
-         geom_point(size = 5)+
-  scale_color_manual(values = c("#A6CEE3",
-                               "#1F78B4"))+
-  scale_shape_manual(values = c(16,17))+
-  theme(text = element_text(size = 24),
-       legend.position="none") +
-  labs(x = "Penguin body mass (g)",
-       y = "Penguin flipper length (mm)")
-
-
-
-```
-
-:::
-
-
-## Context: consistency in symbols (updated)
-
-- Use consistent symbology in related visualizations^[Robbins 2005, p 221]
-
-::: {.absolute top="35%" left="4%" width="45%"}
-```{r}
-
-ggplot(data = palmerpenguins::penguins,
-       mapping = aes(x = bill_depth_mm,
-                     y = bill_length_mm,
-                     shape = species,
-                     color = species)) + 
-         geom_point(size = 5) +
-  scale_color_manual(values = c("#A6CEE3",
-                               "#1F78B4",
-                               "#B2DF8A"))+
-  scale_shape_manual(values = c(15,16,17))+
-  theme(text = element_text(size = 24),
-       legend.position="none") +
-  labs(x = "Penguin bill depth (mm)",
-       y = "Penguin bill length (mm)")
-
-```
-  
-  
-:::
-  
-::: {.absolute top="35%" left="54%" width="45%"}             
-```{r}
-ggplot(data = palmerpenguins::penguins[palmerpenguins::penguins$species!="Adelie",],
-       mapping = aes(x = body_mass_g,
-                     y = flipper_length_mm,
-                     shape = species,
-                     color = species)) + 
-         geom_point(size = 5) +
-  scale_color_manual(values = c(
-                               "#1F78B4",
-                               "#B2DF8A"))+
-  scale_shape_manual(values = c(16,17))+
-  theme(text = element_text(size = 24),
-       legend.position="none") +
-  labs(x = "Penguin body mass (g)",
-       y = "Penguin flipper length (mm)")
-
-
-
-```
-:::
-
-
-
-
-## Context: labelling
-
-- Label directly on visuals where possible^[Robbins 2005, p 213]
-
-::: {.absolute top="35%" left="0%" width="45%"}
-```{r,fig.height=4, fig.width=6}
-tiny_plot +
-  theme_classic()+
-  labs(linetype = "Treatment")+
-  theme(text = element_text(size = 24)) 
-
-```
-:::
-
-
-
-::: {.absolute top="35%" left="54%" width="45%"}
-```{r,fig.height=4, fig.width=4}
-
-tiny_plot +
-  annotate(geom = "text", x = 2, y = 4, label = "control", size = 8)+
-  annotate(geom = "text", x = 4.75, y = 2.5, label = "treatment", size = 8) +
-  guides(linetype="none") +
-  theme_classic()+
-  theme(text = element_text(size = 24)) 
-
-```
-:::
-
-
-
-# Ending activity
-
-## Think about the original graph
-
-::: {.absolute top="10%" left="-10%" width="90%"}
-
-![](images/complex_figure_to_critique.png)
-
-:::
-
-::: {.absolute top="15%" left="60%" width="50%"}
-
-- What variables are included?
-  - SPL dB(Z)
-  - Frequency (Hz)
-  - Some sort of heat map / intensity
-  - Types of experiments/treatments
-  - Annotation highlights
-
-- What is confusing?
-
-  - What are annotations?
-  - Treatment combinations
-  - x-axis ticks not proportional
-
-:::
-
-::: aside
-
-"Noise source and individual physiology mediate effectiveness of bird songs adjusted to anthropogenic noise", 2018.
-*Scientific Reports* 8:3942.
-
-:::
-
-## Some possibilities
-
-::: {.absolute top="10%" left="60%" width="55%"}
-- Goals 
-  - Effect size not reported
-- Highlight
-  - Make lines thicker, add shapes at data
-  - Highlight relevant frequencies
-- Organize
-  - Small multiples for effect sizes
-  - Make comparisons clearer with heat map
-- Context
-  - Label variables 
-  - Make proportionally accurate x-axis
-  - Integrate with text via images
-
-:::
-
-::: {.absolute top="10%" left="-10%" width="70%"}
-
-```{r, fig.height=5.5, fig.width=8}
-library(ggplot2)
-library(gridExtra)
-# https://stackoverflow.com/a/66220111
-library(png)
-songs <- readPNG(source = "./images/songs.png")
-sparrow <- readPNG(source = "./images/sparrow.png")
-long_graphingdata <- read.csv("example_toy_data.csv")
-
-freq_line_plot <- ggplot(data = long_graphingdata,
-       mapping = aes(x = freq_ex,
-                     y = dbZ,
-                     linetype = treatment,
-                     shape = treatment)) +
-  geom_line() +
-  geom_point()+
-  theme_classic() +
-  # geom_ribbon(mapping = aes(ymin = backgroundlowerCI,
-  #                           ymax = backgroundupperCI),
-  #             alpha = 0.1) +
-  # geom_ribbon(mapping = aes(ymin = playbacklowerCI,
-  #                           ymax = playbackupperCI),
-  #             alpha = 0.1) +
-  # geom_ribbon(mapping = aes(ymin = pumpjacklowerCI,
-  #                           ymax = pumpjackupperCI),
-  #             alpha = 0.1) +
-  # geom_ribbon(mapping = aes(ymin = screwpumplowerCI,
-  #                           ymax = screwpumpupperCI),
-  #             alpha = 0.1)+
-  geom_vline(xintercept=c(4000, 8000)) +
-  annotation_raster(raster = sparrow,
-                    xmin = 4900,
-                    xmax = 7000,
-                    ymin = 50,
-                    ymax = 60) +
-  annotation_raster(raster = songs,
-                    xmin = 4600,
-                    xmax = 7400,
-                    ymin = 62,
-                    ymax = 75) +
-  annotate(geom = "text", x = 15000, y = 15, label = "BG", size = 6) +
-    annotate(geom = "text", x = 15000, y = 26, label = "SP", size = 6) +
-    annotate(geom = "text", x = 18000, y = 30, label = "PJ", size = 6) +
-    annotate(geom = "text", x = 18000, y = 42, label = "DP", size = 6) +
-  xlab("(Simulated) Frequency (Hz), measurements at 1/3 octave intervals")+
-  ylab("(Simulated) SPL at 10 m [dB(Z)]")+
-  guides(
-         shape = "none",
-         linetype = "none")
-
-# Toy data
-# Creating output to look like this effect size function output
-# https://rpkgs.datanovia.com/rstatix/reference/cohens_d.html
-
-group1 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
-group2 <- c("Background", "Drilling Playback", "Pumpjack", "Screwpump")
-combinations <- expand.grid(group1 = group1, group2  = group2)
-combinations$effsize4k <- c(NA, 2.5, 2.1, 1.2,
-                          NA, NA, 0.16, 0.05,
-                          NA, NA, NA, 0.5,
-                          NA, NA, NA, NA)
-combinations$effsize5k <- c(NA, 2.5, 2.1, 1.2,
-                          NA, NA, 0.16, 0.15,
-                          NA, NA, NA, 0.5,
-                          NA, NA, NA, NA)
-combinations$effsize6k <- c(NA, 2.5, 2.1, 1.2,
-                          NA, NA, 0.16, 0.75,
-                          NA, NA, NA, 0.5,
-                          NA, NA, NA, NA)
-combinations$effsize8k <- c(NA, 2.5, .8, 1.2,
-                          NA, NA, 0.1, 0.15,
-                          NA, NA, NA, 0.5,
-                          NA, NA, NA, NA)
-combinations$pvalues <- c(NA, 0.01, 0.001, 0.02,
-                          NA, NA, 1, 1,
-                          NA, NA, NA, 0.02,
-                          NA, NA, NA, NA)
-combinations$group1_n <- c("", "", "", "",
-                          "20", "", "", "",
-                          "22", "22", "", "",
-                          "20", "20", "20", "")
-combinations$group2_n <- c("", "", "", "",
-                          "10", "", "", "",
-                          "10", "19", "", "",
-                          "10", "19", "22", "")
-combinations$treatment_labels <- c("BG", "", "", "",
-                          "", "DP", "", "",
-                          "", "", "PJ", "",
-                          "", "", "", "SP")
- 
-# Heatmap 
-heatmaps1 <- ggplot(combinations) + 
-# 
-#     geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group1_n),
-#                           size = 20,
-#                           hjust = "right",
-#                           vjust = "bottom"))+
-#       geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group2_n),
-#                           size = 20,
-#                           hjust = "left",
-#                           vjust = "top"))+
-        geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(treatment_labels),
-                          size = 20,
-                          hjust = "center",
-                          vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize4k)) +
-    # geom_label(mapping = aes(x = group1, y = group2,
-    #                       label = pvalues,
-    #                       alpha = 1-pvalues,
-    #                       size = 20))+
-  labs(title = "4000 Hz",
-       x = "",
-       y = "") +
-  theme_classic()+
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank())+
-  scale_fill_gradient(high = "gray10",
-                      low = "gray80",
-                      na.value = "transparent")+
-  guides(fill = "none",
-         size = "none",
-         color = "none",
-         alpha = "none")
-
-heatmaps2 <- ggplot(combinations) + 
-# 
-#     geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group1_n),
-#                           size = 20,
-#                           hjust = "right",
-#                           vjust = "bottom"))+
-#       geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group2_n),
-#                           size = 20,
-#                           hjust = "left",
-#                           vjust = "top"))+
-        geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(treatment_labels),
-                          size = 20,
-                          hjust = "center",
-                          vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize5k)) +
-    # geom_label(mapping = aes(x = group1, y = group2,
-    #                       label = pvalues,
-    #                       alpha = 1-pvalues,
-    #                       size = 20))+
-  labs(title = "5000 Hz",
-       x = "",
-       y = "") +
-  theme_classic()+
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank())+
-  scale_fill_gradient(high = "gray10",
-                      low = "gray80",
-                      na.value = "transparent")+
-  guides(fill = "none",
-         size = "none",
-         color = "none",
-         alpha = "none")
-
-heatmaps3 <- ggplot(combinations) + 
-# 
-#     geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group1_n),
-#                           size = 20,
-#                           hjust = "right",
-#                           vjust = "bottom"))+
-#       geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group2_n),
-#                           size = 20,
-#                           hjust = "left",
-#                           vjust = "top"))+
-        geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(treatment_labels),
-                          size = 20,
-                          hjust = "center",
-                          vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize6k)) +
-    # geom_label(mapping = aes(x = group1, y = group2,
-    #                       label = pvalues,
-    #                       alpha = 1-pvalues,
-    #                       size = 20))+
-  labs(title = "6300 Hz",
-       x = "",
-       y = "") +
-  theme_classic()+
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank())+
-  scale_fill_gradient(high = "gray10",
-                      low = "gray80",
-                      na.value = "transparent")+
-  guides(fill = "none",
-         size = "none",
-         color = "none",
-         alpha = "none")
-
-heatmaps4 <- ggplot(combinations) + 
-# 
-#     geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group1_n),
-#                           size = 20,
-#                           hjust = "right",
-#                           vjust = "bottom"))+
-#       geom_text(mapping = aes(x = group1, y = group2,
-#                           label = paste(group2_n),
-#                           size = 20,
-#                           hjust = "left",
-#                           vjust = "top"))+
-        geom_text(mapping = aes(x = group1, y = group2,
-                          label = paste(treatment_labels),
-                          size = 20,
-                          hjust = "center",
-                          vjust = "center"))+
-    geom_tile(mapping = aes(x = group1, y = group2, fill= effsize8k)) +
-    # geom_label(mapping = aes(x = group1, y = group2,
-    #                       label = pvalues,
-    #                       alpha = 1-pvalues,
-    #                       size = 20))+
-  labs(title = "8000 Hz",
-       x = "",
-       y = "") +
-  theme_classic()+
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank())+
-  scale_fill_gradient(high = "gray10",
-                      low = "gray80",
-                      na.value = "transparent")+
-  guides(fill = "none",
-         size = "none",
-         color = "none",
-         alpha = "none")
-
-
-
-grid.arrange(freq_line_plot,
-             arrangeGrob(heatmaps1,
-                         heatmaps2,
-                         heatmaps3,
-                         heatmaps4,
-                         ncol = 4))
-
-
-```
-
-
-:::
-
-
-
-## Get more help
-
-OU Libraries Digital Scholarship and Data Services
-
-- Open office hours (drop in)
-- Schedule an appointment with our contact form
-
-::: {.absolute top="35%" left="04%" width="70%"}
-![[libraries.ou.edu/data](https://libraries.ou.edu/data)](qrcode_dsds.png){fig-align="left"}
-:::
-
-## What did you think?
-
-::: {.absolute top="35%" left="30%" width="70%"}
-![[ou.libwizard.com/f/datasurvey](https://ou.libwizard.com/f/datasurvey)](qrcode_ou-libwizard-com.png){fig-align="left"}
+::: {.absolute top="45%" left="49%" width="45%"}
+![](images/highlight_cat.png)
 :::
