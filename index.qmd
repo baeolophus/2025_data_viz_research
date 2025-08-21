@@ -279,14 +279,14 @@ Goal: Helping people get the skills to make an impact in their chosen field
 - People are tired ^[A.H. Petersen, Can't Even: Why Millenials are the Burnout Generation. Press, Location.] and have limited cognitive load^[G. Wilson, Teaching Tech Together]
 - Universal design helps^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.] and many things we do are just "tradition" or "inessential weirdnesses"^[S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.]
 - Story-based to capture you with actionable items^[Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma, February 28. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.]
-- We need to lower activation barriers lowering^[https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion]
+- We need to lower activation barriers^[Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Accessed July 09, 2025.  Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion]
 
 
 
 ## Human connection and relationships
 
 - Relationships
-  - Room for vulnerability^[data viz example] of lived experience ^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.]
+  - Room for vulnerability^[Curry 2025. Concepts of Data Driven Visualization.  osf.io/] of lived experience ^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.]
   - "We are afraid to be approachable at the risk of not being taken seriously".^[CORE e-forum 2025]
 - Clear boundaries (aka the service model) are kind
   - Privacy in assessment data - really loved the UNMHS privacy page
@@ -323,9 +323,7 @@ Goal: Helping people get the skills to make an impact in their chosen field
 ## Workshop development and collaboration
 
 - Scaling up the basics in workshops: the datasets and experimental grounds for upcoming ideas
-  - Universal design of materials but also on how to implement
-  - "Accessibility carpentries": a new program I've wanted to do
-  - Opportunity for collaboration with campus Carpentries and CARC
+- Opportunity for collaboration with campus Carpentries and CARC
     - Listen to campus about needs and problems!
     - Listen again to both people^[Smoother meetings note] and data^[
 DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications, September 1. https://digitalcommons.unl.edu/libraryscience/446.]
@@ -345,7 +343,7 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 ## Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
   - There is no right answer, there is the right answer for your situation
   - So much already exists, don't reinvent the wheel^[FORRT - Framework for Open and Reproducible Research Training. n.d. “FORRT Lesson Plans.” Accessed August 15, 2025. https://forrt.org/lesson-plans/.]
-  - Timeline: 2-4 new workshops a semester until rotating through 5-10 rotating
+  - Timeline: 2-4 new workshops a semester until rotating up to 10-20 each semester
 
 ## Workshop and asynchronous materials design
 - Methods:
@@ -371,7 +369,7 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 - Graduate or upper-level undergraduate: bring your own data
 - Literature searching to find field-appropriate data visualization types
 - Exploring known human perceptions
-- Discipline-specific data visualization in outreach
+- Discipline-specific data visualization focused on [HSC Institutional Focus Areas](https://hsc.unm.edu/research/centers-programs/)
 - Setting up individual workflows for universal design^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.] in R, Python, Tableau, etc
 - Timeline: year 2 or later
 
@@ -381,15 +379,29 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 
 ## What are the hidden barriers for researchers?
 
-::: {.absolute top="25%" left="0%" width="50%"}
+::: {.absolute top="15%" left="0%" width="50%"}
 ![](images/nervous_dog.png)
 :::
 
-::: {.absolute top="25%" left="55%" width="50%"}
+
+
+
+## What are the hidden barriers for researchers?
+
+::: {.absolute top="15%" left="0%" width="50%"}
+![](images/nervous_dog.png)
+:::
+
+::: {.absolute top="15%" left="55%" width="50%"}
 ![](images/nervous_dog_context.jpg)
 :::
-  
+
+::: {notes}
+
 - Marketing, skill retention, approachability of librarians, accessibility
+
+:::
+
 
 ## Skill retention in researcher workflows
 
@@ -407,8 +419,10 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 
 - Funding/logistics
   - Survey cash for incentives
-  - Adding on assessment to others' grants to get funding like CAREER grant (research and outreach, has to has an impact on teaching)
+  - Adding on assessment/mentorship to [HSC faculty grants such as to PCORI or NIH](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025)
 
+- Potential partners
+  - [Economic Development and Workforce](https://hsc.unm.edu/research/eco-develop/)
 - Timeline: first 2-3 years
   
 ## Marketing vs anthropology of workshop descriptions
@@ -428,21 +442,31 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
     - Social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
     - Analysis of “does the asking questions doc” help. 
   - How, and should, we quantify relationships?  What gets people to listen to us if they don't know they need something.  (if they already know us, are they more likely to come to a thing they're not sure about^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.])
-- Funding: collaborator with medical folks on what gets people to ask questions of health care professionals
+- Funding
+  - collaborator with medical folks on what gets people to ask questions of health care professionals
+  - [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
+  - Career development [(K series NIH grants)](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
 - Timeline: 2-4 years
 
 ## Universal design in the library
-- Unmet needs of disabled students, faculty, staff  mostly research on students^[Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.], what about others.^[Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.]
+- Unmet needs of disabled students^[Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.] and faculty/staff^[Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.]
+- "Accessibility carpentries": a new program I've wanted to do to get Universal Design out ^[“UDL: The UDL Guidelines.” n.d. Accessed May 1, 2024. https://udlguidelines.cast.org/.]
 - Experience:
-  - Sensory libguide and working with GA
+  - Sensory libguide^[https://guides.ou.edu/access]
 - Methods:
   - qualitative interviews and survey free-response
-  - quantitative survey responses
+  - quantitative survey responses^[Stockwell, Kayden M., Zoë S. Robertson, Andrew J. Lampi, Talyn Steinmann, Erline Morgan, and Vikram K. Jaswal. 2025. “‘A System That Wasn’t Really Optimized for Me’: Factors Influencing Autistic University Students’ Access to Information.” Autism in Adulthood 7 (2): 171–84. https://doi.org/10.1089/aut.2023.0139]
+  - Designing outreach a la these UK government posters^[“Dos and Don’ts on Designing for Accessibility – Accessibility in Government.” 2016. September 2. https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/] and Minnesota IT Service^[Minnesota IT Services. n.d. “Implementation Toolkit.” ,. Accessed August 21, 2025. https://mn.gov/mnit/about-mnit/accessibility/accessibility-quick-cards.jsp.]
+
+
+
 - Potential issues: history of not being listened to^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.], why respond to yet another survey ($ for survey, ??)
 - Potential collaborators:
   - Health outreach grants
   - Campus disability office
   - Student groups
+- Potential funding
+  - UNM Foundation Crowdfunding 
 - Timeline: year 3-6 (will work better with more established relationships and after hearing more about campus needs)^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.]
 
 # Collaborations
