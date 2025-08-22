@@ -478,10 +478,14 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 ## Potential funding sources for all these projects
 - UNM Foundation Crowdfunding 
 - [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
-- Career development [(K series NIH grants)](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
-- Adding on assessment/mentorship to [HSC faculty grants such as to PCORI or NIH](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025)
+- Adding on assessment/mentorship to [HSC faculty grants such as to PCORI](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025) or [K series NIH grants](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+
+
+## Potential partners
+- [Supercomputing center](link)
+- Main campus library and extended campus libraries
 - [Economic Development and Workforce](https://hsc.unm.edu/research/eco-develop/)
-  
+- [UNM Statistics Consulting Clinic](https://math.unm.edu/resources/unm-statistics-consulting-clinic)  
   
 ## Chance favors the prepared data visualization specialist
 
