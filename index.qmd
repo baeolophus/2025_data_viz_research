@@ -236,15 +236,12 @@ ggplot(data = subset_penguins,
 
 ## People don't pay attention until their point of need
 
-- Pouring energy into workshops and promotion doesn't work on its own^[https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion] because researchers have limited time and attention
-- We need workshops, but we need effective workshops with long-term changes in behavior
-
+- Pouring energy into workshops and promotion doesn't work on its ownbecause researchers have limited time and attention^[https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion] 
 
 # Data-driven research and librarianship to address
 
-- What our researchers already know
-- What gets them to show up
-- How to get the learning to stick
+- What gets researchers to show up
+- How to get improved workflows to stick
 
 ::: {.absolute top="35%" left="49%" width="40%"}
 
@@ -270,8 +267,8 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 ## Key tenets of my approach
 
-- Evidence-based, learner-centered pedagogy
-- Human relationships and reciprocity
+- Evidence-based, accessible pedagogy
+- Human relationships and connection
 - Scaling sustainably
 
 
@@ -280,16 +277,11 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 ## Learner centered
 - People are tired ^[A.H. Petersen, Can't Even: Why Millenials are the Burnout Generation. Press, Location.] and have limited cognitive load^[G. Wilson, Teaching Tech Together]
-- Universal design helps^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.] and many things we do are just "tradition" or "inessential weirdnesses"^[S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.]
+- Universal design is not optional^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.] and many things we do are just "tradition" or "inessential weirdnesses"^[S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.]
 - Story-based to capture you with actionable items^[Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma, February 28. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.]
 
-## Learner centered = humane
+## Learner centered = humane and accessible
 
-::: {.absolute top="35%" left="4%" width="40%"}
-
-![](images/cat_struggles_with_academic_book.jpg)
-
-:::
 
 - We need to lower activation barriers^[Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Accessed July 09, 2025.  Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion]
 
@@ -302,15 +294,15 @@ Goal: Helping people get the skills to make an impact in their chosen field
   - "We are afraid to be approachable at the risk of not being taken seriously".^[CORE e-forum 2025]
 - Clear boundaries (aka the service model) are kind
   - Privacy in assessment data - really loved the UNMHS privacy page
-- Justice: IRB framework for AI use^[Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.]
-
+- Respect, beneficience, and justice: IRB framework for AI use, but really any interaction^[Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.]
+- Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
 
 
 ## Scaling in a sustainable way
 
-- "Harm reduction": get biggest, not always easiest, things first^[Shelby, Renee, Shalaleh Rismani, Kathryn Henne, et al. 2023. “Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction.” Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society (New York, NY, USA), AIES ’23, August 29, 723–41. https://doi.org/10.1145/3600211.3604673.]
-- Making sure our offerings meet needs^[Cogito, Ergo Sumana. n.d. “What Should We Stop Doing? (FLOSS Community Metrics Meeting Keynote).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/what-should-we-stop-doing-floss-community-metrics-meeting-keynote/.]
-- Staff burnout and accessibility^[Davis, Nicollette, Mondo Vaden, Marco Seiferle-Valencia, Jess Saldaña, and DeAnn Brame. 2024. “The Library Is NOT for Everyone (Yet): Disability, Accommodations, and Working in Libraries.” College & Research Libraries News 85 (2): 58. https://doi.org/10.5860/crln.85.2.58.]
+- Make sure we don't lose our values when we scale up^[Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.]
+- Making sure our offerings meet needs^[Harihareswara, Sumana. 2016.  “What Should We Stop Doing? (FLOSS Community Metrics Meeting Keynote).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/what-should-we-stop-doing-floss-community-metrics-meeting-keynote/.]^[DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications. 446. https://digitalcommons.unl.edu/libraryscience/446.]
+- Staff burnout and health/accessibility^[Davis, Nicollette, Mondo Vaden, Marco Seiferle-Valencia, Jess Saldaña, and DeAnn Brame. 2024. “The Library Is NOT for Everyone (Yet): Disability, Accommodations, and Working in Libraries.” College & Research Libraries News 85 (2): 58. https://doi.org/10.5860/crln.85.2.58.]
 
 
 # Scholarly Output
@@ -332,55 +324,22 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 # Getting started with data and community
 
-## Workshop development and collaboration
+## Workshop and asynchronous materials
 
-- Scaling up the basics in workshops: the datasets and experimental grounds for upcoming ideas
-- Opportunity for collaboration with campus Carpentries and CARC
-    - Listen to campus about needs and problems!
-    - Listen again to both people^[Smoother meetings note] and data^[
-DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications, September 1. https://digitalcommons.unl.edu/libraryscience/446.]
-
-## Which is the right cat (workshop)?
-
-::: {.absolute top="20%" left="4%" width="45%"}
-![](images/clean_cat_image.png)
-
-:::
-
-::: {.absolute top="25%" left="49%" width="45%"}
-![](images/highlight_cat.png)
-:::
-  
-
-## There is no "right" one-size-fits-all workshop!
-- Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
-- There is no right answer, there is the right answer for your situation
-  - So much already exists, don't reinvent the wheel^[FORRT - Framework for Open and Reproducible Research Training. n.d. “FORRT Lesson Plans.” Accessed August 15, 2025. https://forrt.org/lesson-plans/.]
-  - Timeline: 2-4 new workshops a semester until rotating up to 10-20 each semester
-
-## Workshop and asynchronous materials design
+- Scaling up the basics in workshops: the datasets and experimental grounds for more research
 - Methods:
-  - Evidence synthesis: what works in other programs and in health education, education to inform our work (2-5 years in)
-  - Attendance and satisfaction metrics... easy to get if worded well
-    - Current work in progress at current institution: LibInsights pathway
-    - Quantitative analysis: conditional inference trees, non-parametric t-tests, contingency tables
-    - What's the metric and why should it not be "efficiency" or quantity/dollars^[]
+  - Evidence synthesis^[DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications. 446. https://digitalcommons.unl.edu/libraryscience/446.]
+  - Attendance and satisfaction metrics^[Claire Curry, B. Narr 2024.  Marketing - Research Workshops.  Available at: https://oulib-resdata.github.io/metrics/marketing.html]
+    - What's the metric and why should it not necessarily be "efficiency" or quantity/dollars^[Sohl-Dickstein, Jascha. 2022. “Too Much Efficiency Makes Everything Worse: Overfitting and the Strong Version of Goodhart’s Law.” Jascha’s Blog, November 6. http://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html.
+]
+- Timeline: year 1+: 2-4 new workshops a semester until rotating up to 10-20 each semester
 
 
-## Data visualization wall for cross-pollination
-
-- Three potential interactive paths to use it
-  - Do you want to do something that’s an example here on your own data?
-  - Do you want to feature something new?
-  - Are you looking for collaborators?  Facilitating connection (a sort of ideas pollination!)
-- Qualitative case study until long-term (numbers of collaborations, grants)
-- Timeline: year 1
 
 ## Potential course: deep dive in health sciences visualizations
 
-- Graduate or upper-level undergraduate: bring your own data
-- Literature searching to find field-appropriate data visualization types
-- Exploring known human perceptions
+- Graduate or upper-level undergraduate
+- Literature searching to find field-appropriate data visualization types and understand human perceptual abilities
 - Discipline-specific data visualization focused on [HSC Institutional Focus Areas](https://hsc.unm.edu/research/centers-programs/)
 - Setting up individual workflows for universal design^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.] in R, Python, Tableau, etc
 - Timeline: year 2 or later
@@ -411,13 +370,12 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 
 
 
-## Skill retention in researcher workflows: research questions
+## Hidden barriers researcher workflows: research questions
 
 - How much does our training impact people’s actual work products, not just the post-workshop assessment initially?
-  - Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
-
 - Potential focus questions
-  - what perceived need did this workshop meet?  is it what we thought the need was?
+  - What tweaks to language work?
+  - what perceived need did this workshop meet?  is it what we thought the need was?^[Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.]
   - what were barriers to long-term retention or use?  
   - what worked for long-term implementation?  (How many people get grants because of our services?  Win awards?))
   
@@ -427,28 +385,6 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 
 - Timeline: first 2-3 years
   
-## Marketing vs anthropology of workshop descriptions: research questinos
-- What is enough to bring people in?
-- Focused questions
-  - What tweaks to language work?^[Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.]
-
-## Marketing vs anthropolgoy of workshop descriptions: implementation
-- Potential collaborators: Who on campus could work with?^[look up, esp Health outreach people, marketing on main campus, anthropology, or psychology]
-
-- Timeline: first 2-3 years
-
-
-## Interventions in approachability: research questions
-- What helps/impedes people from coming back to us for more help?
-- What interventions get people to follow up?
-- What gets people to listen to us if they don't know they need something?^[there was a citation in non-MLIS paper.])
-
-## Interventions in approachability: implementation
-- Methods (potential interventions)
-    - The experiments with writing prompts in classes.  do folks in those workshops come back for more help?
-    - Social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
-    - Analysis of “does the asking questions doc” help via case study^[Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.] and interviews^[Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.]
-- Timeline: 2-4 years
 
 ## Universal design in the library: scholarship questions
 - Unmet needs of disabled students^[Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.] and faculty/staff^[Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.]
@@ -486,7 +422,17 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 - Main campus library and extended campus libraries
 - [Economic Development and Workforce](https://hsc.unm.edu/research/eco-develop/)
 - [UNM Statistics Consulting Clinic](https://math.unm.edu/resources/unm-statistics-consulting-clinic)  
-  
+
+## Data visualization wall for cross-pollination
+
+- Three potential interactive paths to use it
+  - Do you want to do something that’s an example here on your own data?
+  - Do you want to feature something new?
+  - Are you looking for collaborators?  Facilitating connection (a sort of ideas pollination!)
+- Qualitative case study until long-term (numbers of collaborations, grants)
+- Timeline: year 1
+
+
 ## Chance favors the prepared data visualization specialist
 
 - Psychology R model^[Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams [Poster].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.]
@@ -495,7 +441,7 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
   - Peer-reviewed search arXiv (psychology)
   - Adaptive capacity: a new review type for conservation (biology)
   - Comparing early internet discussion to AI discussion now (librarianship)
-- Serendipitous opportunities based on connections and user needs!
+- Timeline: Serendipitous opportunities based on connections and user needs!
 
 
 
@@ -512,3 +458,20 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 Thank you for your time and attention.
 
 Contact: cmcurry@protonmail.com
+
+
+# Other project ideas (bonus slides)
+
+
+## Interventions in approachability: research questions
+- What helps/impedes people from coming back to us for more help?
+- What interventions get people to follow up?
+- What gets people to listen to us if they don't know they need something?^[there was a citation in non-MLIS paper.])
+
+## Interventions in approachability: implementation
+- Methods (potential interventions)
+    - The experiments with writing prompts in classes.  do folks in those workshops come back for more help?
+    - Social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
+    - Analysis of “does the asking questions doc” help via case study^[Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.] and interviews^[Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.]
+- Timeline: 2-4 years
+
