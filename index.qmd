@@ -231,7 +231,7 @@ ggplot(data = subset_penguins,
 
 ## "How your email finds me"
 ::: {.absolute top="20%" left="25%" width="60%"}
-!["A gray tabby cat laying face down in the crack between sofa cushions"](images/overwhelmed_cat.jpg)
+![A gray tabby cat laying face down in the crack between sofa cushions](images/overwhelmed_cat.jpg)\
 :::
 
 ## People don't pay attention until their point of need
@@ -246,12 +246,12 @@ ggplot(data = subset_penguins,
 - What gets them to show up
 - How to get the learning to stick
 
+::: {.absolute top="35%" left="49%" width="40%"}
 
-::: {.absolute top="35%" left="4%" width="40%"}
-
-![](images/cat_struggles_with_academic_book.jpg)
+![](images/keyboard_cat.jpg)
 
 :::
+
 
 ## What I would bring to this position
 
@@ -275,15 +275,27 @@ Goal: Helping people get the skills to make an impact in their chosen field
 - Scaling sustainably
 
 
+
+
+
 ## Learner centered
 - People are tired ^[A.H. Petersen, Can't Even: Why Millenials are the Burnout Generation. Press, Location.] and have limited cognitive load^[G. Wilson, Teaching Tech Together]
 - Universal design helps^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.] and many things we do are just "tradition" or "inessential weirdnesses"^[S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.]
 - Story-based to capture you with actionable items^[Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma, February 28. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.]
+
+## Learner centered = humane
+
+::: {.absolute top="35%" left="4%" width="40%"}
+
+![](images/cat_struggles_with_academic_book.jpg)
+
+:::
+
 - We need to lower activation barriers^[Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Accessed July 09, 2025.  Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion]
 
 
 
-## Human connection and relationships
+## Connection and relationships
 
 - Relationships
   - Room for vulnerability^[Curry 2025. Concepts of Data Driven Visualization.  osf.io/] of lived experience ^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.]
@@ -310,7 +322,7 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 
 ::: {.absolute top="35%" left="0%" width="45%"}
-![The workshop we envision at first](images/overly_complex_graph_cat.jpg)
+![The workshop we stuff full of ideas](images/overly_complex_graph_cat.jpg)
 :::
 
 ::: {.absolute top="35%" left="60%" width="20%"}
@@ -330,30 +342,30 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 
 ## Which is the right cat (workshop)?
 
-::: {.absolute top="40%" left="4%" width="45%"}
+::: {.absolute top="20%" left="4%" width="45%"}
 ![](images/clean_cat_image.png)
 
 :::
 
-::: {.absolute top="45%" left="49%" width="45%"}
+::: {.absolute top="25%" left="49%" width="45%"}
 ![](images/highlight_cat.png)
 :::
   
 
-## Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
-  - There is no right answer, there is the right answer for your situation
+## There is no "right" one-size-fits-all workshop!
+- Making sure workshops are like visualizations: Possible + useful = relevant^[Kirk, 2019, pg. 130, figure 5.6]
+- There is no right answer, there is the right answer for your situation
   - So much already exists, don't reinvent the wheel^[FORRT - Framework for Open and Reproducible Research Training. n.d. “FORRT Lesson Plans.” Accessed August 15, 2025. https://forrt.org/lesson-plans/.]
   - Timeline: 2-4 new workshops a semester until rotating up to 10-20 each semester
 
 ## Workshop and asynchronous materials design
 - Methods:
   - Evidence synthesis: what works in other programs and in health education, education to inform our work (2-5 years in)
-  - Text and theme analysis of design and wording choices, objectives 
   - Attendance and satisfaction metrics... easy to get if worded well
     - Current work in progress at current institution: LibInsights pathway
     - Quantitative analysis: conditional inference trees, non-parametric t-tests, contingency tables
     - What's the metric and why should it not be "efficiency" or quantity/dollars^[]
-  - Case studies^[Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.] and interviews^[Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.]
+
 
 ## Data visualization wall for cross-pollination
 
@@ -379,7 +391,7 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 
 ## What are the hidden barriers for researchers?
 
-::: {.absolute top="15%" left="0%" width="50%"}
+::: {.absolute top="25%" left="04%" width="50%"}
 ![](images/nervous_dog.png)
 :::
 
@@ -388,22 +400,18 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
 
 ## What are the hidden barriers for researchers?
 
-::: {.absolute top="15%" left="0%" width="50%"}
+::: {.absolute top="25%" left="04%" width="50%"}
 ![](images/nervous_dog.png)
 :::
 
-::: {.absolute top="15%" left="55%" width="50%"}
+::: {.absolute top="25%" left="55%" width="50%"}
 ![](images/nervous_dog_context.jpg)
 :::
 
-::: {notes}
-
-- Marketing, skill retention, approachability of librarians, accessibility
-
-:::
 
 
-## Skill retention in researcher workflows
+
+## Skill retention in researcher workflows: research questions
 
 - How much does our training impact people’s actual work products, not just the post-workshop assessment initially?
   - Who has had their life changed by an HR workshop?  Unlearning series and why that workshop stuck.
@@ -413,65 +421,68 @@ DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Acad
   - what were barriers to long-term retention or use?  
   - what worked for long-term implementation?  (How many people get grants because of our services?  Win awards?))
   
-
-- Methods: IRB, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, interviews^[Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.] Ithaka project^[
+## Skill retention in researcher workflows: implementation
+- Methods: IRB experience, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, interviews^[Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.] Ithaka project^[
 Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructure at the Crossroads: Support Needs and Challenges for Universities. Ithaka S+R. https://doi.org/10.18665/sr.316121.], maps project (in progress)
 
-- Funding/logistics
-  - Survey cash for incentives
-  - Adding on assessment/mentorship to [HSC faculty grants such as to PCORI or NIH](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025)
-
-- Potential partners
-  - [Economic Development and Workforce](https://hsc.unm.edu/research/eco-develop/)
 - Timeline: first 2-3 years
   
-## Marketing vs anthropology of workshop descriptions
+## Marketing vs anthropology of workshop descriptions: research questinos
 - What is enough to bring people in?
 - Focused questions
   - What tweaks to language work?^[Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.]
-  - Do we need to know why?  Who on campus could work with?^[look up, esp Health outreach people, marketing on main campus, anthropology, or psychology]
-- Funding/logistics:
-  - Health money for workshops?
+
+## Marketing vs anthropolgoy of workshop descriptions: implementation
+- Potential collaborators: Who on campus could work with?^[look up, esp Health outreach people, marketing on main campus, anthropology, or psychology]
+
 - Timeline: first 2-3 years
 
 
-## Interventions in approachability
+## Interventions in approachability: research questions
 - What helps/impedes people from coming back to us for more help?
-  - What interventions get people to follow up?
+- What interventions get people to follow up?
+- What gets people to listen to us if they don't know they need something?^[there was a citation in non-MLIS paper.])
+
+## Interventions in approachability: implementation
+- Methods (potential interventions)
     - The experiments with writing prompts in classes.  do folks in those workshops come back for more help?
     - Social annotation as an intervention, maybe shorten doc ???  The syllabus annotation trend.
-    - Analysis of “does the asking questions doc” help. 
-  - How, and should, we quantify relationships?  What gets people to listen to us if they don't know they need something.  (if they already know us, are they more likely to come to a thing they're not sure about^[Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.])
-- Funding
-  - collaborator with medical folks on what gets people to ask questions of health care professionals
-  - [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
-  - Career development [(K series NIH grants)](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+    - Analysis of “does the asking questions doc” help via case study^[Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.] and interviews^[Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.]
 - Timeline: 2-4 years
 
-## Universal design in the library
+## Universal design in the library: scholarship questions
 - Unmet needs of disabled students^[Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.] and faculty/staff^[Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.]
-- "Accessibility carpentries": a new program I've wanted to do to get Universal Design out ^[“UDL: The UDL Guidelines.” n.d. Accessed May 1, 2024. https://udlguidelines.cast.org/.]
 - Experience:
-  - Sensory libguide^[https://guides.ou.edu/access]
+  - New sensory and accessibility libguide^[https://guides.ou.edu/access]
+  
+  
+## Universal design in the library: implementation
+- "Accessibility carpentries"^[“UDL: The UDL Guidelines.” n.d. Accessed May 1, 2024. https://udlguidelines.cast.org/.]
 - Methods:
-  - qualitative interviews and survey free-response
+  - qualitative interviews and survey free-response^["without that detail" citation]
   - quantitative survey responses^[Stockwell, Kayden M., Zoë S. Robertson, Andrew J. Lampi, Talyn Steinmann, Erline Morgan, and Vikram K. Jaswal. 2025. “‘A System That Wasn’t Really Optimized for Me’: Factors Influencing Autistic University Students’ Access to Information.” Autism in Adulthood 7 (2): 171–84. https://doi.org/10.1089/aut.2023.0139]
   - Designing outreach a la these UK government posters^[“Dos and Don’ts on Designing for Accessibility – Accessibility in Government.” 2016. September 2. https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/] and Minnesota IT Service^[Minnesota IT Services. n.d. “Implementation Toolkit.” ,. Accessed August 21, 2025. https://mn.gov/mnit/about-mnit/accessibility/accessibility-quick-cards.jsp.]
 
 
-
-- Potential issues: history of not being listened to^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.], why respond to yet another survey ($ for survey, ??)
+## Universal design in the library: timeline
+- Potential issues: history of not being listened to^[Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.]
 - Potential collaborators:
-  - Health outreach grants
-  - Campus disability office
-  - Student groups
-- Potential funding
-  - UNM Foundation Crowdfunding 
+  - Campus disability office, student groups
+
 - Timeline: year 3-6 (will work better with more established relationships and after hearing more about campus needs)^[Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.]
+
+
 
 # Collaborations
 
-
+## Potential funding sources for all these projects
+- UNM Foundation Crowdfunding 
+- [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
+- Career development [(K series NIH grants)](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+- Adding on assessment/mentorship to [HSC faculty grants such as to PCORI or NIH](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025)
+- [Economic Development and Workforce](https://hsc.unm.edu/research/eco-develop/)
+  
+  
 ## Chance favors the prepared data visualization specialist
 
 - Psychology R model^[Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams [Poster].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.]
@@ -488,6 +499,11 @@ Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructur
 
 
 # Building community for better data visualization
+
+::: {.absolute top="65%" left="10%" width="50%"}
+![A dog and a cat lay near each other on a rug, in community, gazing at the sun.](images/sun_in_eyes.jpg)\
+:::
+
 
 Thank you for your time and attention.
 
