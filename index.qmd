@@ -23,7 +23,7 @@ editor: source
     -   telling a story
 
 ::: aside
-Kirk, 2019, *Data visualization, a handbook for data driven design, 2nd ed*. Los Angeles: SAGE.
+Kirk, Andy. 2019. *Data visualization, a handbook for data driven design, 2nd ed*. Los Angeles, CA: SAGE.
 :::
 
 # How much work is it to improve a graph?
@@ -252,7 +252,6 @@ ggplot(data = subset_penguins,
     -   Trained as researcher in life sciences (evolutionary biology and ecology)
     -   Now, seven years of science librarianship
 -   Tools: R, RShiny, more
--   Enthusiasm for learning
 -   Enthusiasm for connecting people, which makes for a successful librarian-researcher[^2]
 
 [^2]: Kennedy, Marie R., Kristine R. Brancolini, and David P. Kennedy. 2020. “An Exploratory Study of Accomplished Librarian-Researchers”. Evidence Based Library and Information Practice 15 (1):179-217. https://doi.org/10.18438/eblip29655.
@@ -279,22 +278,23 @@ ggplot(data = subset_penguins,
 
 -   Relationships
     -   Respect, beneficence, and justice[^3]
-    -   Room for vulnerability[^4] of lived experience [^5] and sharing experiences
+    -   Room for vulnerability[^4] of lived experience[^5]
 -   Clear boundaries (aka the service model and clear policies) are kind
 
 [^3]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
-[^4]: Curry, Claire M., Beth Tweedy, Mark Laufersweiler, and Amanda Schilling. 2025. "Concepts of Data Driven Visualization Materials."  Available at: osf.io/
+[^4]: Curry, Claire M., Beth Tweedy, and Amanda Schilling. 2025. "Concepts of Data Driven Visualization Materials."  Available at: https://oulib-resdata.github.io/datavis
+
+[^5]: Price, Candice, and Miloš Savić. 2022. *Radical Grace: Essays and Discussions on Teaching*. Norman, OK: 619 Wreath.
 
 
 ## Relationships and connection
 
 -   Approachability
-    -   Lower activation energy to attend[^6]
+    -   Lower the activation energy needed to attend[^6]
     -   Is approachability a lack of seriousness?[^7]
 
 
-[^5]: Price, Candice, and Miloš Savić. 2022. *Radical Grace: Essays and Discussions on Teaching*. Norman, OK: 619 Wreath.
 
 [^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
@@ -302,16 +302,6 @@ ggplot(data = subset_penguins,
 
 
 ## Evidence-based, accessible pedagogy
-
--   People can take on limited cognitive load[^8]
--   Universal design is desperately needed[^9]
-
-[^8]: Wilson, Greg. 2019. *Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.* Boca Raton, FL: CRC Press.
-
-[^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
-
-
-## Evidence-based, accessible pedagogy = learner-centered
 
 -   Many things we do are just "tradition" or "inessential weirdnesses"[^10]
 
@@ -327,13 +317,25 @@ ggplot(data = subset_penguins,
 ![Essentials](images/cleaned_graph_cat.jpg)
 :::
 
+## Evidence-based, accessible pedagogy: implementation
+
+-   People can take on limited cognitive load[^8]
+-   Universal design is desperately needed[^9]
+
+[^8]: Wilson, Greg. 2019. *Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.* Boca Raton, FL: CRC Press.
+
+[^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
+
+
+
+
 ## Scaling in a sustainable way
 
 ::: {.absolute top="20%" left="04%" width="40%"}
 
 -   Make sure we don't lose our values when we scale up[^11]
 -   Making sure our offerings meet needs[^12]
--   Staff burnout and health/accessibility[^13]
+-   Librarian burnout and health (accessibility)[^13]
 
 [^11]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
@@ -359,6 +361,7 @@ ggplot(data = subset_penguins,
 -   Methods:
     -   Attendance and satisfaction metrics[^15]
     -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
+- Timeline: year 1+
 
 [^15]: Curry, Claire M. and B. Narr. 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
 
@@ -374,23 +377,6 @@ ggplot(data = subset_penguins,
 
 :::
 
-## Course: health sciences visualizations
-
-::: {.absolute top="25%" left="35%" width="55%"}
-
--   Graduate or upper-level undergraduate
--   Literature searching to find field-appropriate data visualization types and understand human perceptual abilities
--   Discipline-specific data visualization focused on [HSC Institutional Focus Areas](https://hsc.unm.edu/research/centers-programs/)
--   Setting up individual workflows for universal design[^18] in R, Python, Tableau, etc
--   Timeline: year 2 or later
-
-[^18]: Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.
-
-:::
-
-::: {.absolute top="15%" left="04%" width="30%"}
-![](images/keyboard_cat.jpg)
-:::
 
 # Research into improvements
 
@@ -413,7 +399,6 @@ ggplot(data = subset_penguins,
 ## Hidden barriers to researcher workflows: research questions
 
 -   What changes to workshop descriptions bring in more folks?[^19]
--   What need did this workshop meet?
 -   What were barriers to long-term retention or use?
 -   What is the campus impact of adding these skills?
 
@@ -421,11 +406,10 @@ ggplot(data = subset_penguins,
 
 ## Hidden barriers to researcher workflows: implementation
 
--   Methods and past experience
+-   Methods
   - IRB experience
-  - Quantitative skills
-  - Interview[^20] and qualitative coding[^21]
--   Timeline: first 2-3 years
+  - Quantitative and qualitative (interview[^20], coding[^21]) skills
+-   Timeline: 1-3+ years
 
 [^20]: Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.
 
@@ -590,3 +574,21 @@ Contact: [cmcurry@protonmail.com](mailto:cmcurry@protonmail.com)
 
 :::
 
+
+
+
+## Course: health sciences visualizations
+
+::: {.absolute top="25%" left="35%" width="55%"}
+
+-   Graduate or upper-level undergraduate
+-   Field-appropriate data visualization types
+-   Understand human perceptual abilities
+-   Setting up individual workflows for universal design in R, Python, Tableau, etc
+-   Timeline: year 2 or later
+
+:::
+
+::: {.absolute top="15%" left="04%" width="30%"}
+![](images/keyboard_cat.jpg)
+:::
