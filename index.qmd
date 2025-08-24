@@ -345,18 +345,14 @@ ggplot(data = subset_penguins,
 
 # Getting started with data and community
 
-## Workshop and asynchronous materials
+## Workshop and materials
 
 ::: {.absolute top="15%" left="04%" width="40%"}
 
 -  The datasets and experimental grounds for more research
 -   Methods:
-    -   Evidence synthesis[^14]
     -   Attendance and satisfaction metrics[^15]
-        -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
--   Timeline: year 1+: 2-4 new workshops a semester until rotating up to 10-20 each semester
-
-[^14]: DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications. 446. https://digitalcommons.unl.edu/libraryscience/446.
+    -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
 
 [^15]: Claire Curry, B. Narr 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
 
@@ -366,7 +362,7 @@ ggplot(data = subset_penguins,
 
 :::
 
-::: {.absolute top="15%" left="49%" width="40%"}
+::: {.absolute top="15%" left="60%" width="40%"}
 
 ![graph of attendance metrics](/images/prop_attendance_over_time-1.png)\
 
@@ -374,7 +370,7 @@ ggplot(data = subset_penguins,
 
 ## Course: health sciences visualizations
 
-::: {.absolute top="35%" left="49%" width="40%"}
+::: {.absolute top="25%" left="35%" width="55%"}
 
 -   Graduate or upper-level undergraduate
 -   Literature searching to find field-appropriate data visualization types and understand human perceptual abilities
@@ -386,7 +382,7 @@ ggplot(data = subset_penguins,
 
 :::
 
-::: {.absolute top="35%" left="49%" width="40%"}
+::: {.absolute top="15%" left="04%" width="30%"}
 ![](images/keyboard_cat.jpg)
 :::
 
@@ -410,9 +406,9 @@ ggplot(data = subset_penguins,
 
 ## Hidden barriers to researcher workflows: research questions
 
--   What changes to workshop descriptions bring in more folks?
--   What perceived need did this workshop meet? is it what we thought the need was?[^19]
--   What were barriers to long-term retention or use?\
+-   What changes to workshop descriptions bring in more folks?[^19]
+-   What need did this workshop meet?
+-   What were barriers to long-term retention or use?
 -   What is the campus impact of adding these skills?
 
 [^19]: Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.
@@ -451,12 +447,11 @@ ggplot(data = subset_penguins,
 
 
 
-
-[^22]: Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.
+[^22]: Brunskill, Amelia. 2020. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. College & Research Libraries, 81(5), 768. doi: 10.5860/crl.81.5.768
 
 [^23]: Leigh, Jennifer, Josie Caplehorne, and Sarah Slowe. 2023. “Ableism and Exclusion: Challenging Academic Cultural Norms in Research Communication.” Journal of Research Management and Administration 2 (1): 1. https://doi.org/10.18552/jorma.v2i1.764.
 
-[^24]: Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma, February 28. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.
+[^24]: Groves, Karl. 2024. “I Never Knew a Website Could Hurt Someone.” Conference. Tech Access Oklahoma. https://www.youtube.com/watch?v=pynKRttYlBg&list=PL0gW6noozmWHhAmq_hifHDl3x4Q2Y1RN5&index=3.
 
 [^25]: [guides.ou.edu/access](https://guides.ou.edu/access)
 
@@ -464,19 +459,16 @@ ggplot(data = subset_penguins,
 
 -   "Accessibility Carpentries"[^26]
 -   Methods:
-    -   qualitative interviews and survey free-response[^27]
+    -   qualitative interviews[^37] and survey free-response[^27]
     -   quantitative survey responses[^28]
-    -   Designing outreach a la these UK government posters[^29] and Minnesota IT Service[^30]
 
 [^26]: “UDL: The UDL Guidelines.” n.d. Accessed May 1, 2024. https://udlguidelines.cast.org/.
 
-[^27]: "without that detail" citation
+[^27]: Brunskill, Amelia. 2020. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. College & Research Libraries, 81(5), 768. doi: 10.5860/crl.81.5.768
 
 [^28]: Stockwell, Kayden M., Zoë S. Robertson, Andrew J. Lampi, Talyn Steinmann, Erline Morgan, and Vikram K. Jaswal. 2025. “‘A System That Wasn’t Really Optimized for Me’: Factors Influencing Autistic University Students’ Access to Information.” Autism in Adulthood 7 (2): 171–84. https://doi.org/10.1089/aut.2023.0139
 
-[^29]: “Dos and Don’ts on Designing for Accessibility – Accessibility in Government.” 2016. September 2. https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/
-
-[^30]: Minnesota IT Services. n.d. “Implementation Toolkit.” ,. Accessed August 21, 2025. https://mn.gov/mnit/about-mnit/accessibility/accessibility-quick-cards.jsp.
+[^37]: Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.
 
 ## Universal design in the library: timeline
 
@@ -493,7 +485,7 @@ ggplot(data = subset_penguins,
 
 ## Potential funding sources
 
-::: {.absolute top="30%" left="04%" width="30%"}
+::: {.absolute top="20%" left="04%" width="30%"}
 
 ![A compound microscope with multiple US twenty dollar bills on the stage](/images/funding.jpg)\
 
@@ -502,19 +494,28 @@ ggplot(data = subset_penguins,
 
 -   UNM Foundation Crowdfunding
 -   [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
--   Adding on assessment/mentorship to [HSC faculty grants such as to PCORI](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025) or [K series NIH grants](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+-   Adding on assessment/mentorship to [faculty grants such as PCORI](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025) or [K series NIH grants](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
 
 :::
 
 
-## Potential partners
+## Potential campus partners
+
+::: {.absolute top="15%" left="04%" width="50%"}
 
 -   [Center for Advanced Research Computing](https://carc.unm.edu/news--events/News/fall-23-workshops.html)
 -   [Main campus library and extended campus libraries](https://carc.unm.edu/news--events/News/fall-23-workshops.html)
 -   [Economic Development and Workforce Unit](https://hsc.unm.edu/research/eco-develop/)
--   [UNM Statistics Consulting Clinic](https://math.unm.edu/resources/unm-statistics-consulting-clinic)
+-   [Statistics Consulting Clinic](https://math.unm.edu/resources/unm-statistics-consulting-clinic)
 
-LOGOS
+:::
+
+
+::: {.absolute top="25%" left="65%" width="30%"}
+
+![Red University of New Mexico logo with gray "health sciences" below it](/images/health-sciences-logo-vertical.png)\
+
+:::
 
 ## Data visualization wall
 
@@ -580,22 +581,4 @@ Thank you for your time and attention.
 Contact: [cmcurry@protonmail.com](mailto:cmcurry@protonmail.com)
 
 :::
-# Other project ideas (bonus slides)
 
-## Interventions in approachability: research questions
-
--   What helps/impedes people from coming back to us for more help?
--   What interventions get people to follow up?
--   What gets people to listen to us if they don't know they need something?[^36])
-
-[^36]: there was a citation in non-MLIS paper.
-
-## Interventions in approachability: implementation
-
--   Methods (potential interventions)
-    -   The experiments with writing prompts in classes. do folks in those workshops come back for more help?
-    -   Social annotation of our help guides/pages as an intervention
-    -   Interviews of range of user frequencies/effectiveness[^37]
--   Timeline: 2-4 years
-
-[^37]: Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.
