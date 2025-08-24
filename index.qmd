@@ -345,6 +345,33 @@ ggplot(data = subset_penguins,
 
 # Getting started with data and community
 
+## Data visualization wall
+
+::: {.absolute top="15%" left="04%" width="50%"}
+
+-   Three potential interactive paths
+    -   Do you want to do something that’s an example here on your own data?
+    -   Do you want to feature something new?
+    -   Are you looking for collaborators?
+-   Methods: Qualitative case study[^33] and long-term grant numbers
+
+[^33]: Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.
+
+:::
+
+::: {.absolute top="15%" left="65%" width="30%"}
+
+![A large multi-part screen on a pale wall, with a clear podium to the right. Photo credit: UNM HSC](images/UNM_data-viz-wall.jpg)\
+
+:::
+
+::: {.absolute top="45%" left="65%" width="30%"}
+
+![Loofah gourd flower with two common eastern bumblebees in their yellow flower](images/cross_pollination_bees.jpg)\
+
+:::
+
+
 ## Workshop and materials
 
 ::: {.absolute top="15%" left="04%" width="40%"}
@@ -353,7 +380,6 @@ ggplot(data = subset_penguins,
 -   Methods:
     -   Attendance and satisfaction metrics[^15]
     -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
-- Timeline: year 1+
 
 [^15]: Curry, Claire M. and B. Narr. 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
 
@@ -391,17 +417,16 @@ ggplot(data = subset_penguins,
 ## Hidden barriers to researcher workflows: research questions
 
 -   What changes to workshop descriptions bring in more folks?[^19]
--   What were barriers to long-term retention or use?
+-   What facilitates long-term incorporation of skills?
 -   What is the campus impact of adding these skills?
 
 [^19]: Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.
 
 ## Hidden barriers to researcher workflows: implementation
 
--   Methods
-  - IRB experience
-  - Quantitative and qualitative (interview[^20], coding[^21]) skills
--   Timeline: 1-3+ years
+- IRB and other compliance experience
+- Quantitative and qualitative (interview[^20], coding[^21]) skills
+- Timeline: 1-3+ years
 
 [^20]: Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.
 
@@ -442,11 +467,10 @@ ggplot(data = subset_penguins,
 ## Universal design in the library: implementation
 
 -   "Accessibility Carpentries"[^26]
--   Methods:
-    -   qualitative interviews[^37] and survey free-response[^27]
-    -   quantitative survey responses[^28]
+-   Qualitative interviews[^37] and open-ended survey fields[^27]
+-   Quantitative survey responses[^28]
 
-[^26]: “UDL: The UDL Guidelines.” n.d. Accessed May 1, 2024. https://udlguidelines.cast.org/.
+[^26]: CAST. 2024. "Universal Design for Learning Guidelines version 3.0." Accessed August 24, 2025.  Available at https://udlguidelines.cast.org
 
 [^27]: Brunskill, Amelia. 2020. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. College & Research Libraries, 81(5), 768. doi: 10.5860/crl.81.5.768
 
@@ -456,14 +480,35 @@ ggplot(data = subset_penguins,
 
 ## Universal design in the library: timeline
 
--   Potential issues: history of not being listened to[^31]
+-   Potential issues: history of being ignored, dismissed
 -   Potential collaborators:
     -   Campus disability office, student groups
--   Timeline: year 3-6[^32]
-
-[^31]: Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.
+-   Timeline: year 3-6+[^32]
 
 [^32]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
+
+## Chance favors the prepared data visualization specialist
+
+::: {.absolute top="25%" left="30%" width="80%"}
+
+-   Timeline: Serendipitous opportunities[^35] based on connections and user needs[^34]!
+-   Three in progress now: 
+    -   Peer-reviewed search arXiv (psychology)
+    -   Adaptive capacity: a new review type for conservation (biology)
+    -   Comparing early internet discussion to AI discussion now (librarianship)
+
+
+[^34]: Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams \[Poster\].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.
+
+[^35]: Gaffin, Douglas D., and Claire M. Curry. 2020. “Arachnid Navigation – a Review of Classic and Emerging Models.” Journal of Arachnology 48 (1): 1–25. https://doi.org/10.1636/0161-8202-48.1.1.
+
+:::
+
+::: {.absolute top="30%" left="04%" width="20%"}
+
+![An open rain lily, a flower with six white petals, on a long green stalk. Two small bees are feeding on the flower pollen.](images/rain_lily.jpg)\
+
+:::
 
 # Making this happen
 
@@ -501,55 +546,9 @@ ggplot(data = subset_penguins,
 
 :::
 
-## Data visualization wall
-
-::: {.absolute top="15%" left="04%" width="50%"}
-
--   Three potential interactive paths to use it
-    -   Do you want to do something that’s an example here on your own data?
-    -   Do you want to feature something new?
-    -   Are you looking for collaborators?
--   Methods: Qualitative case study[^33] and long-term numbers
--   Timeline: year 1
-
-[^33]: Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.
-
-:::
-
-::: {.absolute top="15%" left="65%" width="30%"}
-
-![A large multi-part screen on a pale wall, with a clear podium to the right. Photo credit: UNM HSC](images/UNM_data-viz-wall.jpg)\
-
-:::
-
-::: {.absolute top="45%" left="65%" width="30%"}
-
-![Loofah gourd flower with two common eastern bumblebees in their yellow flower](images/cross_pollination_bees.jpg)\
-
-:::
-
-## Chance favors the prepared data visualization specialist
-
-::: {.absolute top="25%" left="30%" width="80%"}
-
--   Timeline: Serendipitous opportunities based on connections and user needs![^34][^35]
--   Three in progress now: 
-    -   Peer-reviewed search arXiv (psychology)
-    -   Adaptive capacity: a new review type for conservation (biology)
-    -   Comparing early internet discussion to AI discussion now (librarianship)
 
 
-[^34]: Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams \[Poster\].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.
 
-[^35]: Gaffin, Douglas D., and Claire M. Curry. 2020. “Arachnid Navigation – a Review of Classic and Emerging Models.” Journal of Arachnology 48 (1): 1–25. https://doi.org/10.1636/0161-8202-48.1.1.
-
-:::
-
-::: {.absolute top="30%" left="04%" width="20%"}
-
-![An open rain lily, a flower with six white petals, on a long green stalk. Two small bees are feeding on the flower pollen.](images/rain_lily.jpg)\
-
-:::
 
 # Let's explore data visualization together!
 
