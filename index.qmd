@@ -293,7 +293,7 @@ ggplot(data = subset_penguins,
 
 [^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
-[^7]: Schiavone, Mary Elizabeth, Tristan M.K. Draper, and Easton Brundage. July 2025.  ""We've GOT to be Sillier": Approachability in Academic Libraries." American Library Association, Core Access and Equity Section e-forum.  Online.
+[^7]: Schiavone, Mary Elizabeth, Tristan M.K. Draper, and Easton Brundage. July 2025.  ""We've GOT to be Sillier": Approachability in Academic Libraries." American Library Association, Core Access and Equity Section e-forum.  Online.  Available at:  https://connect.ala.org/core/discussion/core-e-forum-weve-got-to-be-sillier-approachability-in-academic-libraries-2.
 
 
 ## Evidence-based, accessible pedagogy
