@@ -281,15 +281,20 @@ ggplot(data = subset_penguins,
     -   Respect, beneficence, and justice[^3]
     -   Room for vulnerability[^4] of lived experience [^5] and sharing experiences
 -   Clear boundaries (aka the service model and clear policies) are kind
--   Approachability
-    -   Lower activation energy to attend[^6]
-    -   Is approachability a lack of seriousness?[^7]
 
 [^3]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
 [^4]: Curry, Claire M., Beth Tweedy, Mark Laufersweiler, and Amanda Schilling. 2025. "Concepts of Data Driven Visualization Materials."  Available at: osf.io/
 
-[^5]: Price, Candice, and Miloš Savić. 2022. **Radical Grace: Essays and Discussions on Teaching**. Norman, OK: 619 Wreath.
+
+## Relationships and connection
+
+-   Approachability
+    -   Lower activation energy to attend[^6]
+    -   Is approachability a lack of seriousness?[^7]
+
+
+[^5]: Price, Candice, and Miloš Savić. 2022. *Radical Grace: Essays and Discussions on Teaching*. Norman, OK: 619 Wreath.
 
 [^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
@@ -301,7 +306,7 @@ ggplot(data = subset_penguins,
 -   People can take on limited cognitive load[^8]
 -   Universal design is desperately needed[^9]
 
-[^8]: Wilson, Greg. 2019. **Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.** Boca Raton, FL: CRC Press.
+[^8]: Wilson, Greg. 2019. *Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.* Boca Raton, FL: CRC Press.
 
 [^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
 
