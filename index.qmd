@@ -227,26 +227,26 @@ ggplot(data = subset_penguins,
 ```
 :::
 
-# Now, think about what's happening in health sciences research right now
+# Think about what's happening in health sciences research right now
 
 ## "How your email finds me"
 
-::: {.absolute top="20%" left="0%" width="60%"}
+::: {.absolute top="20%" left="04%" width="60%"}
 ![A gray tabby cat laying face down in the crack between sofa cushions](images/overwhelmed_cat.jpg)\
 :::
 
 ## People don't pay attention until their point of need
 
 -   Pouring energy into workshops and promotion doesn't work on its own[^1]
-
-[^1]: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion
-
-# Data-driven research and librarianship to address
-
 -   What gets researchers to show up
 -   How to get improved workflows to stick
 
+[^1]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
+
+
 ## What I would bring to this position
+
+::: {.absolute top="20%" left="30%" width="70%"}
 
 -   Experience
     -   Trained as researcher in life sciences (evolutionary biology and ecology)
@@ -257,52 +257,63 @@ ggplot(data = subset_penguins,
 
 [^2]: Kennedy, Marie R., Kristine R. Brancolini, and David P. Kennedy. 2020. “An Exploratory Study of Accomplished Librarian-Researchers”. Evidence Based Library and Information Practice 15 (1):179-217. https://doi.org/10.18438/eblip29655.
 
-Goal: Helping people get the skills to make an impact in their chosen field
+:::
 
-![Photo of Claire]()\
+::: {.absolute top="20%" left="04%" width="25%"}
+
+![a hybrid titmouse from my dissertation, held by my hands](/images/dissertation_titmouse.jpg)\
+
+:::
+
+
 
 # Philosophy
 
 ## Key tenets of my approach
 
--   Human relationships and connection
+-   Relationships and connection
 -   Evidence-based, accessible pedagogy
 -   Scaling sustainably
 
-## Connection and relationships
+## Relationships and connection
 
 -   Relationships
-    -   Respect, beneficence, and justice: IRB framework for AI use, but really any interaction[^3]
+    -   Respect, beneficence, and justice[^3]
     -   Room for vulnerability[^4] of lived experience [^5] and sharing experiences
 -   Clear boundaries (aka the service model and clear policies) are kind
 -   Approachability
-    -   Lower activation energy[^6]
+    -   Lower activation energy to attend[^6]
     -   "We are afraid to be approachable at the risk of not being taken seriously".[^7]
 
 [^3]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
-[^4]: Curry 2025. Concepts of Data Driven Visualization. osf.io/
+[^4]: Curry, Claire M., Beth Tweedy, Mark Laufersweiler, and Amanda Schilling. 2025. "Concepts of Data Driven Visualization Materials."  Available at: osf.io/
 
 [^5]: Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.
 
-[^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion
+[^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
 [^7]: CORE e-forum 2025
 
-## Learner centered = humane and accessible
-
-## Learner centered
+## Evidence-based, accessible pedagogy
 
 -   People can take on limited cognitive load[^8]
--   Universal design is not optional[^9] and many things we do are just "tradition" or "inessential weirdnesses"[^10]
+-   Universal design is desperately needed[^9]
 
-[^8]: G. Wilson, Teaching Tech Together
+[^8]: Wilson, Greg. 2019. "Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them." Taylor & Francis.
 
 [^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
 
+
+## Evidence-based, accessible pedagogy = learner-centered
+
+-   Many things we do are just "tradition" or "inessential weirdnesses"[^10]
+
 [^10]: S. Harihareswara. 2016. “Inessential Weirdnesses in Open Source Software (OSCON 2016).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/inessential-weirdnesses-in-open-source-software-oscon-2016/.
 
-::: {.absolute top="35%" left="0%" width="45%"}
+
+
+::: {.absolute top="35%" left="04%" width="45%"}
 ![Tradition](images/overly_complex_graph_cat.jpg)
 :::
 
@@ -311,6 +322,8 @@ Goal: Helping people get the skills to make an impact in their chosen field
 :::
 
 ## Scaling in a sustainable way
+
+::: {.absolute top="20%" left="04%" width="40%"}
 
 -   Make sure we don't lose our values when we scale up[^11]
 -   Making sure our offerings meet needs[^12]
@@ -322,11 +335,21 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 [^13]: Davis, Nicollette, Mondo Vaden, Marco Seiferle-Valencia, Jess Saldaña, and DeAnn Brame. 2024. “The Library Is NOT for Everyone (Yet): Disability, Accommodations, and Working in Libraries.” College & Research Libraries News 85 (2): 58. https://doi.org/10.5860/crln.85.2.58.
 
+:::
+
+::: {.absolute top="15%" left="49%" width="40%"}
+
+![](/images/cat_struggles_with_academic_book.jpg)\
+
+:::
+
 # Getting started with data and community
 
 ## Workshop and asynchronous materials
 
--   Scaling up the basics in workshops: the datasets and experimental grounds for more research
+::: {.absolute top="15%" left="04%" width="40%"}
+
+-  The datasets and experimental grounds for more research
 -   Methods:
     -   Evidence synthesis[^14]
     -   Attendance and satisfaction metrics[^15]
@@ -341,9 +364,17 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 [^17]: Sohl-Dickstein, Jascha. 2022. “Too Much Efficiency Makes Everything Worse: Overfitting and the Strong Version of Goodhart’s Law.” Jascha’s Blog, November 6. http://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html.
 
-![graph of attendance metrics]()\
+:::
+
+::: {.absolute top="15%" left="49%" width="40%"}
+
+![graph of attendance metrics](/images/prop_attendance_over_time-1.png)\
+
+:::
 
 ## Course: health sciences visualizations
+
+::: {.absolute top="35%" left="49%" width="40%"}
 
 -   Graduate or upper-level undergraduate
 -   Literature searching to find field-appropriate data visualization types and understand human perceptual abilities
@@ -352,6 +383,8 @@ Goal: Helping people get the skills to make an impact in their chosen field
 -   Timeline: year 2 or later
 
 [^18]: Byrne-Haber, Shery. 2021. “Giving a Damn about Accessibility: A Candid and Practical Handbook for Designers.” UX Collective, May 18, 1–49.
+
+:::
 
 ::: {.absolute top="35%" left="49%" width="40%"}
 ![](images/keyboard_cat.jpg)
@@ -377,7 +410,7 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 ## Hidden barriers to researcher workflows: research questions
 
--   What tweaks to language work?
+-   What changes to workshop descriptions bring in more folks?
 -   What perceived need did this workshop meet? is it what we thought the need was?[^19]
 -   What were barriers to long-term retention or use?\
 -   What is the campus impact of adding these skills?
@@ -394,12 +427,30 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 [^21]: Ruediger, Dylan, Thea Atwood, Neelam Bharti, et al. 2021. Big Data Infrastructure at the Crossroads: Support Needs and Challenges for Universities. Ithaka S+R. https://doi.org/10.18665/sr.316121.
 
+
+
+## Universal design in the library
+
+
+::: {.absolute top="25%" left="04%" width="50%"}
+![](images/lepidoptera_big.jpg)
+:::
+
+::: {.absolute top="25%" left="55%" width="30%"}
+![](images/lepidoptera_small.jpg)
+:::
+
+
+
 ## Universal design in the library: scholarship questions
 
 -   Unmet needs of disabled students[^22] and faculty/staff[^23]
 -   Go beyond minimums[^24]
 -   Experience:
     -   New sensory and accessibility LibGuide[^25]
+
+
+
 
 [^22]: Brunskill, Amelia. 2021. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. February 10. https://doi.org/10.25417/uic.13807979.v1.
 
@@ -440,11 +491,21 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 # Making this happen
 
-## Potential funding sources for all these projects
+## Potential funding sources
+
+::: {.absolute top="30%" left="04%" width="30%"}
+
+![A compound microscope with multiple US twenty dollar bills on the stage](/images/funding.jpg)\
+
+:::
+::: {.absolute top="30%" left="35%" width="50%"}
 
 -   UNM Foundation Crowdfunding
 -   [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
 -   Adding on assessment/mentorship to [HSC faculty grants such as to PCORI](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025) or [K series NIH grants](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+
+:::
+
 
 ## Potential partners
 
@@ -455,42 +516,70 @@ Goal: Helping people get the skills to make an impact in their chosen field
 
 LOGOS
 
-## Data visualization wall for cross-pollination
+## Data visualization wall
+
+::: {.absolute top="15%" left="04%" width="50%"}
 
 -   Three potential interactive paths to use it
     -   Do you want to do something that’s an example here on your own data?
     -   Do you want to feature something new?
     -   Are you looking for collaborators?
--   Qualitative case study[^33] and until long-term (numbers of collaborations, grants)
+-   Methods: Qualitative case study[^33] and long-term numbers
 -   Timeline: year 1
 
 [^33]: Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.
 
-![data viz wall image from website]()\
-![flower with multiple bees]()\
+:::
+
+::: {.absolute top="15%" left="65%" width="30%"}
+
+![A large multi-part screen on a pale wall, with a clear podium to the right. Photo credit: UNM HSC](/images/UNM_data-viz-wall.jpg)\
+
+:::
+
+::: {.absolute top="45%" left="65%" width="30%"}
+
+![Loofah gourd flower with two common eastern bumblebees in their yellow flower](/images/cross_pollination_bees.jpg)\
+
+:::
 
 ## Chance favors the prepared data visualization specialist
 
--   Psychology R model[^34]
--   Arachnid navigation: a narrative review[^35]
--   In progress
+::: {.absolute top="25%" left="30%" width="80%"}
+
+-   Timeline: Serendipitous opportunities based on connections and user needs![^34][^35]
+-   Three in progress now: 
     -   Peer-reviewed search arXiv (psychology)
     -   Adaptive capacity: a new review type for conservation (biology)
     -   Comparing early internet discussion to AI discussion now (librarianship)
--   Timeline: Serendipitous opportunities based on connections and user needs!
+
 
 [^34]: Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams \[Poster\].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.
 
 [^35]: Gaffin, Douglas D., and Claire M. Curry. 2020. “Arachnid Navigation – a Review of Classic and Emerging Models.” Journal of Arachnology 48 (1): 1–25. https://doi.org/10.1636/0161-8202-48.1.1.
 
-![rain lily photo]()\
+:::
 
-# Building community for better data visualization
+::: {.absolute top="30%" left="04%" width="20%"}
 
+![An open rain lily, a flower with six white petals, on a long green stalk. Two small bees are feeding on the flower pollen.](/images/rain_lily.jpg)\
+
+:::
+
+# Let's explore data visualization together!
+
+::: {.absolute top="30%" left="04%" width="60%"}
+
+![A ground-level view of a german shepherd dog looking ahead on a trail for adventure, with grama grass to the left and a low mountain and junipers in the distance.](/images/dog_explore_black_mesa.jpg)\
+
+:::
+
+::: {.absolute top="70%" left="65%" width="40%"}
 Thank you for your time and attention.
 
-Contact: [cmcurry\@protonmail.com](mailto:cmcurry@protonmail.com)
+Contact: [cmcurry@protonmail.com](mailto:cmcurry@protonmail.com)
 
+:::
 # Other project ideas (bonus slides)
 
 ## Interventions in approachability: research questions
