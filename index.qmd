@@ -291,12 +291,7 @@ ggplot(data = subset_penguins,
 ## Relationships and connection
 
 -   Approachability
-    -   Lower the activation energy needed to attend[^6]
     -   Is approachability a lack of seriousness?[^7]
-
-
-
-[^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
 [^7]: Schiavone, Mary Elizabeth, Tristan M.K. Draper, and Easton Brundage. July 2025.  ""We've GOT to be Sillier": Approachability in Academic Libraries." American Library Association, Core Access and Equity Section e-forum.  Online.  Available at:  https://connect.ala.org/core/discussion/core-e-forum-weve-got-to-be-sillier-approachability-in-academic-libraries-2.
 
@@ -333,11 +328,8 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="20%" left="04%" width="40%"}
 
--   Make sure we don't lose our values when we scale up[^11]
 -   Making sure our offerings meet needs[^12]
 -   Librarian burnout and health (accessibility)[^13]
-
-[^11]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
 [^12]: DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications. 446. https://digitalcommons.unl.edu/libraryscience/446.
 
