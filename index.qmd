@@ -283,24 +283,25 @@ ggplot(data = subset_penguins,
 -   Clear boundaries (aka the service model and clear policies) are kind
 -   Approachability
     -   Lower activation energy to attend[^6]
-    -   "We are afraid to be approachable at the risk of not being taken seriously".[^7]
+    -   Is approachability a lack of seriousness?[^7]
 
 [^3]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
 
 [^4]: Curry, Claire M., Beth Tweedy, Mark Laufersweiler, and Amanda Schilling. 2025. "Concepts of Data Driven Visualization Materials."  Available at: osf.io/
 
-[^5]: Price, Candice, and Miloš Savić. 2022. Radical Grace: Essays and Discussions on Teaching. 619 Wreath.
+[^5]: Price, Candice, and Miloš Savić. 2022. **Radical Grace: Essays and Discussions on Teaching**. Norman, OK: 619 Wreath.
 
 [^6]: Theisinger, Diana. 2025. "One Inaccessible PDF at a Time". Inside Higher Ed. Accessed July 09, 2025. Available at: https://www.insidehighered.com/opinion/views/2025/07/09/essay-faculty-engagement-and-web-accessibility-opinion.
 
-[^7]: CORE e-forum 2025
+[^7]: Schiavone, Mary Elizabeth, Tristan M.K. Draper, and Easton Brundage. July 2025.  ""We've GOT to be Sillier": Approachability in Academic Libraries." American Library Association, Core Access and Equity Section e-forum.  Online.
+
 
 ## Evidence-based, accessible pedagogy
 
 -   People can take on limited cognitive load[^8]
 -   Universal design is desperately needed[^9]
 
-[^8]: Wilson, Greg. 2019. "Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them." Taylor & Francis.
+[^8]: Wilson, Greg. 2019. **Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.** Boca Raton, FL: CRC Press.
 
 [^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
 
@@ -354,7 +355,7 @@ ggplot(data = subset_penguins,
     -   Attendance and satisfaction metrics[^15]
     -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
 
-[^15]: Claire Curry, B. Narr 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
+[^15]: Curry, Claire M. and B. Narr. 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
 
 [^16]: Harihareswara, Sumana. 2016. “What Should We Stop Doing? (FLOSS Community Metrics Meeting Keynote).” Accessed June 10, 2025. https://www.harihareswara.net/posts/2016/what-should-we-stop-doing-floss-community-metrics-meeting-keynote/.
 
@@ -415,8 +416,10 @@ ggplot(data = subset_penguins,
 
 ## Hidden barriers to researcher workflows: implementation
 
--   Methods: IRB experience, quantitative skills, timing (immediate, one month, six month, one year), likert analysis, interviews[^20] Ithaka project[^21], maps project (in progress)
-
+-   Methods and past experience
+  - IRB experience
+  - Quantitative skills
+  - Interview[^20] and qualitative coding[^21]
 -   Timeline: first 2-3 years
 
 [^20]: Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.
@@ -432,13 +435,13 @@ ggplot(data = subset_penguins,
 ![](images/lepidoptera_big.jpg)
 :::
 
-::: {.absolute top="25%" left="55%" width="30%"}
+::: {.absolute top="23%" left="55%" width="30%"}
 ![](images/lepidoptera_small.jpg)
 :::
 
 
 
-## Universal design in the library: scholarship questions
+## Universal design in the library
 
 -   Unmet needs of disabled students[^22] and faculty/staff[^23]
 -   Go beyond minimums[^24]
@@ -493,8 +496,8 @@ ggplot(data = subset_penguins,
 ::: {.absolute top="30%" left="35%" width="50%"}
 
 -   UNM Foundation Crowdfunding
--   [HSC Pilot Funding](https://hsc.unm.edu/research/research-development/funding-resources/internal-funding.html)
--   Adding on assessment/mentorship to [faculty grants such as PCORI](https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2025) or [K series NIH grants](https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts?ac=K01)
+-   HSC Pilot Funding
+-   Adding on assessment/mentorship to faculty grants such as PCORI or K series NIH grants
 
 :::
 
@@ -503,10 +506,10 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="15%" left="04%" width="50%"}
 
--   [Center for Advanced Research Computing](https://carc.unm.edu/news--events/News/fall-23-workshops.html)
--   [Main campus library and extended campus libraries](https://carc.unm.edu/news--events/News/fall-23-workshops.html)
--   [Economic Development and Workforce Unit](https://hsc.unm.edu/research/eco-develop/)
--   [Statistics Consulting Clinic](https://math.unm.edu/resources/unm-statistics-consulting-clinic)
+-   Center for Advanced Research Computing
+-   Main campus library and extended campus libraries
+-   Economic Development and Workforce Unit
+-   Statistics Consulting Clinic
 
 :::
 
