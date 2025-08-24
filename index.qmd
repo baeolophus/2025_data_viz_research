@@ -261,7 +261,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="20%" left="04%" width="25%"}
 
-![a hybrid titmouse from my dissertation, held by my hands](/images/dissertation_titmouse.jpg)\
+![a hybrid titmouse from my dissertation, held by my hands](images/dissertation_titmouse.jpg)\
 
 :::
 
@@ -340,7 +340,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="15%" left="49%" width="40%"}
 
-![](/images/cat_struggles_with_academic_book.jpg)\
+![](images/cat_struggles_with_academic_book.jpg)\
 
 :::
 
@@ -365,7 +365,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="15%" left="60%" width="40%"}
 
-![graph of attendance metrics](/images/prop_attendance_over_time-1.png)\
+![graph of attendance metrics](images/prop_attendance_over_time-1.png)\
 
 :::
 
@@ -490,7 +490,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="20%" left="04%" width="30%"}
 
-![A compound microscope with multiple US twenty dollar bills on the stage](/images/funding.jpg)\
+![A compound microscope with multiple US twenty dollar bills on the stage](images/funding.jpg)\
 
 :::
 ::: {.absolute top="30%" left="35%" width="50%"}
@@ -516,7 +516,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="25%" left="65%" width="30%"}
 
-![Red University of New Mexico logo with gray "health sciences" below it](/images/health-sciences-logo-vertical.png)\
+![Red University of New Mexico logo with gray "health sciences" below it](images/health-sciences-logo-vertical.png)\
 
 :::
 
@@ -537,13 +537,13 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="15%" left="65%" width="30%"}
 
-![A large multi-part screen on a pale wall, with a clear podium to the right. Photo credit: UNM HSC](/images/UNM_data-viz-wall.jpg)\
+![A large multi-part screen on a pale wall, with a clear podium to the right. Photo credit: UNM HSC](images/UNM_data-viz-wall.jpg)\
 
 :::
 
 ::: {.absolute top="45%" left="65%" width="30%"}
 
-![Loofah gourd flower with two common eastern bumblebees in their yellow flower](/images/cross_pollination_bees.jpg)\
+![Loofah gourd flower with two common eastern bumblebees in their yellow flower](images/cross_pollination_bees.jpg)\
 
 :::
 
@@ -566,7 +566,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="30%" left="04%" width="20%"}
 
-![An open rain lily, a flower with six white petals, on a long green stalk. Two small bees are feeding on the flower pollen.](/images/rain_lily.jpg)\
+![An open rain lily, a flower with six white petals, on a long green stalk. Two small bees are feeding on the flower pollen.](images/rain_lily.jpg)\
 
 :::
 
@@ -574,7 +574,7 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="30%" left="04%" width="60%"}
 
-![A ground-level view of a german shepherd dog looking ahead on a trail for adventure, with grama grass to the left and a low mountain and junipers in the distance.](/images/dog_explore_black_mesa.jpg)\
+![A ground-level view of a german shepherd dog looking ahead on a trail for adventure, with grama grass to the left and a low mountain and junipers in the distance.](images/dog_explore_black_mesa.jpg)\
 
 :::
 
