@@ -67,7 +67,8 @@ ggplot(data = subset_penguins,
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
                      shape = species)) +
   geom_point(size = 4) + 
-  geom_smooth(method = 'lm')
+  theme(text = element_text(size = 24))
+
 
 ```
 :::
@@ -80,9 +81,10 @@ ggplot(data = subset_penguins,
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
                      shape = species)) +
   geom_point(size = 4) + 
-  geom_smooth(method = 'lm')+
+  theme(text = element_text(size = 24))+
   labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)")
+       y = "Flipper length (mm)",
+       shape = "Species")
 
 ```
 :::
@@ -95,10 +97,11 @@ ggplot(data = subset_penguins,
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
                      shape = species)) +
   geom_point(size = 4) + 
-  geom_smooth(method = 'lm')+
+  theme(text = element_text(size = 24))+
   labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
-  theme_classic()
+       y = "Flipper length (mm)",
+       shape = "Species")+
+  geom_smooth(method = 'lm')
 
 ```
 :::
@@ -111,9 +114,10 @@ ggplot(data = subset_penguins,
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
                      shape = species)) +
   geom_point(size = 4) + 
-  geom_smooth(method = 'lm')+
   labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
+       y = "Flipper length (mm)",
+       shape = "Species")+
+  geom_smooth(method = 'lm')+
   theme_classic()+
   theme(text = element_text(size = 24))
 
@@ -130,7 +134,9 @@ ggplot(data = subset_penguins,
   geom_point(size = 4) + 
   geom_smooth(method = 'lm')+
   labs(x = "Penguin weight (g)", 
-       y = "Flipper length (mm)") +
+       y = "Flipper length (mm)",
+       shape = "Species",
+       color = "Species") +
   theme_classic()+
   theme(text = element_text(size = 24))
 
@@ -388,7 +394,7 @@ ggplot(data = subset_penguins,
 
 ## Chance favors the prepared data visualization specialist
 
-::: {.absolute top="25%" left="30%" width="80%"}
+::: {.absolute top="30%" left="30%" width="80%"}
 
 -   Timeline: Serendipitous opportunities[^35] based on connections and user needs[^34]!
 -   Three in progress now
@@ -464,16 +470,14 @@ Contact: [cmcurry@protonmail.com](mailto:cmcurry@protonmail.com)
 
 ## Course: health sciences visualizations
 
-::: {.absolute top="25%" left="35%" width="55%"}
+::: {.absolute top="15%" left="35%" width="70%"}
 
--   Graduate or upper-level undergraduate
 -   Field-appropriate data visualization types
 -   Understand human perceptual abilities
 -   Setting up individual workflows for universal design in R, Python, Tableau, etc
--   Timeline: year 2 or later
 
 :::
 
-::: {.absolute top="15%" left="04%" width="30%"}
+::: {.absolute top="30%" left="04%" width="30%"}
 ![](images/keyboard_cat.jpg)
 :::
