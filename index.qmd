@@ -1,22 +1,24 @@
 ---
 title: "Building community for better data visualization"
 subtitle: "A people-focused, data-driven program for scholarship and research"
-author: "Claire M Curry, Ph.D., candidate for Data Visualization Specialist"
+author: "Claire M Curry, Ph.D. "
 format: 
   revealjs:
     slide-number: true
     #show-notes: separate-page #https://revealjs.com/pdf-export/
     preview-links: true
-    slide-tone: true
+    slide-tone: false
     controls: true
     smaller: true
     center-title-slide: false
     hash: true
+    css: styles.css
 editor: source
+revealjs-plugins:
+  - revealjs-text-resizer
 ---
 
 ## What is data-driven visualization?
-
 -   Definition: "visual representation and presentation of data to facilitate understanding"
 -   We use visualizations (graphs, figures, plots) for
     -   exploring
@@ -30,7 +32,7 @@ Kirk, Andy. 2019. *Data visualization, a handbook for data driven design, 2nd ed
 
 ## How many settings to get to publication quality?
 
-::: {.absolute top="45%" left="4%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -47,22 +49,7 @@ ggplot(data = subset_penguins,
 
 ## One setting
 
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -74,22 +61,7 @@ ggplot(data = subset_penguins,
 
 ## Two settings
 
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -102,22 +74,7 @@ ggplot(data = subset_penguins,
 
 ## Three settings
 
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -132,22 +89,7 @@ ggplot(data = subset_penguins,
 
 ## Four settings
 
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -163,22 +105,7 @@ ggplot(data = subset_penguins,
 
 ## Five settings
 
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -195,24 +122,7 @@ ggplot(data = subset_penguins,
 
 ## Six settings
 
-And we could still do more to improve.
-
-::: {.absolute top="45%" left="4%" width="45%"}
-```{r}
-library(dplyr)
-library(ggplot2)
-subset_penguins <- palmerpenguins::penguins %>%
-  dplyr::filter(species != "Gentoo", year != 2007)
-
-ggplot(data = subset_penguins, 
-       mapping = aes(x = body_mass_g, y = flipper_length_mm,
-                     shape = species)) +
-  geom_point() 
-
-```
-:::
-
-::: {.absolute top="45%" left="54%" width="45%"}
+::: {.absolute top="25%" left="4%" width="100%"}
 ```{r}
 ggplot(data = subset_penguins, 
        mapping = aes(x = body_mass_g, y = flipper_length_mm,
@@ -227,15 +137,15 @@ ggplot(data = subset_penguins,
 ```
 :::
 
-# Think about what's happening in health sciences research right now
+# What is happening in health sciences research right now?
 
 ## "How your email finds me"
 
-::: {.absolute top="20%" left="04%" width="60%"}
+::: {.absolute top="15%" left="04%" width="60%"}
 ![A gray tabby cat laying face down in the crack between sofa cushions](images/overwhelmed_cat.jpg)\
 :::
 
-## People don't pay attention until their point of need
+## People do not pay attention until their point of need
 
 -   Pouring energy into workshops and promotion doesn't work on its own[^1]
 -   What gets researchers to show up
@@ -248,10 +158,8 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="20%" left="30%" width="70%"}
 
--   Experience
-    -   Trained as researcher in life sciences (evolutionary biology and ecology)
-    -   Now, seven years of science librarianship
--   Tools: R, RShiny, more
+-   Life sciences background
+-   Seven years science librarianship
 -   Enthusiasm for connecting people, which makes for a successful librarian-researcher[^2]
 
 [^2]: Kennedy, Marie R., Kristine R. Brancolini, and David P. Kennedy. 2020. “An Exploratory Study of Accomplished Librarian-Researchers”. Evidence Based Library and Information Practice 15 (1):179-217. https://doi.org/10.18438/eblip29655.
@@ -276,9 +184,8 @@ ggplot(data = subset_penguins,
 
 ## Relationships and connection
 
--   Relationships
-    -   Respect, beneficence, and justice[^3]
-    -   Room for vulnerability[^4] of lived experience[^5]
+-   Respect, beneficence, and justice[^3]
+-   Room for vulnerability[^4] of lived experience[^5]
 -   Clear boundaries (aka the service model and clear policies) are kind
 
 [^3]: Reece, Gwendolyn. 2025. “We Already Have an Ethics Framework for AI.” Inside Higher Ed. Accessed July 21, 2025. https://www.insidehighered.com/opinion/views/2025/04/25/we-already-have-ethics-framework-ai-opinion.
@@ -288,10 +195,9 @@ ggplot(data = subset_penguins,
 [^5]: Price, Candice, and Miloš Savić. 2022. *Radical Grace: Essays and Discussions on Teaching*. Norman, OK: 619 Wreath.
 
 
-## Relationships and connection
+## Relationships and connection: Approachability
 
--   Approachability
-    -   Is approachability a lack of seriousness?[^7]
+-   Is there a cost to approachability?[^7]
 
 [^7]: Schiavone, Mary Elizabeth, Tristan M.K. Draper, and Easton Brundage. July 2025.  ""We've GOT to be Sillier": Approachability in Academic Libraries." American Library Association, Core Access and Equity Section e-forum.  Online.  Available at:  https://connect.ala.org/core/discussion/core-e-forum-weve-got-to-be-sillier-approachability-in-academic-libraries-2.
 
@@ -305,11 +211,12 @@ ggplot(data = subset_penguins,
 
 
 ::: {.absolute top="35%" left="04%" width="45%"}
-![Tradition](images/overly_complex_graph_cat.jpg)
+![Tradition](images/overly_complex_graph_cat.jpg){fig-alt="a gray tabby cat with toys piled on his back, while he stares at the viewer with big yellow eyes and a concerned face"}
+
 :::
 
 ::: {.absolute top="35%" left="60%" width="20%"}
-![Essentials](images/cleaned_graph_cat.jpg)
+![Essentials](images/cleaned_graph_cat.jpg){fig-alt="A close up zoom of the gray tabby cat's face only"}
 :::
 
 ## Evidence-based, accessible pedagogy: implementation
@@ -319,7 +226,7 @@ ggplot(data = subset_penguins,
 
 [^8]: Wilson, Greg. 2019. *Teaching Tech Together: How to create and deliver lessons that work and build a teaching community around them.* Boca Raton, FL: CRC Press.
 
-[^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” The Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
+[^9]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
 
 
 
@@ -328,8 +235,8 @@ ggplot(data = subset_penguins,
 
 ::: {.absolute top="20%" left="04%" width="40%"}
 
--   Making sure our offerings meet needs[^12]
--   Librarian burnout and health (accessibility)[^13]
+-   Programs that meet needs[^12]
+-   Librarian burnout and health[^13]
 
 [^12]: DeFrain, Erica, Leslie Sult, and Nicole Pagowsky. 2025. “Effectiveness of Academic Library Research Guides for Building College Students’ Information Literacy Skills: A Scoping Review.” UNL Libraries: Faculty Publications. 446. https://digitalcommons.unl.edu/libraryscience/446.
 
@@ -337,22 +244,20 @@ ggplot(data = subset_penguins,
 
 :::
 
-::: {.absolute top="15%" left="49%" width="40%"}
+::: {.absolute top="15%" left="49%" width="30%"}
 
-![](images/cat_struggles_with_academic_book.jpg)\
+![](images/cat_struggles_with_academic_book.jpg){fig-alt="A gray tabby cat sprawls tiredly next to a very thick academic flora"}
 
 :::
 
-# Getting started with data and community
+# Proposed research at UNM
 
 ## Data visualization wall
 
 ::: {.absolute top="15%" left="04%" width="50%"}
 
--   Three potential interactive paths
-    -   Do you want to do something that’s an example here on your own data?
-    -   Do you want to feature something new?
-    -   Are you looking for collaborators?
+-   Interactive surveys
+-   Researcher features
 -   Methods: Qualitative case study[^33] and long-term grant numbers
 
 [^33]: Robbins, Sarah, Claire Curry, Amanda Schilling, and B. N. Tweedy. 2022. “Recruiting, Hiring, & On-Boarding Non-MLS Liaison Librarians: A Case Study.” Library Leadership & Management 36 (1). https://doi.org/10.5860/llm.v36i1.7490.
@@ -372,14 +277,17 @@ ggplot(data = subset_penguins,
 :::
 
 
-## Workshop and materials
+## Workshops and materials: our data
+
+-  Datasets and experimental subjects for more research
+
+## Workshop and materials metrics
 
 ::: {.absolute top="15%" left="04%" width="40%"}
 
--  The datasets and experimental grounds for more research
--   Methods:
-    -   Attendance and satisfaction metrics[^15]
-    -   What's the metric[^16] and why should it not necessarily be "efficiency" or quantity[^17]
+-   What should metrics be[^16]?
+-   Start: attendance[^17] and satisfaction[^15]
+
 
 [^15]: Curry, Claire M. and B. Narr. 2024. Marketing - Research Workshops. Available at: https://oulib-resdata.github.io/metrics/marketing.html
 
@@ -389,7 +297,7 @@ ggplot(data = subset_penguins,
 
 :::
 
-::: {.absolute top="15%" left="60%" width="40%"}
+::: {.absolute top="10%" left="50%" width="50%"}
 
 ![graph of attendance metrics](images/prop_attendance_over_time-1.png)\
 
@@ -400,32 +308,28 @@ ggplot(data = subset_penguins,
 
 ## What are the hidden barriers for researchers?
 
-::: {.absolute top="25%" left="04%" width="50%"}
-![](images/nervous_dog.png)
+::: {.absolute top="45%" left="40%" width="50%"}
+![](images/nervous_dog.png){fig-alt="A dog laying on the ground nervously looks at something off-screen"}
 :::
 
-## What are the hidden barriers for researchers?
+## Barriers are sometimes unexpected
 
-::: {.absolute top="25%" left="04%" width="50%"}
-![](images/nervous_dog.png)
-:::
-
-::: {.absolute top="25%" left="55%" width="50%"}
-![](images/nervous_dog_context.jpg)
+::: {.absolute top="15%" left="25%" width="50%"}
+![](images/nervous_dog_context.jpg){fig-alt="A tiny cat is the unexpected barrier to the dog's research skills"}
 :::
 
 ## Hidden barriers to researcher workflows: research questions
 
 -   What changes to workshop descriptions bring in more folks?[^19]
--   What facilitates long-term incorporation of skills?
+-   Longitudinal study of what facilitates long-term incorporation of skills?
 -   What is the campus impact of adding these skills?
 
 [^19]: Curry, Claire M., Joey Albin, Bobby Reed III, Amanda Schilling, Beth Tweedy, and Kristi Wyatt. 2024. “Plain Language Workshop Descriptions: How to Attract Participants from All Disciplines.” College & Research Libraries News 85 (8): 327–31.
 
 ## Hidden barriers to researcher workflows: implementation
 
+- Quantitative (repeated measures statistics) and qualitative (interview[^20], coding[^21]) skills
 - IRB and other compliance experience
-- Quantitative and qualitative (interview[^20], coding[^21]) skills
 - Timeline: 1-3+ years
 
 [^20]: Hayman, Richard, and Erika E Smith. 2020. “Mixed Methods Research in Library and Information Science: A Methodological Review”. Evidence Based Library and Information Practice 15 (1):106-25. https://doi.org/10.18438/eblip29648.
@@ -449,10 +353,9 @@ ggplot(data = subset_penguins,
 
 ## Universal design in the library
 
--   Unmet needs of disabled students[^22] and faculty/staff[^23]
+-   Needs of disabled students[^22] and faculty/staff[^23]
 -   Go beyond minimums[^24]
--   Experience:
-    -   New sensory and accessibility LibGuide[^25]
+-   Experience: new sensory LibGuide[^25]
 
 
 
@@ -467,14 +370,12 @@ ggplot(data = subset_penguins,
 ## Universal design in the library: implementation
 
 -   "Accessibility Carpentries"[^26]
--   Qualitative interviews[^37] and open-ended survey fields[^27]
--   Quantitative survey responses[^28]
+-   Interviews[^37] and open-ended survey fields[^27]
+-   Quantitative survey responses
 
 [^26]: CAST. 2024. "Universal Design for Learning Guidelines version 3.0." Accessed August 24, 2025.  Available at https://udlguidelines.cast.org
 
 [^27]: Brunskill, Amelia. 2020. “Without That Detail, I’m Not Coming”: The Perspectives of Students with Disabilities on Accessibility Information Provided on Academic Library Websites. College & Research Libraries, 81(5), 768. doi: 10.5860/crl.81.5.768
-
-[^28]: Stockwell, Kayden M., Zoë S. Robertson, Andrew J. Lampi, Talyn Steinmann, Erline Morgan, and Vikram K. Jaswal. 2025. “‘A System That Wasn’t Really Optimized for Me’: Factors Influencing Autistic University Students’ Access to Information.” Autism in Adulthood 7 (2): 171–84. https://doi.org/10.1089/aut.2023.0139
 
 [^37]: Suarez, Doug. 2010. “Evaluating Qualitative Research Studies for Evidence Based Library and Information Practice”. Evidence Based Library and Information Practice 5 (2):75-85. https://doi.org/10.18438/B8V90M.
 
@@ -483,20 +384,14 @@ ggplot(data = subset_penguins,
 -   Potential issues: history of being ignored, dismissed
 -   Potential collaborators:
     -   Campus disability office, student groups
--   Timeline: year 3-6+[^32]
-
-[^32]: Roberson, Casey Alexander, Trisha Barefield, and Eric Griffith. 2022. “Students with Disabilities and Library Services: Blending Accommodation and Universal Design.” Journal of Academic Librarianship 48 (4): 102531. https://doi.org/10.1016/j.acalib.2022.102531.
+-   Timeline: year 3-6+
 
 ## Chance favors the prepared data visualization specialist
 
 ::: {.absolute top="25%" left="30%" width="80%"}
 
 -   Timeline: Serendipitous opportunities[^35] based on connections and user needs[^34]!
--   Three in progress now: 
-    -   Peer-reviewed search arXiv (psychology)
-    -   Adaptive capacity: a new review type for conservation (biology)
-    -   Comparing early internet discussion to AI discussion now (librarianship)
-
+-   Three in progress now
 
 [^34]: Rockwood, J. V., Claire M. Curry, and E. A. Day. 2022. “Distributed Expertise, Leadership Structure & Efficiency-Viability Tradeoffs in Teams \[Poster\].” Paper presented at Society for Industrial and Organizational Psychology Annual Conference, Seattle, WA, USA.
 
@@ -519,18 +414,17 @@ ggplot(data = subset_penguins,
 ![A compound microscope with multiple US twenty dollar bills on the stage](images/funding.jpg)\
 
 :::
-::: {.absolute top="30%" left="35%" width="50%"}
+::: {.absolute top="25%" left="35%" width="50%"}
 
 -   UNM Foundation Crowdfunding
--   HSC Pilot Funding
--   Adding on assessment/mentorship to faculty grants such as PCORI or K series NIH grants
+-   Collaborate with HSC faculty on HSC Pilot Funding, PCORI, or K series NIH grants
 
 :::
 
 
 ## Potential campus partners
 
-::: {.absolute top="15%" left="04%" width="50%"}
+::: {.absolute top="15%" left="04%" width="100%"}
 
 -   Center for Advanced Research Computing
 -   Main campus library and extended campus libraries
@@ -540,7 +434,7 @@ ggplot(data = subset_penguins,
 :::
 
 
-::: {.absolute top="25%" left="65%" width="30%"}
+::: {.absolute top="0%" left="95%" width="15%"}
 
 ![Red University of New Mexico logo with gray "health sciences" below it](images/health-sciences-logo-vertical.png)\
 
